@@ -1,3 +1,10 @@
+svg * {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+
+
 .rank-selector {
     margin-top: 25vh;
 }
