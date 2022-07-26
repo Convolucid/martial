@@ -1,0 +1,72 @@
+.rank-title {
+    padding: 1rem;
+
+    border-width: 5px 0;
+    border-style: double;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+
+    transition: 0.5s;
+}
+
+.whiteSash {
+    background-color: white;
+    border-color: black;
+    color:darkslategrey;
+}
+
+.yellowSash {
+    background-color: yellow;
+    border-color: black;
+    color:black;
+}
+
+.orangeSash {
+    background-color: rgb(255, 165, 0);
+    border-color: black;
+    color:black;
+}
+
+.purpleSash {
+    background-color: purple;
+    border-color: white;
+    color:white;
+}
+
+.blueSash {
+    background-color: blue;
+    border-color: white;
+    color:white;
+}
+
+.greenSash {
+    background-color: green;
+    border-color: white;
+    color:white;
+}
+
+.brownSash {
+    background-color: rgb(107, 55, 34);
+    border-color: white;
+    color:white;
+}
+
+.goldSash {
+    background-color: rgb(212, 171, 37);
+    border-color: black;
+    color:black;
+}
+
+.redSash {
+    background-color: rgb(146, 0, 0);
+    border-color: white;
+    color:white;
+}
+
+.blackSash {
+    background-color: black;
+    border-color: white;
+    color:white;
+}

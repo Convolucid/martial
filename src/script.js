@@ -1,6 +1,7 @@
 import './style.css'
 import html from './index.html'
-import rankNodeSelector from './components/rankNodeSelector/rankNodeSelector.js'
+import buildRankNodeSelector from './components/rankNodeSelector/rankNodeSelector.js'
+import RankCurriculum from './components/RankCurriculum.js'
 
 function component(htmlStructure)
 {
@@ -10,6 +11,6 @@ function component(htmlStructure)
     
     return element;
 }
-
 document.body.appendChild(component(html));
-rankNodeSelector();
+
+const rankCurriculum = new RankCurriculum( document.getElementById('rank-curriculum') );
