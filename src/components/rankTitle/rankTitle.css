@@ -1,14 +1,20 @@
 .rank-title {
-    padding: 1rem;
+    padding: 0.25rem;
 
     border-width: 5px 0;
     border-style: double;
 
     text-align: center;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 5vw;
 
-    transition: 0.5s;
+    transition: background-color 0.5s;
+}
+
+@media(min-width: 481px) {
+    .rank-title {
+        font-size: 1.5rem;
+    }
 }
 
 .whiteSash {

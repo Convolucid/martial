@@ -2,3 +2,14 @@ svg * {
     transform-box: fill-box;
     transform-origin: center;
 }
+
+.rank-selector {
+    margin: 3vh auto 0;
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    .rank-selector {
+        width: 75%;
+    }
+}
