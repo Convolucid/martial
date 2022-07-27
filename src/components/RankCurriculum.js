@@ -10,15 +10,15 @@ export default class RankCurriculum
         const rankCurriculum = document.createElement('div')
         containerElement.appendChild(rankCurriculum)
 
-
-        // Card-based Frames for individual sash ranks
-        const rankRequirements = buildRankRequirements(rankCurriculum);
+        // Animated SVG Node Selector for sash ranks
+        const rankNodeSelector = buildRankNodeSelector(rankCurriculum);
 
         // Color themed text bar for Sash Title
         const rankTitle = buildRankTitle(rankCurriculum);
 
-        // Animated SVG Node Selector for sash ranks
-        const rankNodeSelector = buildRankNodeSelector(rankCurriculum);
+        // Card-based Frames for individual sash ranks
+        const rankRequirements = buildRankRequirements(rankCurriculum);
+
 
         // Add EventListeners to all rank nodes
         for(let i=0; i < rankNodeSelector.rankArray.length; i++)
@@ -39,6 +39,7 @@ export default class RankCurriculum
             rankNodeSelector.rankArray[i].addEventListener('click', () => 
             {
                 rankTitle.rankChange(i)
+                rankRequirements.rankChange(i)
             })
         }
 

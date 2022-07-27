@@ -2,6 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     padding: 4rem 20%;
+
+    transition: 0.5s;
+    color: black;
 }
 
 .card-container {
@@ -26,7 +29,7 @@
     text-align: center;
     font-family: var(--sansSerif);
     font-size: 0.9rem;
-    color: black;
+
 }
 
 .card-subtitle {
@@ -48,6 +51,89 @@
     background-color: rgb(240, 240, 240);
 }
 
-.card-image-whiteSash {
+/* .card-image-whiteSash {
     box-shadow: 0px 2px 10px 1px black;
+} */
+
+/* Yellow Sash */
+.rank-requirements-yellowSash {
+    background-color: rgb(255, 254, 175);
 }
+
+/* .card-image-yellowSash {
+    box-shadow: 0px 2px 10px 1px black;
+} */
+
+/* Orange Sash */
+.rank-requirements-orangeSash {
+    background-color: rgb(252, 221, 181);
+}
+
+/* .card-image-orangeSash {
+    box-shadow: 0px 2px 10px 1px black;
+} */
+
+/* Purple Sash */
+.rank-requirements-purpleSash {
+    background-color: rgb(243, 204, 255);
+}
+
+/* .card-image-purpleSash {
+    box-shadow: 0px 2px 10px 1px black;
+} */
+
+/* Blue Sash */
+.rank-requirements-blueSash {
+    background-color: rgb(169, 204, 255);
+}
+
+/* .card-image-blueSash {
+    box-shadow: 0px 2px 10px 1px black;
+} */
+
+/* Green Sash */
+.rank-requirements-greenSash {
+    background-color: rgb(195, 255, 193);
+}
+
+/* .card-image-greenSash {
+    box-shadow: 0px 2px 10px 1px black;
+} */
+
+/* Brown Sash */
+.rank-requirements-brownSash {
+    background-color: rgb(207, 196, 184);
+}
+
+/* .card-image-brownSash {
+    box-shadow: 0px 2px 10px 1px black;
+} */
+
+/* Gold Sash */
+.rank-requirements-goldSash {
+    background-color: rgb(252, 235, 189);
+}
+
+/* .card-image-goldSash {
+    box-shadow: 0px 2px 10px 1px black;
+} */
+
+/* Red Sash */
+.rank-requirements-redSash {
+    background-color: rgb(236, 185, 185);
+
+}
+
+/* .card-image-redSash {
+    box-shadow: 0px 2px 10px 1px black;
+} */
+
+/* Black Sash */
+.rank-requirements-blackSash {
+    background-color: rgb(39, 39, 39);
+    color: var(--color-primary-contrast)
+}
+
+/* .card-image-blackSash {
+    box-shadow: 0px 2px 10px 1px black;
+} */

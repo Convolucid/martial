@@ -1,19 +1,19 @@
 .rank-title {
-    padding: 0.25rem;
+    padding: 0.2rem;
 
     border-width: 5px 0;
     border-style: double;
 
     text-align: center;
     text-transform: uppercase;
-    font-size: 5vw;
+    font-size: 4vw;
 
     transition: background-color 0.5s;
 }
 
 @media(min-width: 481px) {
     .rank-title {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -37,26 +37,26 @@
 
 .purpleSash {
     background-color: purple;
-    border-color: white;
-    color:white;
+    border-color: rgb(255, 97, 189);
+    color:rgb(253, 236, 253);
 }
 
 .blueSash {
     background-color: blue;
-    border-color: white;
-    color:white;
+    border-color: rgb(193, 246, 255);
+    color:rgb(204, 247, 255);
 }
 
 .greenSash {
     background-color: green;
-    border-color: white;
-    color:white;
+    border-color: rgb(87, 255, 162);
+    color:rgb(227, 255, 244);
 }
 
 .brownSash {
     background-color: rgb(107, 55, 34);
-    border-color: white;
-    color:white;
+    border-color: rgb(255, 212, 155);
+    color:rgb(245, 240, 235);
 }
 
 .goldSash {
@@ -67,12 +67,12 @@
 
 .redSash {
     background-color: rgb(146, 0, 0);
-    border-color: white;
-    color:white;
+    border-color: rgb(255, 57, 57);
+    color:rgb(255, 241, 241);
 }
 
 .blackSash {
     background-color: black;
-    border-color: white;
-    color:white;
+    border-color: var(--color-primary-contrast);
+    color:var(--color-primary-contrast);
 }

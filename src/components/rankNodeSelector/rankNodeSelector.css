@@ -4,12 +4,12 @@ svg * {
 }
 
 .rank-selector {
-    margin: 3vh auto 0;
+    margin: 0 auto;
     width: 100%;
 }
 
 @media(min-width: 768px) {
     .rank-selector {
-        width: 75%;
+        width: 60%;
     }
 }

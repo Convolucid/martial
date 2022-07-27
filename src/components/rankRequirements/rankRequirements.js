@@ -52,29 +52,26 @@ export default function rankRequirements(containerElement)
     // Function to change 'active' card, resizing it and moving it to left, while also changing background and content
 
 
-    // // Create array for class list
-    // const rankTitleStyles = [
-    //     'whiteSash', 'yellowSash', 'orangeSash', 'purpleSash', 'blueSash', 'greenSash', 'brownSash', 'goldSash', 'redSash', 'blackSash'
-    // ]
+    // Create array for class list
+    const rankRequirementsStyles = [
+        'rank-requirements-whiteSash', 'rank-requirements-yellowSash', 'rank-requirements-orangeSash', 'rank-requirements-purpleSash', 'rank-requirements-blueSash', 'rank-requirements-greenSash', 'rank-requirements-brownSash', 'rank-requirements-goldSash', 'rank-requirements-redSash', 'rank-requirements-blackSash'
+    ]
 
     // const rankTitleText = [
     //     'White Sash', 'Yellow Sash', 'Orange Sash', 'Purple Sash', 'Blue Sash', 'Green Sash', 'Brown Sash', 'Gold Sash', 'Red Sash', 'Black Sash'
     // ]
 
 
-    // // Style-switching functionality
-    // rankTitle.rankChange = function(rank)
-    // {
-    //     for(let i=0; i < rankTitleStyles.length; i++)
-    //     {
-    //         rankTitle.classList.remove(rankTitleStyles[i]);
-    //     }
+    // Style-switching functionality
+    rankRequirements.rankChange = function(rank)
+    {
+        for(let i=0; i < rankRequirementsStyles.length; i++)
+        {
+            rankRequirements.classList.remove(rankRequirementsStyles[i]);
+        }
 
-    //     rankTitle.classList.add(rankTitleStyles[rank])
-    //     rankTitle.innerText = rankTitleText[rank]
-    //     rankTitle.rank = rank
-
-    // }
+        rankRequirements.classList.add(rankRequirementsStyles[rank])
+    }
 
     // rankTitle.rankChange(0);
 
