@@ -1,4 +1,37 @@
 .rank-requirements {
     display: flex;
-    padding: 1rem;
+    flex-wrap: wrap;
+    padding: 4rem 20%;
+}
+
+.card-container {
+    margin: 0 auto;
+    padding: 1rem 1rem;
+}
+
+.card-image {
+    height: 50vh;
+    margin: 0 auto 1.5rem;
+
+    border-radius: 25px;
+    box-shadow: 0px 2px 15px 2px black;
+}
+
+.card-text {
+    text-align: center;
+    color: black;
+}
+
+.card-curriculum-view {
+    height: 30vh;
+    border-radius: 10px;
+}
+
+/* White Sash */
+.rank-requirements-whiteSash {
+    background-color: rgb(240, 240, 240);
+}
+
+.card-image-whiteSash {
+    box-shadow: 0px 2px 10px 1px black;
 }
