@@ -1,3 +1,8 @@
+.rank-requirements-section {
+    transition: background-color 0.5s;
+    color: black;
+}
+
 .rank-requirements {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -5,9 +10,10 @@
     min-height: 43vw;
 
     padding: 2rem;
+}
 
-    transition: background-color 0.5s;
-    color: black;
+.rank-requirements-hidden {
+    display: none;
 }
 
 .rank-requirements-card-display {
@@ -19,7 +25,6 @@
     display: grid;
     column-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 10rem));
-    /* flex-wrap: wrap; */
 
     padding: 0 5%;
 
