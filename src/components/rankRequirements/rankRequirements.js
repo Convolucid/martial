@@ -1,13 +1,29 @@
 import './rankRequirements.css'
+
 import advancementImage from './cardImages/advancement.png'
-import whiteSashImage from './cardImages/white-sash.png'
-import whiteTechImage from './cardImages/white-tech.png'
-import whiteMindImage1 from './cardImages/white-mindset-tiu.png'
-import whiteMindImage2 from './cardImages/white-mindset-css.png'
-import yellowSashImage from './cardImages/yellow-sash.png'
-import yellowTechImage from './cardImages/yellow-tech.png'
-import yellowMindImage1 from './cardImages/yellow-mindset-jimnim.png'
-import yellowMindImage2 from './cardImages/yellow-mindset-au.png'
+import forgeInvitationImage from './cardImages/forge-invitation.png'
+import proficiencyBronzeInitiateImage from './cardImages/proficiency-bronze-initiate.png'
+
+import whiteSashImage from './cardImages/tier1-initiate/white-sash.png'
+import whiteTechImage from './cardImages/tier1-initiate/white-tech.png'
+import whiteMindImage1 from './cardImages/tier1-initiate/white-mind-tiu.png'
+import whiteMindImage2 from './cardImages/tier1-initiate/white-mind-css.png'
+import yellowSashImage from './cardImages/tier1-initiate/yellow-sash.png'
+import yellowTechImage from './cardImages/tier1-initiate/yellow-tech.png'
+import yellowMindImage1 from './cardImages/tier1-initiate/yellow-mind-jimnim.png'
+import yellowMindImage2 from './cardImages/tier1-initiate/yellow-mind-au.png'
+import orangeSashImage from './cardImages/tier1-initiate/orange-sash.png'
+import orangeMindImage1 from './cardImages/tier1-initiate/orange-mind-choi.png'
+import orangeMindImage2 from './cardImages/tier1-initiate/orange-mind-tipkaau.png'
+import orangeTechImage from './cardImages/tier1-initiate/orange-tech.png'
+
+import purpleSashImage from './cardImages/tier2-development/purple-sash.png'
+import purpleMindImage1 from './cardImages/tier2-development/purple-mind-sung.png'
+import purpleMindImage2 from './cardImages/tier2-development/purple-mind-gates.png'
+import purpleMindImage3 from './cardImages/tier2-development/purple-mind-pok.png'
+import purpleTech7KicksImage from './cardImages/tier2-development/purple-tech-7kicks.png'
+import purpleTrainingManualImage from './cardImages/tier2-development/purple-trainingManual.png'
+
 
 export default function rankRequirements(containerElement)
 {
@@ -15,20 +31,6 @@ export default function rankRequirements(containerElement)
     const rankRequirementsSection = document.createElement('section')
     rankRequirementsSection.classList.add('rank-requirements-section')
     containerElement.appendChild(rankRequirementsSection)
-
-
-
-
-
-
-    // Create grid container element for large card display on left
-    // const cardDisplayPanel = document.createElement('div')
-    // cardDisplayPanel.classList.add('rank-requirements-card-display')
-    // rankRequirements.appendChild(cardDisplayPanel)
-
-    // const curriculumDisplayPanel = document.createElement('div')
-    // curriculumDisplayPanel.classList.add('rank-requirements-curriculum-display')
-    // rankRequirements.appendChild(curriculumDisplayPanel)
 
     function createCard(cardImage, cardTitle, cardSubtitle)
     {
@@ -75,25 +77,25 @@ export default function rankRequirements(containerElement)
         yellowSash, yellowMindJimNim, yellowMindAu, yellowTechIronPhoenixCombo2, yellowTechInterceptingHammerFist, yellowAdvancement
     ]
 
-    const orangeSash = createCard(yellowSashImage, 'Orange Sash', 'Initiate Chamber')
-    const orangeMindChoi= createCard(yellowMindImage1, 'Choi', 'Plucking Methods');
-    const orangeMindTipKaau = createCard(yellowMindImage2, 'Tip, Kaau', 'Lean on the Center');
-    const orangeTechIronPhoenixCombo3 = createCard(yellowTechImage, 'Iron Phoenix Combination', '3rd Route');
-    const orangeTechEightEssentials = createCard(yellowTechImage, 'Baat Jaak Yiu Sau', 'Eight Essential Movements');
+    const orangeSash = createCard(orangeSashImage, 'Orange Sash', 'Initiate Chamber')
+    const orangeMindChoi= createCard(orangeMindImage1, 'Choi', 'Plucking Methods');
+    const orangeMindTipKaau = createCard(orangeMindImage2, 'Tip, Kaau', 'Lean on the Center');
+    const orangeTechIronPhoenixCombo3 = createCard(orangeTechImage, 'Iron Phoenix Combination', '3rd Route');
+    const orangeTechEightEssentials = createCard(orangeTechImage, 'Baat Jaak Yiu Sau', 'Eight Essential Movements');
     const orangeAdvancement = createCard(advancementImage, 'Advancement', 'Initiate Tier or higher')
 
     const orangeRankRequirements = [
         orangeSash, orangeMindChoi, orangeMindTipKaau, orangeTechIronPhoenixCombo3, orangeTechEightEssentials, orangeAdvancement
     ]
 
-    const purpleSash = createCard(yellowSashImage, 'Purple Sash', 'Development Chamber')
-    const purpleMindSung= createCard(yellowMindImage1, 'Sung', 'Empty Method');
-    const purpleMindGates = createCard(yellowMindImage2, 'Gates', 'Inner and Outer, Life and Death');
-    const purpleMindPokLauFung = createCard(yellowMindImage2, 'Pok, Lau, Fung', 'Ward, Grasp, and Seal');
-    const purpleTechSevenKicks = createCard(yellowTechImage, 'Seven Kicks');
-    const purpleTrainingManual = createCard(yellowTechImage, 'The Shaolin Monastery', 'Choose one Technical Card');
-    const purpleProficiency = createCard(yellowTechImage, 'Bronze Proficiency', 'Initiate Tier or Higher')
-    const purpleEvaluation = createCard(yellowTechImage, 'Initiate Chamber Evaluation', '80% score or greater')
+    const purpleSash = createCard(purpleSashImage, 'Purple Sash', 'Development Chamber')
+    const purpleMindSung= createCard(purpleMindImage1, 'Sung', 'Empty Method');
+    const purpleMindGates = createCard(purpleMindImage2, 'Gates', 'Inner and Outer, Life and Death');
+    const purpleMindPokLauFung = createCard(purpleMindImage3, 'Pok, Lau, Fung', 'Ward, Grasp, and Seal');
+    const purpleTechSevenKicks = createCard(purpleTech7KicksImage, 'Seven Kicks', '');
+    const purpleTrainingManual = createCard(purpleTrainingManualImage, 'The Shaolin Monastery', 'Choose one Technical Card');
+    const purpleProficiency = createCard(proficiencyBronzeInitiateImage, 'Bronze Proficiency', 'Initiate Tier or Higher')
+    const purpleEvaluation = createCard(forgeInvitationImage, 'Initiate Chamber Evaluation', '80% score or greater')
     // const purpleTechDaaiFaanChe = createCard(yellowTechImage, 'Daai Faan Che Kyun', 'Big Wheel Fist');
     // const purpleTechYiLouJaakYiu = createCard(yellowTechImage, 'Yi Lou Jaak Yiu', '2nd Route Essentials');
     const purpleAdvancement = createCard(advancementImage, 'Advancement', 'Development Tier or higher')
