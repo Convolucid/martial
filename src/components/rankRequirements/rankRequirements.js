@@ -61,18 +61,152 @@ export default function rankRequirements(containerElement)
     const whiteAdvancement = createCard(advancementImage, 'Advancement', 'Initiate Tier or higher')
 
     const whiteRankRequirements = [
-        whiteSash, whiteMindTiu, whiteMindCheuiSaamSau, whiteTechIronPhoenixCombo1, whiteTech8ChainPunch2,  whiteAdvancement
+        whiteSash, whiteMindTiu, whiteMindCheuiSaamSau, whiteTechIronPhoenixCombo1, whiteTech8ChainPunch2, whiteAdvancement
     ]
 
     const yellowSash = createCard(yellowSashImage, 'Yellow Sash', 'Initiate Chamber')
     const yellowMindJimNim = createCard(yellowMindImage1, 'Jim, Nim', 'Contact and Cling');
     const yellowMindAu = createCard(yellowMindImage2, 'Au, Diu, Got', 'the Mantis Hook');
     const yellowTechIronPhoenixCombo2 = createCard(yellowTechImage, 'Iron Phoenix Combination', '2nd Route');
-    const yellowTechInterceptingHammerFist = createCard(yellowTechImage, 'Intercepting Hammer Fist');
+    const yellowTechInterceptingHammerFist = createCard(yellowTechImage, 'Intercepting Hammer Fist', '1st Route');
     const yellowAdvancement = createCard(advancementImage, 'Advancement', 'Initiate Tier or higher')
 
     const yellowRankRequirements = [
-        yellowSash, yellowMindJimNim, yellowMindAu, yellowTechIronPhoenixCombo2, yellowTechInterceptingHammerFist,  yellowAdvancement
+        yellowSash, yellowMindJimNim, yellowMindAu, yellowTechIronPhoenixCombo2, yellowTechInterceptingHammerFist, yellowAdvancement
+    ]
+
+    const orangeSash = createCard(yellowSashImage, 'Orange Sash', 'Initiate Chamber')
+    const orangeMindChoi= createCard(yellowMindImage1, 'Choi', 'Plucking Methods');
+    const orangeMindTipKaau = createCard(yellowMindImage2, 'Tip, Kaau', 'Lean on the Center');
+    const orangeTechIronPhoenixCombo3 = createCard(yellowTechImage, 'Iron Phoenix Combination', '3rd Route');
+    const orangeTechEightEssentials = createCard(yellowTechImage, 'Baat Jaak Yiu Sau', 'Eight Essential Movements');
+    const orangeAdvancement = createCard(advancementImage, 'Advancement', 'Initiate Tier or higher')
+
+    const orangeRankRequirements = [
+        orangeSash, orangeMindChoi, orangeMindTipKaau, orangeTechIronPhoenixCombo3, orangeTechEightEssentials, orangeAdvancement
+    ]
+
+    const purpleSash = createCard(yellowSashImage, 'Purple Sash', 'Development Chamber')
+    const purpleMindSung= createCard(yellowMindImage1, 'Sung', 'Empty Method');
+    const purpleMindGates = createCard(yellowMindImage2, 'Gates', 'Inner and Outer, Life and Death');
+    const purpleMindPokLauFung = createCard(yellowMindImage2, 'Pok, Lau, Fung', 'Ward, Grasp, and Seal');
+    const purpleTechSevenKicks = createCard(yellowTechImage, 'Seven Kicks');
+    const purpleTrainingManual = createCard(yellowTechImage, 'The Shaolin Monastery', 'Choose one Technical Card');
+    const purpleProficiency = createCard(yellowTechImage, 'Bronze Proficiency', 'Initiate Tier or Higher')
+    const purpleEvaluation = createCard(yellowTechImage, 'Initiate Chamber Evaluation', '80% score or greater')
+    // const purpleTechDaaiFaanChe = createCard(yellowTechImage, 'Daai Faan Che Kyun', 'Big Wheel Fist');
+    // const purpleTechYiLouJaakYiu = createCard(yellowTechImage, 'Yi Lou Jaak Yiu', '2nd Route Essentials');
+    const purpleAdvancement = createCard(advancementImage, 'Advancement', 'Development Tier or higher')
+
+    const purpleRankRequirements = [
+        purpleSash, purpleMindSung, purpleMindGates, purpleMindPokLauFung, purpleTechSevenKicks, purpleTrainingManual, purpleProficiency, purpleEvaluation, purpleAdvancement
+    ]
+
+    const blueSash = createCard(yellowSashImage, 'Blue Sash', 'Development Chamber')
+    const blueMindManGam= createCard(yellowMindImage1, 'Man Gam', 'Spatial Contextual Awareness');
+    const blueMindSimJau = createCard(yellowMindImage2, 'Sim, Jau', 'Dodging and Stalking');
+    const blueMindTangNo = createCard(yellowMindImage2, 'Tang No', 'Bouncing Step');
+    const blueTechGungLik = createCard(yellowTechImage, 'Gung Lik Kyun', 'Powerful Boxing');
+    const blueTechFootwork = createCard(yellowTechImage, 'Stance Routine', 'Personal Creation')
+    const blueTrainingManual = createCard(yellowTechImage, 'The Forests of Laoshan', 'Choose one Technical Card');
+    const blueProficiency = createCard(yellowTechImage, 'Silver Proficiency', 'Initiate Tier or Higher')
+    // const blueTechDoGong = createCard(yellowTechImage, 'Do Gong Kyun', 'Avoiding the Hard');
+    // const blueTechMuiFaSau = createCard(yellowTechImage, 'Mui Fa Sau', 'Plum Blossom Hand');
+    const blueAdvancement = createCard(advancementImage, 'Advancement', 'Development Tier or higher')
+
+    const blueRankRequirements = [
+        blueSash, blueMindManGam, blueMindSimJau, blueMindTangNo, blueTechGungLik, blueTechFootwork, blueTrainingManual, blueProficiency, blueAdvancement
+    ]
+
+    const greenSash = createCard(yellowSashImage, 'Green Sash', 'Development Chamber')
+    const greenMindLengHeng= createCard(yellowMindImage1, 'Leng, Heng', 'Lightness and Agility');
+    const greenMindRoot = createCard(yellowMindImage2, 'Root', '');
+    const greenMindWanCham = createCard(yellowMindImage2, 'Wan, Cham', 'Stability and Sinking');
+    const greenTechTongLongBouSyun = createCard(yellowTechImage, 'Tong Long Bou Syun', 'Mantis Whirlwind Step');
+    const greenTrainingManual = createCard(yellowTechImage, 'Green Dragon Temple', 'Choose one Technical Card');
+    const greenProficiency1 = createCard(yellowTechImage, 'Stance Routine', 'Bronze Proficiency of Higher')
+    const greenProficiency2 = createCard(yellowTechImage, 'Silver Proficiency', 'Initiate Tier or Higher')
+    // const greenTechBaakYunTauTou = createCard(yellowTechImage, 'Baak Yun Tau Tou', 'White Ape Steals the Peach');
+    // const greenTechHaakFuGaauCha = createCard(yellowTechImage, 'Haak Fu Gaau Cha', 'Black Tiger Crossing');
+    const greenAdvancement = createCard(advancementImage, 'Advancement', 'Development Tier or higher')
+
+    const greenRankRequirements = [
+        greenSash, greenMindLengHeng, greenMindRoot, greenMindWanCham, greenTechTongLongBouSyun, greenTrainingManual, greenProficiency1, greenProficiency2, greenAdvancement
+    ]
+
+    const brownSash = createCard(yellowSashImage, 'Brown Sash', 'Refinement Chamber')
+    const brownMind8Weakening = createCard(yellowMindImage1, '8 Points of Weakening', '');
+    const brownMind8Devastation = createCard(yellowMindImage2, '8 Points of Devastation', '');
+    const brownMindSeNgoiLin = createCard(yellowMindImage2, 'Sei Ngoi Lin', 'Four External Practices');
+    const brownMindSeiNaapLin = createCard(yellowMindImage2, 'Sei Naap Lin', 'Four Internal Practices');
+    const brownMindBatJikBatLei = createCard(yellowMindImage2, 'Bat Jik Bat Lei', 'Engagement Distance');
+    const brownTechDaaiFuNgaan = createCard(yellowTechImage, 'Daai Fu Ngaan Kyun', 'Big Tigers and Wild Geese');
+    const brownTechSixHarmonyStaff = createCard(yellowTechImage, 'Luk Hap Gwan', 'Six Harmony Staff');
+    const brownTechAny = createCard(yellowTechImage, 'Any Acquired Set', 'Choose one Technical Card');
+    const brownTrainingManual = createCard(yellowTechImage, 'The Jade Emperor Temple', 'Choose one Technical Card');
+    const brownProficiency = createCard(yellowTechImage, 'Silver Proficiency', 'Development Tier or Higher')
+    const brownSeals = createCard(yellowTechImage, '10 Seals Collected', 'Any combination of Leopard, Snake, and Crane')
+    // const brownTechMuiFaLou = createCard(yellowTechImage, 'Mui Fa Lou Kyun', 'Plum Blossom Routine Boxing');
+    const brownEvaluation = createCard(yellowTechImage, 'Development Chamber Evaluation', '80% score or greater')
+    const brownAdvancement = createCard(advancementImage, 'Advancement', 'Refinement Tier or higher')
+
+    const brownRankRequirements = [
+        brownSash, brownMind8Weakening, brownMind8Devastation, brownMindSeNgoiLin, brownMindSeiNaapLin, brownMindBatJikBatLei, brownTechDaaiFuNgaan, brownTechSixHarmonyStaff, brownTechAny, brownTrainingManual, brownProficiency, brownSeals, brownEvaluation, brownAdvancement
+    ]
+
+    const goldSash = createCard(yellowSashImage, 'Gold Sash', 'Refinement Chamber')
+    const goldMindBatDiuBatDeng = createCard(yellowMindImage1, 'Bat Diu Bat Deng', 'Cling without Resistance');
+    const goldMindFongYun = createCard(yellowMindImage2, 'Fong Yun', 'Square and Round');
+    const goldMind4Ounces = createCard(yellowMindImage2, 'Sei Leung But Chin Gan', '4 Ounces Overcome 1000 Pounds');
+    const goldMindSiuDikDaai = createCard(yellowMindImage2, 'Siu Dik Daai, Maan Dik Faai', 'Defeat Big with Small, Fast with Slow');
+    const goldMindYanJeunLaaiHung = createCard(yellowMindImage2, 'Yan Jeun Laai Hung', 'Attract into Emptiness');
+    const goldTechTongLongCheutDung = createCard(yellowTechImage, 'Tong Long Cheut Dung Kyun', 'Praying Mantis Exits the Cave');
+    const goldTechYinChingDaanDou = createCard(yellowTechImage, 'Yin Ching Daan Dou', "Yin Ching's Broadsword");
+    const goldTechSpeedOfHands = createCard(yellowTechImage, 'Speed of Hands Routine', 'Personal Creation');
+    const goldTechAny = createCard(yellowTechImage, 'Any Acquired Set', 'Choose one Technical Card');
+    const goldTrainingManual = createCard(yellowTechImage, 'The Shandong Countryside', 'Choose one Technical Card');
+    const goldProficiency = createCard(yellowTechImage, 'Silver Proficiency', 'Development Tier or Higher')
+    const goldSeals = createCard(yellowTechImage, '10 Seals Collected', 'Any combination of Monkey, Tiger, and Dragon')
+    const goldAdvancement = createCard(advancementImage, 'Advancement', 'Refinement Tier or higher')
+
+    const goldRankRequirements = [
+        goldSash, goldMindBatDiuBatDeng, goldMindFongYun, goldMind4Ounces, goldMindSiuDikDaai, goldMindYanJeunLaaiHung, goldTechTongLongCheutDung, goldTechYinChingDaanDou, goldTechSpeedOfHands, goldTechAny, goldTrainingManual, goldProficiency, goldSeals, goldAdvancement
+    ]
+
+    const redSash = createCard(yellowSashImage, 'Red Sash', 'Refinement Chamber')
+    const redMind1= createCard(yellowMindImage1, '?', '');
+    const redMind2 = createCard(yellowMindImage2, '?', '');
+    const redMind3 = createCard(yellowMindImage2, '?', '');
+    const redMind4 = createCard(yellowMindImage2, '?', '');
+    const redMind5 = createCard(yellowMindImage2, '?', '');
+    const redTech1 = createCard(yellowTechImage, '?', '');
+    const redTech2 = createCard(yellowTechImage, '?', '');
+    const redTech3 = createCard(yellowTechImage, '?', 'Personal Creation')
+    const redTechAny = createCard(yellowTechImage, 'Any Acquired Set', 'Choose one Technical Card');
+    const redTrainingManual = createCard(yellowTechImage, '?', 'Choose one Technical Card');
+    const redProficiency1 = createCard(yellowTechImage, 'Gold Proficiency', 'Development Tier or Higher')
+    const redProficiency2 = createCard(yellowTechImage, 'Speed of Hands Routine', 'Silver Proficiency or Higher')
+    const redSeals = createCard(yellowTechImage, '10 Seals Collected', 'Any combination of Tortoise, Lion, and Bird')
+    const redAdvancement = createCard(advancementImage, 'Advancement', 'Refinement Tier or higher')
+
+    const redRankRequirements = [
+        redSash, redMind1, redMind2, redMind3, redMind4, redMind5, redTech1, redTech2, redTech3, redTechAny, redTrainingManual, redProficiency1, redProficiency2, redSeals, redAdvancement
+    ]
+
+    const blackSash = createCard(yellowSashImage, 'Black Sash', 'Adept Chamber')
+    const blackMind1= createCard(yellowMindImage1, '?', '');
+    const blackMind2 = createCard(yellowMindImage2, '?', '');
+    const blackMind3 = createCard(yellowMindImage2, '?', '');
+    const blackMind4 = createCard(yellowMindImage2, '?', '');
+    const blackMind5 = createCard(yellowMindImage2, '?', '');
+    const blackTech1 = createCard(yellowTechImage, '?', '');
+    const blackTech2 = createCard(yellowTechImage, '?', '');
+    const blackTech3 = createCard(yellowTechImage, '?', 'Personal Creation')
+    const blackTrainingManual = createCard(yellowTechImage, '?', 'Choose one Technical Card');
+    const blackAdvancement = createCard(advancementImage, 'Advancement', 'Adept Tier or higher')
+
+    const blackRankRequirements = [
+        blackSash, blackMind1, blackMind2, blackMind3, blackMind4, blackMind5, blackTech1, blackTech2, blackTech3, blackTrainingManual, blackAdvancement
     ]
 
 
@@ -108,9 +242,17 @@ export default function rankRequirements(containerElement)
 
     const whiteRankRequirementsPanel = createRankRequirementsPanel(whiteRankRequirements)
     const yellowRankRequirementsPanel = createRankRequirementsPanel(yellowRankRequirements)
+    const orangeRankRequirementsPanel = createRankRequirementsPanel(orangeRankRequirements)
+    const purpleRankRequirementsPanel = createRankRequirementsPanel(purpleRankRequirements)
+    const blueRankRequirementsPanel = createRankRequirementsPanel(blueRankRequirements)
+    const greenRankRequirementsPanel = createRankRequirementsPanel(greenRankRequirements)
+    const brownRankRequirementsPanel = createRankRequirementsPanel(brownRankRequirements)
+    const goldRankRequirementsPanel = createRankRequirementsPanel(goldRankRequirements)
+    const redRankRequirementsPanel = createRankRequirementsPanel(redRankRequirements)
+    const blackRankRequirementsPanel = createRankRequirementsPanel(blackRankRequirements)
 
     const rankRequirementsPanelArray = [
-        whiteRankRequirementsPanel, yellowRankRequirementsPanel
+        whiteRankRequirementsPanel, yellowRankRequirementsPanel, orangeRankRequirementsPanel, purpleRankRequirementsPanel, blueRankRequirementsPanel, greenRankRequirementsPanel, brownRankRequirementsPanel, goldRankRequirementsPanel, redRankRequirementsPanel, blackRankRequirementsPanel
     ]
 
 
