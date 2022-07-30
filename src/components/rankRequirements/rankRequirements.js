@@ -67,7 +67,6 @@ import goldTrainingManualImage from './cardImages/tier3-refinement/gold-training
 import redSashImage from './cardImages/tier3-refinement/red-sash.png'
 
 
-
 export default function rankRequirements(containerElement)
 {
     // Create HTML element section for rank requirements
@@ -75,29 +74,44 @@ export default function rankRequirements(containerElement)
     rankRequirementsSection.classList.add('rank-requirements-section')
     containerElement.appendChild(rankRequirementsSection)
 
+
+    // Card creation function creates full information about card.  Will add in functions from imported "Card Challenge" and "Card info" sources so that all content is attached to the card element.
+
     function createCard(cardImage, cardTitle, cardSubtitle)
     {
         const cardContainer = document.createElement('div')
         cardContainer.classList.add('card-container')
 
-        const card = new Image()
-        card.src = cardImage
-        card.classList.add('card-image')
-        cardContainer.appendChild(card)
+        cardContainer.cardImage = new Image()
+        cardContainer.cardImage.src = cardImage
+        cardContainer.cardImage.classList.add('card-image')
 
-        const title = document.createElement('h3')
-        title.innerText = cardTitle
-        title.classList.add('card-title')
-        cardContainer.appendChild(title)
+        cardContainer.cardTitle = document.createElement('h3')
+        cardContainer.cardTitle.innerText = cardTitle
+        cardContainer.cardTitle.classList.add('card-title')
 
-        const subtitle = document.createElement('p')
-        subtitle.innerText = cardSubtitle
-        subtitle.classList.add('card-title', 'card-subtitle')
-        cardContainer.appendChild(subtitle)
+        cardContainer.cardSubtitle = document.createElement('p')
+        cardContainer.cardSubtitle.innerText = cardSubtitle
+        cardContainer.cardSubtitle.classList.add('card-title', 'card-subtitle')
+
+
+        cardContainer.append(cardContainer.cardImage)
+        cardContainer.append(cardContainer.cardTitle)
+        cardContainer.append(cardContainer.cardSubtitle)
+
+        // Add function to add description
+
+        // Add function to add challenges
+
+        // Add function to add rewards
 
         return cardContainer;
     }
-    
+
+    // Will need a better grid, built with four sections each, image, title, subtitle, checkbox
+
+
+    // Full list of curriculum cards sorted into sash rank arrays
     const whiteSash = createCard(whiteSashImage, 'White Sash', 'Initiate Chamber')
     const whiteMindTiu = createCard(whiteMindImage1, 'Tiu', 'the Warding Principle');
     const whiteMindCheuiSaamSau = createCard(whiteMindImage2, 'Cheui Saam Sau', 'the Three Hands of Mantis');
@@ -262,25 +276,27 @@ export default function rankRequirements(containerElement)
         rankRequirements.classList.add('rank-requirements')
         rankRequirementsSection.appendChild(rankRequirements)
 
-        const cardDisplayPanel = document.createElement('div')
-        cardDisplayPanel.classList.add('rank-requirements-card-display')
-        rankRequirements.appendChild(cardDisplayPanel)
+        rankRequirements.cardDisplayPanel = document.createElement('div')
+        rankRequirements.cardDisplayPanel.classList.add('rank-requirements-card-display')
+        rankRequirements.appendChild(rankRequirements.cardDisplayPanel)
 
-        const curriculumDisplayPanel = document.createElement('div')
-        curriculumDisplayPanel.classList.add('rank-requirements-curriculum-display')
-        rankRequirements.appendChild(curriculumDisplayPanel)
+        rankRequirements.curriculumDisplayPanel = document.createElement('div')
+        rankRequirements.curriculumDisplayPanel.classList.add('rank-requirements-curriculum-display')
+        rankRequirements.appendChild(rankRequirements.curriculumDisplayPanel)
 
         for(let i=0; i < array.length; i++)
         {
             if(i == 0)
             {
-                cardDisplayPanel.appendChild(array[0])
+                rankRequirements.cardDisplayPanel.appendChild(array[0])
             }
             else
             {
-                curriculumDisplayPanel.appendChild(array[i])
+                rankRequirements.curriculumDisplayPanel.appendChild(array[i])
             }
         }
+
+        rankRequirements.array = array
 
         return rankRequirements;
     }
@@ -337,6 +353,43 @@ export default function rankRequirements(containerElement)
     }
 
     rankRequirementsSection.rankChange(0);
+
+    // Add card selection function
+    function focalCardSelector(rankRequirementsPanel, rankCardArray, cardName) 
+    {
+        for(let i=0; i < rankCardArray.length; i++)
+        {
+            if(rankCardArray[i] == cardName)
+            {
+                rankRequirementsPanel.cardDisplayPanel.appendChild(rankCardArray[i])
+            }
+            else
+            {
+                rankRequirementsPanel.curriculumDisplayPanel.appendChild(rankCardArray[i])
+            }
+        }
+    }
+
+    // focalCardSelector(whiteRankRequirementsPanel, whiteRankRequirements, whiteMindTiu)
+    // focalCardSelector(whiteRankRequirementsPanel, whiteRankRequirements, whiteMindCheuiSaamSau)
+
+    // Run through all cards and add onclicks
+    for(let i=0; i < rankRequirementsPanelArray.length; i++)
+    {
+        for(let j=0; j < rankRequirementsPanelArray[i].array.length; j++)
+        {
+            rankRequirementsPanelArray[i].array[j].addEventListener('click', function()
+                {
+                    focalCardSelector(
+                        rankRequirementsPanelArray[i], 
+                        rankRequirementsPanelArray[i].array, 
+                        rankRequirementsPanelArray[i].array[j]
+                    )
+                }
+            )
+        }
+    }
+
 
     return rankRequirementsSection;
 }
