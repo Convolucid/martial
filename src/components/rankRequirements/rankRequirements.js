@@ -6,6 +6,9 @@ import proficiencyBronzeInitiateImage from './cardImages/proficiency-bronze-init
 import proficiencyBronzeChoreoImage from './cardImages/proficiency-bronze-choreo.png'
 import proficiencySilverInitiateImage from './cardImages/proficiency-silver-initiate.png'
 
+import sealLeopardImage from './cardImages/seal-leopard.png'
+import sealMonkeyImage from './cardImages/seal-monkey.png'
+
 import whiteSashImage from './cardImages/tier1-initiate/white-sash.png'
 import whiteTechImage from './cardImages/tier1-initiate/white-tech.png'
 import whiteMindImage1 from './cardImages/tier1-initiate/white-mind-tiu.png'
@@ -38,6 +41,30 @@ import greenMindImage2 from './cardImages/tier2-development/green-mind-root.png'
 import greenMindImage3 from './cardImages/tier2-development/green-mind-wancham.png'
 import greenTechMantisImage from './cardImages/tier2-development/green-tech-mantis.png'
 import greenTrainingManualImage from './cardImages/tier2-development/green-trainingManual.png'
+
+import brownSashImage from './cardImages/tier3-refinement/brown-sash.png'
+import brownMindImage1 from './cardImages/tier3-refinement/brown-mind-8weak.png'
+import brownMindImage2 from './cardImages/tier3-refinement/brown-mind-8devastation.png'
+import brownMindImage3 from './cardImages/tier3-refinement/brown-mind-4external.png'
+import brownMindImage4 from './cardImages/tier3-refinement/brown-mind-4internal.png'
+import brownMindImage5 from './cardImages/tier3-refinement/brown-mind-batjikbatlei.png'
+import brownTechBigSmallImage from './cardImages/tier3-refinement/brown-tech-bigsmall.png'
+import brownTechLongPoleImage from './cardImages/tier3-refinement/brown-tech-longpole.png'
+import brownTechMantisImage from './cardImages/tier3-refinement/brown-tech-mantis.png'
+import brownTrainingManualImage from './cardImages/tier3-refinement/brown-trainingManual.png'
+import goldSashImage from './cardImages/tier3-refinement/gold-sash.png'
+import goldMindImage1 from './cardImages/tier3-refinement/gold-mind-batdiubatdeng.png'
+import goldMindImage2 from './cardImages/tier3-refinement/gold-mind-fongyun.png'
+import goldMindImage3 from './cardImages/tier3-refinement/gold-mind-4ounces.png'
+import goldMindImage4 from './cardImages/tier3-refinement/gold-mind-siudikdaai.png'
+import goldMindImage5 from './cardImages/tier3-refinement/gold-mind-yanjeunlaaihung.png'
+import goldTechMantisImage from './cardImages/tier3-refinement/gold-tech-mantis.png'
+import goldTechBladedImage from './cardImages/tier3-refinement/gold-tech-bladed.png'
+import goldTechCreationImage from './cardImages/tier3-refinement/gold-tech-creation.png'
+import goldTrainingManualImage from './cardImages/tier3-refinement/gold-trainingManual.png'
+
+
+import redSashImage from './cardImages/tier3-refinement/red-sash.png'
 
 
 
@@ -142,7 +169,7 @@ export default function rankRequirements(containerElement)
     const greenMindWanCham = createCard(greenMindImage3, 'Wan, Cham', 'Stability and Sinking');
     const greenTechTongLongBouSyun = createCard(greenTechMantisImage, 'Tong Long Bou Syun', 'Mantis Whirlwind Step');
     const greenTrainingManual = createCard(greenTrainingManualImage, 'Green Dragon Temple', 'Choose one Technical Card');
-    const greenProficiency1 = createCard(proficiencyBronzeChoreoImage, 'Stance Routine', 'Bronze Proficiency of Higher')
+    const greenProficiency1 = createCard(proficiencyBronzeChoreoImage, 'Stance Routine', 'Bronze Proficiency or Higher')
     const greenProficiency2 = createCard(proficiencySilverInitiateImage, 'Silver Proficiency', 'Initiate Tier or Higher')
     // const greenTechBaakYunTauTou = createCard(yellowTechImage, 'Baak Yun Tau Tou', 'White Ape Steals the Peach');
     // const greenTechHaakFuGaauCha = createCard(yellowTechImage, 'Haak Fu Gaau Cha', 'Black Tiger Crossing');
@@ -152,46 +179,46 @@ export default function rankRequirements(containerElement)
         greenSash, greenMindLengHeng, greenMindRoot, greenMindWanCham, greenTechTongLongBouSyun, greenTrainingManual, greenProficiency1, greenProficiency2, greenAdvancement
     ]
 
-    const brownSash = createCard(yellowSashImage, 'Brown Sash', 'Refinement Chamber')
-    const brownMind8Weakening = createCard(yellowMindImage1, '8 Points of Weakening', '');
-    const brownMind8Devastation = createCard(yellowMindImage2, '8 Points of Devastation', '');
-    const brownMindSeNgoiLin = createCard(yellowMindImage2, 'Sei Ngoi Lin', 'Four External Practices');
-    const brownMindSeiNaapLin = createCard(yellowMindImage2, 'Sei Naap Lin', 'Four Internal Practices');
-    const brownMindBatJikBatLei = createCard(yellowMindImage2, 'Bat Jik Bat Lei', 'Engagement Distance');
-    const brownTechDaaiFuNgaan = createCard(yellowTechImage, 'Daai Fu Ngaan Kyun', 'Big Tigers and Wild Geese');
-    const brownTechSixHarmonyStaff = createCard(yellowTechImage, 'Luk Hap Gwan', 'Six Harmony Staff');
-    const brownTechAny = createCard(yellowTechImage, 'Any Acquired Set', 'Choose one Technical Card');
-    const brownTrainingManual = createCard(yellowTechImage, 'The Jade Emperor Temple', 'Choose one Technical Card');
-    const brownProficiency = createCard(yellowTechImage, 'Silver Proficiency', 'Development Tier or Higher')
-    const brownSeals = createCard(yellowTechImage, '10 Seals Collected', 'Any combination of Leopard, Snake, and Crane')
+    const brownSash = createCard(brownSashImage, 'Brown Sash', 'Refinement Chamber')
+    const brownMind8Weakening = createCard(brownMindImage1, '8 Points of Weakening', '');
+    const brownMind8Devastation = createCard(brownMindImage2, '8 Points of Devastation', '');
+    const brownMindSeNgoiLin = createCard(brownMindImage3, 'Sei Ngoi Lin', 'Four External Practices');
+    const brownMindSeiNaapLin = createCard(brownMindImage4, 'Sei Naap Lin', 'Four Internal Practices');
+    const brownMindBatJikBatLei = createCard(brownMindImage5, 'Bat Jik Bat Lei', 'Engagement Distance');
+    const brownTechDaaiFuNgaan = createCard(brownTechBigSmallImage, 'Daai Fu Ngaan Kyun', 'Big Tigers and Wild Geese');
+    const brownTechSixHarmonyStaff = createCard(brownTechLongPoleImage, 'Luk Hap Gwan', 'Six Harmony Staff');
+    const brownTechAny = createCard(brownTechMantisImage, 'Any Acquired Set', 'Choose one Technical Card');
+    const brownTrainingManual = createCard(brownTrainingManualImage, 'The Jade Emperor Temple', 'Choose one Technical Card');
+    const brownProficiency = createCard(proficiencySilverInitiateImage, 'Silver Proficiency', 'Development Tier or Higher')
+    const brownSeals = createCard(sealLeopardImage, '10 Seals Collected', 'Any combination of Leopard, Snake, and Crane')
     // const brownTechMuiFaLou = createCard(yellowTechImage, 'Mui Fa Lou Kyun', 'Plum Blossom Routine Boxing');
-    const brownEvaluation = createCard(yellowTechImage, 'Development Chamber Evaluation', '80% score or greater')
+    const brownEvaluation = createCard(forgeInvitationImage, 'Development Chamber Evaluation', '80% score or greater')
     const brownAdvancement = createCard(advancementImage, 'Advancement', 'Refinement Tier or higher')
 
     const brownRankRequirements = [
         brownSash, brownMind8Weakening, brownMind8Devastation, brownMindSeNgoiLin, brownMindSeiNaapLin, brownMindBatJikBatLei, brownTechDaaiFuNgaan, brownTechSixHarmonyStaff, brownTechAny, brownTrainingManual, brownProficiency, brownSeals, brownEvaluation, brownAdvancement
     ]
 
-    const goldSash = createCard(yellowSashImage, 'Gold Sash', 'Refinement Chamber')
-    const goldMindBatDiuBatDeng = createCard(forgeInvitationImage, 'Bat Diu Bat Deng', 'Cling without Resistance');
-    const goldMindFongYun = createCard(forgeInvitationImage, 'Fong Yun', 'Square and Round');
-    const goldMind4Ounces = createCard(forgeInvitationImage, 'Sei Leung But Chin Gan', '4 Ounces Overcome 1000 Pounds');
-    const goldMindSiuDikDaai = createCard(forgeInvitationImage, 'Siu Dik Daai, Maan Dik Faai', 'Defeat Big with Small, Fast with Slow');
-    const goldMindYanJeunLaaiHung = createCard(forgeInvitationImage, 'Yan Jeun Laai Hung', 'Attract into Emptiness');
-    const goldTechTongLongCheutDung = createCard(forgeInvitationImage, 'Tong Long Cheut Dung Kyun', 'Praying Mantis Exits the Cave');
-    const goldTechYinChingDaanDou = createCard(forgeInvitationImage, 'Yin Ching Daan Dou', "Yin Ching's Broadsword");
-    const goldTechSpeedOfHands = createCard(forgeInvitationImage, 'Speed of Hands Routine', 'Personal Creation');
-    const goldTechAny = createCard(forgeInvitationImage, 'Any Acquired Set', 'Choose one Technical Card');
-    const goldTrainingManual = createCard(forgeInvitationImage, 'The Shandong Countryside', 'Choose one Technical Card');
-    const goldProficiency = createCard(forgeInvitationImage, 'Silver Proficiency', 'Development Tier or Higher')
-    const goldSeals = createCard(forgeInvitationImage, '10 Seals Collected', 'Any combination of Monkey, Tiger, and Dragon')
+    const goldSash = createCard(goldSashImage, 'Gold Sash', 'Refinement Chamber')
+    const goldMindBatDiuBatDeng = createCard(goldMindImage1, 'Bat Diu Bat Deng', 'Cling without Resistance');
+    const goldMindFongYun = createCard(goldMindImage2, 'Fong Yun', 'Square and Round');
+    const goldMind4Ounces = createCard(goldMindImage3, 'Sei Leung But Chin Gan', '4 Ounces Overcome 1000 Pounds');
+    const goldMindSiuDikDaai = createCard(goldMindImage4, 'Siu Dik Daai, Maan Dik Faai', 'Defeat Big with Small, Fast with Slow');
+    const goldMindYanJeunLaaiHung = createCard(goldMindImage5, 'Yan Jeun Laai Hung', 'Attract into Emptiness');
+    const goldTechTongLongCheutDung = createCard(goldTechMantisImage, 'Tong Long Cheut Dung Kyun', 'Praying Mantis Exits the Cave');
+    const goldTechYinChingDaanDou = createCard(goldTechBladedImage, 'Yin Ching Daan Dou', "Yin Ching's Broadsword");
+    const goldTechSpeedOfHands = createCard(goldTechCreationImage, 'Speed of Hands Routine', 'Personal Creation');
+    const goldTechAny = createCard(goldTechMantisImage, 'Any Acquired Set', 'Choose one Technical Card');
+    const goldTrainingManual = createCard(goldTrainingManualImage, 'The Shandong Countryside', 'Choose one Technical Card');
+    const goldProficiency = createCard(proficiencySilverInitiateImage, 'Silver Proficiency', 'Development Tier or Higher')
+    const goldSeals = createCard(sealMonkeyImage, '10 Seals Collected', 'Any combination of Monkey, Tiger, and Dragon')
     const goldAdvancement = createCard(advancementImage, 'Advancement', 'Refinement Tier or higher')
 
     const goldRankRequirements = [
         goldSash, goldMindBatDiuBatDeng, goldMindFongYun, goldMind4Ounces, goldMindSiuDikDaai, goldMindYanJeunLaaiHung, goldTechTongLongCheutDung, goldTechYinChingDaanDou, goldTechSpeedOfHands, goldTechAny, goldTrainingManual, goldProficiency, goldSeals, goldAdvancement
     ]
 
-    const redSash = createCard(forgeInvitationImage, 'Red Sash', 'Refinement Chamber')
+    const redSash = createCard(redSashImage, 'Red Sash', 'Refinement Chamber')
     const redMind1= createCard(forgeInvitationImage, '?', '');
     const redMind2 = createCard(forgeInvitationImage, '?', '');
     const redMind3 = createCard(forgeInvitationImage, '?', '');
