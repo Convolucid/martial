@@ -77,7 +77,7 @@ export default function rankRequirements(containerElement)
 
     // Card creation function creates full information about card.  Will add in functions from imported "Card Challenge" and "Card info" sources so that all content is attached to the card element.
 
-    function createCard(cardImage, cardTitle, cardSubtitle)
+    function createCard(cardImage, cardTitle, cardSubtitle, description, challenges, rewards)
     {
         const cardContainer = document.createElement('div')
         cardContainer.classList.add('card-container')
@@ -94,16 +94,22 @@ export default function rankRequirements(containerElement)
         cardContainer.cardSubtitle.innerText = cardSubtitle
         cardContainer.cardSubtitle.classList.add('card-title', 'card-subtitle')
 
+        cardContainer.cardDescription = document.createElement('p')
+        cardContainer.cardDescription.innerText = 'Description goes here'
+        cardContainer.cardDescription.classList.add('card-description', 'rank-requirements-hidden')
 
+        cardContainer.cardChallenges = document.createElement('div')
+        cardContainer.cardChallenges.innerText = 'Challenges go here'
+        cardContainer.cardChallenges.classList.add('card-challenges', 'rank-requirements-hidden')
+
+        cardContainer.cardRewards = document.createElement('div')
+        cardContainer.cardRewards.innerText = 'Rewards go here'
+        cardContainer.cardRewards.classList.add('card-rewards', 'rank-requirements-hidden')
+
+        // Visible in all contexts
         cardContainer.append(cardContainer.cardImage)
         cardContainer.append(cardContainer.cardTitle)
         cardContainer.append(cardContainer.cardSubtitle)
-
-        // Add function to add description
-
-        // Add function to add challenges
-
-        // Add function to add rewards
 
         return cardContainer;
     }
@@ -362,6 +368,8 @@ export default function rankRequirements(containerElement)
         // When the sash card is clicked, it returns to focal area, and all other cards are revealed and returned to the curriculum display area.
         if(cardName == rankCardArray[0])
         {
+            rankRequirementsPanel.curriculumDisplayPanel.classList.replace('rank-requirements-card-information-display','rank-requirements-curriculum-display')
+
             rankCardArray[0].classList.replace('rank-requirements-card-display-overlay', 'rank-requirements-card-display')
             rankCardArray[0].cardTitle.classList.remove('rank-requirements-hidden')
             rankCardArray[0].cardSubtitle.classList.remove('rank-requirements-hidden')
@@ -370,6 +378,9 @@ export default function rankRequirements(containerElement)
             // Index is 1 instead of 0 here because we are always skipping the Sash Card in the initial position
             for(let i=1; i < rankCardArray.length; i++)
             {
+                rankCardArray[i].cardDescription.classList.add('rank-requirements-hidden')
+                rankCardArray[i].cardChallenges.classList.add('rank-requirements-hidden')
+                rankCardArray[i].cardRewards.classList.add('rank-requirements-hidden')
                 rankRequirementsPanel.curriculumDisplayPanel.appendChild(rankCardArray[i])
             }
 
@@ -378,6 +389,8 @@ export default function rankRequirements(containerElement)
         // when a curriculum card is clicked, the sash card is changed to overlay mode, the curriculum card is added to the focal area, and all cards other than it and the sash card are hidden.
         else
         {
+            rankRequirementsPanel.curriculumDisplayPanel.classList.replace('rank-requirements-curriculum-display', 'rank-requirements-card-information-display')
+
             rankCardArray[0].classList.add('rank-requirements-card-display-overlay')
             rankCardArray[0].cardTitle.classList.add('rank-requirements-hidden')
             rankCardArray[0].cardSubtitle.classList.add('rank-requirements-hidden')
@@ -387,10 +400,20 @@ export default function rankRequirements(containerElement)
                 if(rankCardArray[i] == cardName)
                 {
                     rankRequirementsPanel.cardDisplayPanel.appendChild(rankCardArray[i])
+                    rankRequirementsPanel.curriculumDisplayPanel.append(rankCardArray[i].cardDescription)
+                    rankRequirementsPanel.curriculumDisplayPanel.append(rankCardArray[i].cardChallenges)
+                    rankRequirementsPanel.curriculumDisplayPanel.append(rankCardArray[i].cardRewards)
+
+                    rankCardArray[i].cardDescription.classList.remove('rank-requirements-hidden')
+                    rankCardArray[i].cardChallenges.classList.remove('rank-requirements-hidden')
+                    rankCardArray[i].cardRewards.classList.remove('rank-requirements-hidden')
                 }
                 else
                 {
                     rankCardArray[i].classList.add('rank-requirements-hidden')
+                    rankCardArray[i].cardDescription.classList.add('rank-requirements-hidden')
+                    rankCardArray[i].cardChallenges.classList.add('rank-requirements-hidden')
+                    rankCardArray[i].cardRewards.classList.add('rank-requirements-hidden')
                 }
             }
         }

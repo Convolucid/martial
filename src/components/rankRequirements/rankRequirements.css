@@ -37,6 +37,17 @@
     transition: 0.5s;
 }
 
+.rank-requirements-card-information-display {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-rows: repeat(auto-fit, minmax(10rem, 10rem));
+
+    padding: 2%;
+
+    transition: 0.5s;
+    background-color: gray;
+}
+
 .card-container {
     margin: 0 auto;
     padding: 1rem 0rem;
@@ -68,10 +79,19 @@
     border-top: 1px solid;
 }
 
-/* .card-curriculum-display {
-    height: 20vh;
-    border-radius: 10px;
-} */
+.card-description {
+    background-color: aqua;
+}
+
+.card-challenges {
+    background-color: yellow;
+}
+
+.card-rewards {
+    background-color: red;
+}
+
+
 
 /* White Sash */
 .rank-requirements-whiteSash {
