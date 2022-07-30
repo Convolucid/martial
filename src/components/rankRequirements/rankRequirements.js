@@ -354,24 +354,50 @@ export default function rankRequirements(containerElement)
 
     rankRequirementsSection.rankChange(0);
 
-    // Add card selection function
+
+
+    // Card selection function displays focal card and respective information (challenges, rewards, text)
     function focalCardSelector(rankRequirementsPanel, rankCardArray, cardName) 
     {
-        for(let i=0; i < rankCardArray.length; i++)
+        // When the sash card is clicked, it returns to focal area, and all other cards are revealed and returned to the curriculum display area.
+        if(cardName == rankCardArray[0])
         {
-            if(rankCardArray[i] == cardName)
-            {
-                rankRequirementsPanel.cardDisplayPanel.appendChild(rankCardArray[i])
-            }
-            else
+            rankCardArray[0].classList.replace('rank-requirements-card-display-overlay', 'rank-requirements-card-display')
+            rankCardArray[0].cardTitle.classList.remove('rank-requirements-hidden')
+            rankCardArray[0].cardSubtitle.classList.remove('rank-requirements-hidden')
+            rankCardArray.forEach(card => {card.classList.remove('rank-requirements-hidden')})
+
+            // Index is 1 instead of 0 here because we are always skipping the Sash Card in the initial position
+            for(let i=1; i < rankCardArray.length; i++)
             {
                 rankRequirementsPanel.curriculumDisplayPanel.appendChild(rankCardArray[i])
             }
+
         }
+
+        // when a curriculum card is clicked, the sash card is changed to overlay mode, the curriculum card is added to the focal area, and all cards other than it and the sash card are hidden.
+        else
+        {
+            rankCardArray[0].classList.add('rank-requirements-card-display-overlay')
+            rankCardArray[0].cardTitle.classList.add('rank-requirements-hidden')
+            rankCardArray[0].cardSubtitle.classList.add('rank-requirements-hidden')
+            
+            for(let i=1; i < rankCardArray.length; i++)
+            {
+                if(rankCardArray[i] == cardName)
+                {
+                    rankRequirementsPanel.cardDisplayPanel.appendChild(rankCardArray[i])
+                }
+                else
+                {
+                    rankCardArray[i].classList.add('rank-requirements-hidden')
+                }
+            }
+        }
+
     }
 
-    // focalCardSelector(whiteRankRequirementsPanel, whiteRankRequirements, whiteMindTiu)
-    // focalCardSelector(whiteRankRequirementsPanel, whiteRankRequirements, whiteMindCheuiSaamSau)
+
 
     // Run through all cards and add onclicks
     for(let i=0; i < rankRequirementsPanelArray.length; i++)
