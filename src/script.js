@@ -1,6 +1,5 @@
 import './style.css'
 import html from './index.html'
-import buildRankNodeSelector from './components/rankNodeSelector/rankNodeSelector.js'
 import RankCurriculum from './components/RankCurriculum.js'
 
 function component(htmlStructure)

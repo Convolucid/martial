@@ -1,6 +1,8 @@
-import buildRankRequirements from './rankRequirements/rankRequirements.js'
-import buildRankTitle from './rankTitle/rankTitle.js'
 import buildRankNodeSelector from './rankNodeSelector/rankNodeSelector.js'
+import buildRankTitle from './rankTitle/rankTitle.js'
+import buildRankRequirements from './rankRequirements/rankRequirements.js'
+
+// Will add shadered background canvas
 
 export default class RankCurriculum
 {
