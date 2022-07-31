@@ -40,7 +40,7 @@
 .rank-requirements-card-information-display {
     display: grid;
     row-gap: 2rem;
-    grid-template-rows: repeat(auto-fit, minmax(10rem, 10rem));
+    grid-template-rows: auto;
 
     padding: 2%;
 

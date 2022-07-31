@@ -1,5 +1,7 @@
 import './rankRequirements.css'
 
+import whiteMindDescription1 from './cardImages/tier1-initiate/white-mind-tiu.md'
+
 import advancementImage from './cardImages/advancement.png'
 import forgeInvitationImage from './cardImages/forge-invitation.png'
 import proficiencyBronzeInitiateImage from './cardImages/proficiency-bronze-initiate.png'
@@ -95,15 +97,15 @@ export default function rankRequirements(containerElement)
         cardContainer.cardSubtitle.classList.add('card-title', 'card-subtitle')
 
         cardContainer.cardDescription = document.createElement('p')
-        cardContainer.cardDescription.innerText = 'Description goes here'
+        cardContainer.cardDescription.innerHTML = description
         cardContainer.cardDescription.classList.add('card-description', 'rank-requirements-hidden')
 
         cardContainer.cardChallenges = document.createElement('div')
-        cardContainer.cardChallenges.innerText = 'Challenges go here'
+        cardContainer.cardChallenges.innerHTML = 'Challenges go here'
         cardContainer.cardChallenges.classList.add('card-challenges', 'rank-requirements-hidden')
 
         cardContainer.cardRewards = document.createElement('div')
-        cardContainer.cardRewards.innerText = 'Rewards go here'
+        cardContainer.cardRewards.innerHTML = 'Rewards go here'
         cardContainer.cardRewards.classList.add('card-rewards', 'rank-requirements-hidden')
 
         // Visible in all contexts
@@ -119,7 +121,7 @@ export default function rankRequirements(containerElement)
 
     // Full list of curriculum cards sorted into sash rank arrays
     const whiteSash = createCard(whiteSashImage, 'White Sash', 'Initiate Chamber')
-    const whiteMindTiu = createCard(whiteMindImage1, 'Tiu', 'the Warding Principle');
+    const whiteMindTiu = createCard(whiteMindImage1, 'Tiu', 'the Warding Principle', whiteMindDescription1);
     const whiteMindCheuiSaamSau = createCard(whiteMindImage2, 'Cheui Saam Sau', 'the Three Hands of Mantis');
     const whiteTechIronPhoenixCombo1 = createCard(whiteTechImage, 'Iron Phoenix Combination', '1st Route');
     const whiteTech8ChainPunch2 = createCard(whiteTechImage, 'Eight Chain Punch', '2nd Route');
