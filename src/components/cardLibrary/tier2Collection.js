@@ -1,5 +1,7 @@
 import PathCard from './PathCard.js'
 
+import generalCurrency from './tier0-general/generalCurrency.js'
+
 import purpleSashImage from './tier2-development/rank4-purple/purple-sash.png'
 import purpleMindImage1 from './tier2-development/rank4-purple/purple-mind-sung.png'
 import purpleMindImage2 from './tier2-development/rank4-purple/purple-mind-gates.png'
@@ -22,8 +24,7 @@ import greenMindImage3 from './tier2-development/rank6-green/green-mind-wancham.
 import greenTechMantisImage from './tier2-development/rank6-green/green-tech-mantis.png'
 import greenTrainingManualImage from './tier2-development/rank6-green/green-trainingManual.png'
 
-import advancementImage from './tier0-general/advancement.png'
-import forgeInvitationImage from './tier0-general/forge-invitation.png'
+import forgeInvitationImage from './tier0-general/currency/forge-invitation.png'
 import proficiencyBronzeInitiateImage from './tier0-general/proficiency-bronze-initiate.png'
 import proficiencyBronzeChoreoImage from './tier0-general/proficiency-bronze-choreo.png'
 import proficiencySilverInitiateImage from './tier0-general/proficiency-silver-initiate.png'
@@ -31,6 +32,8 @@ import proficiencySilverInitiateImage from './tier0-general/proficiency-silver-i
 export default function developmentTier()
 {
     const t2 = {}
+
+    const t0 = generalCurrency()
 
     t2.purpleSash = new PathCard({}, purpleSashImage, 'Purple Sash', 'Development Chamber')
     t2.purpleMindSung= new PathCard({}, purpleMindImage1, 'Sung', 'Empty Method');
@@ -42,7 +45,7 @@ export default function developmentTier()
     t2.purpleEvaluation = new PathCard({}, forgeInvitationImage, 'Initiate Chamber Evaluation', '80% score or greater')
     // t2.purpleTechDaaiFaanChe = createCard(yellowTechImage, 'Daai Faan Che Kyun', 'Big Wheel Fist');
     // t2.purpleTechYiLouJaakYiu = createCard(yellowTechImage, 'Yi Lou Jaak Yiu', '2nd Route Essentials');
-    t2.purpleAdvancement = new PathCard({}, advancementImage, 'Advancement', 'Development Tier or higher')
+    t2.purpleAdvancement = new PathCard(t0.advancementTier2)
 
     t2.purple = [
         t2.purpleSash, t2.purpleMindSung, t2.purpleMindGates, t2.purpleMindPokLauFung, t2.purpleTechSevenKicks, t2.purpleTrainingManual, t2.purpleProficiency, t2.purpleEvaluation, t2.purpleAdvancement
@@ -58,7 +61,7 @@ export default function developmentTier()
     t2.blueProficiency = new PathCard({}, proficiencySilverInitiateImage, 'Silver Proficiency', 'Initiate Tier or Higher')
     // t2.blueTechDoGong = createCard(yellowTechImage, 'Do Gong Kyun', 'Avoiding the Hard');
     // t2.blueTechMuiFaSau = createCard(yellowTechImage, 'Mui Fa Sau', 'Plum Blossom Hand');
-    t2.blueAdvancement = new PathCard({}, advancementImage, 'Advancement', 'Development Tier or higher')
+    t2.blueAdvancement = new PathCard(t0.advancementTier2)
 
     t2.blue = [
         t2.blueSash, t2.blueMindManGam, t2.blueMindSimJau, t2.blueMindTangNo, t2.blueTechGungLik, t2.blueTechFootwork, t2.blueTrainingManual, t2.blueProficiency, t2.blueAdvancement
@@ -74,7 +77,7 @@ export default function developmentTier()
     t2.greenProficiency2 = new PathCard({}, proficiencySilverInitiateImage, 'Silver Proficiency', 'Initiate Tier or Higher')
     // t2.greenTechBaakYunTauTou = createCard(yellowTechImage, 'Baak Yun Tau Tou', 'White Ape Steals the Peach');
     // t2.greenTechHaakFuGaauCha = createCard(yellowTechImage, 'Haak Fu Gaau Cha', 'Black Tiger Crossing');
-    t2.greenAdvancement = new PathCard({}, advancementImage, 'Advancement', 'Development Tier or higher')
+    t2.greenAdvancement = new PathCard(t0.advancementTier2)
 
     t2.green = [
         t2.greenSash, t2.greenMindLengHeng, t2.greenMindRoot, t2.greenMindWanCham, t2.greenTechTongLongBouSyun, t2.greenTrainingManual, t2.greenProficiency1, t2.greenProficiency2, t2.greenAdvancement
