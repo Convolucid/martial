@@ -62,6 +62,7 @@ export default function whiteRankContent()
         subtitle: '2nd Route',
         image: whiteTechImage,
         description: container.querySelector('#r1-tech2-desc'),
+        techniques: [t.hand2, t.hand3, t.hand5, t.fist3, t.fist4, t.fist5, t.step3, t.step4, t.step5],
         challenges: '',
         rewards: [
             new PathCard(gen.advancementInvitation),

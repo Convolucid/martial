@@ -37,8 +37,8 @@
 
 .rank-requirements-card-information-display {
     display: grid;
-    row-gap: 2rem;
-    grid-template-rows: auto;
+    /* row-gap: 2rem;
+    grid-auto-flow: row; */
 
     padding: 1% 2%;
 
@@ -48,9 +48,12 @@
 
 .rank-requirements-card-information-display h2 {
     background-color: white;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
+    padding: 0.5rem 0.25rem;
     font-size: 1.25rem;
     width: 100%;
+    /* border-top: 1px solid; */
 }
 
 
@@ -87,10 +90,12 @@
 
 .card-description h1 {
     font-size: 1.5rem;
-    border-bottom: 1px solid;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
+.card-description h2 {
+    border-top: 1px solid;
+}
 
 .card-description p, .card-challenges p {
     margin-bottom: 0.5rem;
