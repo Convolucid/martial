@@ -96,23 +96,26 @@
     margin-bottom: 0.5rem;
 }
 
+
+.card-techniques {
+    display: grid;
+    column-gap: 2.25rem;
+    row-gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 8rem));
+}
+
 /* .card-challenges {
 
 } */
 
 .card-rewards {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 2rem;
-    justify-content: flex-start;
-    /* column-gap: 4rem;
-    grid-template-columns: repeat(auto-fit, minmax(7rem, 7rem)); */
+    display: grid;
+    column-gap: 2.25rem;
+    row-gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 8rem));
 }
 
-.card-rewards :not(:first-child) {
-    /* flex: 0 3 0; */
-    width: 8rem;
-}
+
 
 /* White Sash */
 .rank-requirements-whiteSash {

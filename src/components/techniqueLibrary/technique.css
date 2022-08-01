@@ -1,0 +1,20 @@
+/* .tech-container {
+
+} */
+
+.tech-name {
+    font-size: 0.8rem;
+    color: inherit;
+
+    text-transform: uppercase;
+}
+
+.tech-altName {
+    font-size: 0.8rem;
+    color: inherit;
+}
+
+.tech-characters {
+    font-size: inherit;
+    color: inherit;
+}

@@ -1,5 +1,6 @@
 import PathCard from '../PathCard.js'
 
+import techniqueLibrary from '../../techniqueLibrary/techniqueLibrary.js'
 import generalCurrency from '../tier0-general/generalCurrency.js'
 import yellowRankContent from './rank2Yellow.js'
 
@@ -12,8 +13,11 @@ import whiteTechImage from './rank1-white/white-tech.png'
 export default function whiteRankContent()
 {
     const r1 = {}
-    const t0 = generalCurrency()
     const r2 = yellowRankContent()
+
+    const t = techniqueLibrary()
+    const gen = generalCurrency()
+
 
     const container = document.createElement('div')
     container.insertAdjacentHTML('beforeend', whiteContent)
@@ -31,10 +35,11 @@ export default function whiteRankContent()
         subtitle: '1st Route',
         image: whiteTechImage,
         description: container.querySelector('#r1-tech1-desc'),
+        techniques: [t.fist2, t.fist3, t.kick1, t.fist4, t.hand2, t.hand5, t.step1, t.step2],
         challenges: '',
         rewards: [
-            new PathCard(t0.advancementInvitation),
-            new PathCard(t0.iron10)
+            new PathCard(gen.advancementInvitation),
+            new PathCard(gen.iron10)
         ]
     }
 
@@ -47,7 +52,7 @@ export default function whiteRankContent()
         challenges: container.querySelector('#r1-mind1-tasks'),
         rewards: [
             new PathCard(r1.tech1),
-            new PathCard(t0.iron10)
+            new PathCard(gen.iron10)
         ]
     }
 
@@ -59,8 +64,8 @@ export default function whiteRankContent()
         description: container.querySelector('#r1-tech2-desc'),
         challenges: '',
         rewards: [
-            new PathCard(t0.advancementInvitation),
-            new PathCard(t0.iron10)
+            new PathCard(gen.advancementInvitation),
+            new PathCard(gen.iron10)
         ]
     }
 
@@ -73,12 +78,12 @@ export default function whiteRankContent()
         challenges: container.querySelector('#r1-mind2-tasks'),
         rewards: [
             new PathCard(r1.tech2),
-            new PathCard(t0.iron10)
+            new PathCard(gen.iron10)
         ]
     }
 
     // Advancement Invitation
-    r1.adv = t0.advancementTier1
+    r1.adv = gen.advancementTier1
     r1.adv.rewards = [
             new PathCard(r2.sash)
         ]
