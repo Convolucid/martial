@@ -30,7 +30,6 @@ export default function whiteRankContent()
         description: container.querySelector('#r1-mind1-desc'),
         challenges: container.querySelector('#r1-mind1-tasks'),
         rewards: [
-            new PathCard(t0.advancementTier1),
             new PathCard(t0.advancementTier1)
         ]
     }

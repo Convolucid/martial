@@ -12,9 +12,7 @@
     padding: 2rem;
 }
 
-.rank-requirements-hidden {
-    display: none;
-}
+
 
 .rank-requirements-card-display {
     padding-left: 10vw;
@@ -45,11 +43,19 @@
     padding: 2%;
 
     transition: 0.5s;
-    background-color: gray;
+    font-family: var(--sansSerif);
 }
 
+.rank-requirements-card-information-display h2 {
+    background-color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    width: 100%;
+}
+
+
 .card-container {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 1rem 0rem;
 }
 
@@ -79,19 +85,34 @@
     border-top: 1px solid;
 }
 
-.card-description {
-    background-color: aqua;
+.card-description h1 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid;
+    padding-bottom: 1rem;
 }
 
-.card-challenges {
-    background-color: yellow;
+
+.card-description p, .card-challenges p {
+    margin-bottom: 0.5rem;
 }
+
+/* .card-challenges {
+
+} */
 
 .card-rewards {
-    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    justify-content: flex-start;
+    /* column-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 7rem)); */
 }
 
-
+.card-rewards :not(:first-child) {
+    /* flex: 0 3 0; */
+    width: 8rem;
+}
 
 /* White Sash */
 .rank-requirements-whiteSash {
@@ -184,3 +205,6 @@
 /* .card-image-blackSash {
     box-shadow: 0px 2px 10px 1px black;
 } */
+.rank-requirements-hidden {
+    display: none;
+}

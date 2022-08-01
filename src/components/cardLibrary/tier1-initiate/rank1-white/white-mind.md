@@ -7,7 +7,7 @@ Tiu is one of the two most fundamental defensive principles.  A full range defen
 
 At longer ranges it becomes the first point of contact and gains crucial information.  It gauges the opponent's intent.  It monitors and meters their speed and trajectory.  At its core, Tiu encompasses all defensive techniques that ward away, upward and outward.
 
-**Strategy and tactics.  Surprise and deception.  There are many tools the smaller force must employ to overcome the larger force - but none are as vital as the basics.  Defense against assault, escape from suppression, and maneuvers to intercept share the same foundation.  All that is built will only ever be as strong as this.**
+*Strategy and tactics.  Surprise and deception.  There are many tools the smaller force must employ to overcome the larger force - but none are as vital as the basics.  Defense against assault, escape from suppression, and maneuvers to intercept share the same foundation.  All that is built will only ever be as strong as this.*
 </section>
 
 

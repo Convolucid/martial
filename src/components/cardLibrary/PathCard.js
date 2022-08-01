@@ -63,9 +63,12 @@ export default class Card
             cardContainer.cardRewards = document.createElement('div')
             if(cardContent.rewards)
             {
+                const rewardsHeader = document.createElement('h2')
+                rewardsHeader.innerText = 'Rewards'
+                cardContainer.cardRewards.append(rewardsHeader)
+
                 for(let i=0; i < cardContent.rewards.length; i++)
                 {
-                    // cardContent.rewards[i].classList.add('card-rewards', 'rank-requirements-hidden')
                     cardContainer.cardRewards.append(cardContent.rewards[i])
                 }
             }
