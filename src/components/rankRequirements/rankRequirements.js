@@ -2,10 +2,10 @@ import './rankRequirements.css'
 
 import CategoryPanel from '../cardLibrary/CategoryPanel.js'
 
-import initiateTierCollection from '../cardLibrary/tier1-initiate/initiateTierCollection'
-import developmentTierCollection from '../cardLibrary/tier2-development/developmentTierCollection'
-import refinementTierCollection from '../cardLibrary/tier3-refinement/refinementTierCollection'
-import adeptTierCollection from '../cardLibrary/tier4-adept/adeptTierCollection'
+import initiateTierCollection from '../cardLibrary/tier1Collection'
+import developmentTierCollection from '../cardLibrary/tier2Collection'
+import refinementTierCollection from '../cardLibrary/tier3Collection'
+import adeptTierCollection from '../cardLibrary/tier4Collection'
 
 export default function rankRequirements(containerElement)
 {
