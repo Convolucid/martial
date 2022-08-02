@@ -4,7 +4,7 @@ import Challenge from '../Challenge.js'
 
 import techniqueLibrary from '../../techniqueLibrary/techniqueLibrary.js'
 import generalCurrency from '../tier0-general/generalCurrency.js'
-import brownRankContent from '../tier3-refinement/rank7Brown.js'
+// import blueRankContent from './rank5Blue.js'
 
 // import greenContent from './rank6-green/green-content.md'
 // import greenChallenges from './rank6-green/green-challenges.js'
@@ -21,7 +21,7 @@ import proficiencySilverInitiateImage from '../tier0-general/proficiency-silver-
 export default function greenRankContent()
 {
     const r6 = {}
-    const r7 = brownRankContent()
+    // const r5 = blueRankContent()
 
     const t = techniqueLibrary()
     // const ch = greenChallenges()
@@ -146,9 +146,9 @@ export default function greenRankContent()
 
     // Advancement Invitation
     r6.adv = gen.advancementTier2
-    r6.adv.rewards = [
-            new PathCard(r7.sash)
-    ]
+    // r6.adv.rewards = [
+    //         new PathCard(r7.sash)
+    //     ]
 
     return r6;
 }

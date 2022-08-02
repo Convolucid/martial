@@ -1,6 +1,9 @@
 import PathCard from './PathCard.js'
 
 import generalCurrency from './tier0-general/generalCurrency.js'
+import brownRankContent from './tier3-refinement/rank7Brown.js'
+// import goldRankContent from './tier3-refinement/rank8Gold.js'
+// import redRankContent from './tier3-refinement/rank9Red.js'
 
 import brownSashImage from './tier3-refinement/rank7-brown/brown-sash.png'
 import brownMindImage1 from './tier3-refinement/rank7-brown/brown-mind-8weak.png'
@@ -36,22 +39,25 @@ export default function refinementTier()
     const t3 = {}
 
     const t0 = generalCurrency()
+    const r7 = brownRankContent();
+    // const r8 = goldRankContent();
+    // const r9 = redRankContent();
 
-    t3.brownSash = new PathCard({}, brownSashImage, 'Brown Sash', 'Refinement Chamber')
-    t3.brownMind8Weakening = new PathCard({}, brownMindImage1, '8 Points of Weakening', '');
-    t3.brownMind8Devastation = new PathCard({}, brownMindImage2, '8 Points of Devastation', '');
-    t3.brownMindSeNgoiLin = new PathCard({}, brownMindImage3, 'Sei Ngoi Lin', 'Four External Practices');
-    t3.brownMindSeiNaapLin = new PathCard({}, brownMindImage4, 'Sei Naap Lin', 'Four Internal Practices');
-    t3.brownMindBatJikBatLei = new PathCard({}, brownMindImage5, 'Bat Jik Bat Lei', 'Engagement Distance');
-    t3.brownTechDaaiFuNgaan = new PathCard({}, brownTechBigSmallImage, 'Daai Fu Ngaan Kyun', 'Big Tigers and Wild Geese');
-    t3.brownTechSixHarmonyStaff = new PathCard({}, brownTechLongPoleImage, 'Luk Hap Gwan', 'Six Harmony Staff');
-    t3.brownTechAny = new PathCard({}, brownTechMantisImage, 'Any Acquired Set', 'Choose one Technical Card');
-    t3.brownTrainingManual = new PathCard({}, brownTrainingManualImage, 'The Jade Emperor Temple', 'Choose one Technical Card');
-    t3.brownProficiency = new PathCard({}, proficiencySilverInitiateImage, 'Silver Proficiency', 'Development Tier or Higher')
-    t3.brownSeals = new PathCard({}, sealLeopardImage, '10 Seals Collected', 'Any combination of Leopard, Snake, and Crane')
+    t3.brownSash = new PathCard(r7.sash)
+    t3.brownMind8Weakening = new PathCard(r7.mind1);
+    t3.brownMind8Devastation = new PathCard(r7.mind2);
+    t3.brownMindSeNgoiLin = new PathCard(r7.mind3);
+    t3.brownMindSeiNaapLin = new PathCard(r7.mind4);
+    t3.brownMindBatJikBatLei = new PathCard(r7.mind5);
+    t3.brownTechDaaiFuNgaan = new PathCard(r7.tech1);
+    t3.brownTechSixHarmonyStaff = new PathCard(r7.tech2);
+    t3.brownTechAny = new PathCard(r7.tech3);
+    t3.brownTrainingManual = new PathCard(r7.manual);
+    t3.brownProficiency = new PathCard(r7.prof1)
+    t3.brownSeals = new PathCard(r7.seals)
     // t3.brownTechMuiFaLou = new PathCard({}, yellowTechImage, 'Mui Fa Lou Kyun', 'Plum Blossom Routine Boxing');
-    t3.brownEvaluation = new PathCard({}, forgeInvitationImage, 'Development Chamber Evaluation', '80% score or greater')
-    t3.brownAdvancement = new PathCard(t0.advancementTier3)
+    t3.brownEvaluation = new PathCard(r7.eval)
+    t3.brownAdvancement = new PathCard(r7.adv)
 
     t3.brown = [
         t3.brownSash, t3.brownMind8Weakening, t3.brownMind8Devastation, t3.brownMindSeNgoiLin, t3.brownMindSeiNaapLin, t3.brownMindBatJikBatLei, t3.brownTechDaaiFuNgaan, t3.brownTechSixHarmonyStaff, t3.brownTechAny, t3.brownTrainingManual, t3.brownProficiency, t3.brownSeals, t3.brownEvaluation, t3.brownAdvancement

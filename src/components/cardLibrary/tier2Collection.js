@@ -5,17 +5,6 @@ import purpleRankContent from './tier2-development/rank4Purple.js'
 import blueRankContent from './tier2-development/rank5Blue.js'
 import greenRankContent from './tier2-development/rank6Green.js'
 
-
-import greenSashImage from './tier2-development/rank6-green/green-sash.png'
-import greenMindImage1 from './tier2-development/rank6-green/green-mind-lengheng.png'
-import greenMindImage2 from './tier2-development/rank6-green/green-mind-root.png'
-import greenMindImage3 from './tier2-development/rank6-green/green-mind-wancham.png'
-import greenTechMantisImage from './tier2-development/rank6-green/green-tech-mantis.png'
-import greenTrainingManualImage from './tier2-development/rank6-green/green-trainingManual.png'
-
-import proficiencyBronzeChoreoImage from './tier0-general/proficiency-bronze-choreo.png'
-import proficiencySilverInitiateImage from './tier0-general/proficiency-silver-initiate.png'
-
 export default function developmentTier()
 {
     const t2 = {}
