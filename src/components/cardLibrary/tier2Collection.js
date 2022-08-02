@@ -1,6 +1,7 @@
 import PathCard from './PathCard.js'
 
 import generalCurrency from './tier0-general/generalCurrency.js'
+import purpleRankContent from './tier2-development/rank4Purple.js'
 
 import purpleSashImage from './tier2-development/rank4-purple/purple-sash.png'
 import purpleMindImage1 from './tier2-development/rank4-purple/purple-mind-sung.png'
@@ -34,18 +35,19 @@ export default function developmentTier()
     const t2 = {}
 
     const t0 = generalCurrency()
+    const r4 = purpleRankContent();
 
-    t2.purpleSash = new PathCard({}, purpleSashImage, 'Purple Sash', 'Development Chamber')
-    t2.purpleMindSung= new PathCard({}, purpleMindImage1, 'Sung', 'Empty Method');
-    t2.purpleMindGates = new PathCard({}, purpleMindImage2, 'Gates', 'Inner and Outer, Life and Death');
-    t2.purpleMindPokLauFung = new PathCard({}, purpleMindImage3, 'Pok, Lau, Fung', 'Ward, Grasp, and Seal');
-    t2.purpleTechSevenKicks = new PathCard({}, purpleTech7KicksImage, 'Seven Kicks', '');
-    t2.purpleTrainingManual = new PathCard({}, purpleTrainingManualImage, 'The Shaolin Monastery', 'Choose one Technical Card');
-    t2.purpleProficiency = new PathCard({}, proficiencyBronzeInitiateImage, 'Bronze Proficiency', 'Initiate Tier or Higher')
-    t2.purpleEvaluation = new PathCard({}, forgeInvitationImage, 'Initiate Chamber Evaluation', '80% score or greater')
+    t2.purpleSash = new PathCard(r4.sash)
+    t2.purpleMindSung= new PathCard(r4.mind1);
+    t2.purpleMindGates = new PathCard(r4.mind2);
+    t2.purpleMindPokLauFung = new PathCard(r4.mind3);
+    t2.purpleTechSevenKicks = new PathCard(r4.tech1);
+    t2.purpleTrainingManual = new PathCard(r4.manual);
+    t2.purpleProficiency = new PathCard(r4.prof)
+    t2.purpleEvaluation = new PathCard(r4.eval)
     // t2.purpleTechDaaiFaanChe = createCard(yellowTechImage, 'Daai Faan Che Kyun', 'Big Wheel Fist');
     // t2.purpleTechYiLouJaakYiu = createCard(yellowTechImage, 'Yi Lou Jaak Yiu', '2nd Route Essentials');
-    t2.purpleAdvancement = new PathCard(t0.advancementTier2)
+    t2.purpleAdvancement = new PathCard(r4.adv)
 
     t2.purple = [
         t2.purpleSash, t2.purpleMindSung, t2.purpleMindGates, t2.purpleMindPokLauFung, t2.purpleTechSevenKicks, t2.purpleTrainingManual, t2.purpleProficiency, t2.purpleEvaluation, t2.purpleAdvancement
