@@ -39,9 +39,9 @@ export default function developmentTier()
     ]
 
     t2.blueSash = new PathCard(r5.sash)
-    t2.blueMindManGam= new PathCard(r5.mind1);
-    t2.blueMindSimJau = new PathCard(r5.mind2);
-    t2.blueMindTangNo = new PathCard(r5.mind3);
+    t2.blueMindSimJau = new PathCard(r5.mind1);
+    t2.blueMindTangNo = new PathCard(r5.mind2);
+    t2.blueMindManGam= new PathCard(r5.mind3);
     t2.blueTechGungLik = new PathCard(r5.tech1);
     t2.blueTechFootwork = new PathCard(r5.tech2)
     t2.blueTrainingManual = new PathCard(r5.manual);
@@ -52,9 +52,9 @@ export default function developmentTier()
 
     t2.blue = [
         t2.blueSash, 
-        t2.blueMindManGam, 
         t2.blueMindSimJau, 
         t2.blueMindTangNo, 
+        t2.blueMindManGam, 
         t2.blueTechGungLik, 
         t2.blueTechFootwork, 
         t2.blueTrainingManual, 
@@ -63,9 +63,9 @@ export default function developmentTier()
     ]
 
     t2.greenSash = new PathCard(r6.sash)
-    t2.greenMindLengHeng= new PathCard(r6.mind1);
-    t2.greenMindRoot = new PathCard(r6.mind2);
-    t2.greenMindWanCham = new PathCard(r6.mind3);
+    t2.greenMindRoot = new PathCard(r6.mind1);
+    t2.greenMindWanCham = new PathCard(r6.mind2);
+    t2.greenMindLengHeng= new PathCard(r6.mind3);
     t2.greenTechTongLongBouSyun = new PathCard(r6.tech1);
     t2.greenTrainingManual = new PathCard(r6.manual);
     t2.greenProficiency1 = new PathCard(r6.prof1)
@@ -76,9 +76,9 @@ export default function developmentTier()
 
     t2.green = [
         t2.greenSash, 
-        t2.greenMindLengHeng, 
         t2.greenMindRoot, 
         t2.greenMindWanCham, 
+        t2.greenMindLengHeng, 
         t2.greenTechTongLongBouSyun, 
         t2.greenTrainingManual, 
         t2.greenProficiency1, 

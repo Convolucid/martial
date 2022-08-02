@@ -14,6 +14,8 @@ export default function techniqueLibrary()
     tech.hand7 = new Technique({}, 'Got Sáu', 'Cutting Hook', 'Hand', '割手')
     tech.hand8 = new Technique({}, 'Àu Láu Chói Sáu', 'To Hook, Grasp, and Pluck', 'Hand', '抅摟採手')
     tech.hand9 = new Technique({}, 'Yán Jam Sáu', 'To Stretch Across', 'Hand', '引針手')
+    tech.hand10 = new Technique({}, 'Tyut', 'To Cast Off', 'Hand', '脫')
+    tech.hand11 = new Technique({}, 'Bóng', 'To Topple', 'Hand', '榜')
 
     // Closed Fist Strikes
     tech.fist1 = new Technique({}, 'Tóng Chèui', 'Straight Punch', 'Fist', '捅捶')
@@ -28,6 +30,7 @@ export default function techniqueLibrary()
     tech.fist10 = new Technique({}, 'Bóu Chèui', 'Supplemental Punch', 'Fist', '補捶')
     tech.fist11 = new Technique({}, 'Fàan Che Chèui', 'Wheel Fist (Turn the Cart Over)', 'Fist', '翻車捶')
     tech.fist12 = new Technique({}, 'Hyūn Chèui', 'Round Fist', 'Fist', '圈捶')
+    tech.fist13 = new Technique({}, 'Sai Jaat Chèui', 'Side Hammer Fist', 'Fist', '勢扎捶')
 
     // Palm Strikes
     tech.palm1 = new Technique({}, 'Fung Jéung', 'Halting Palm', 'Palm', '封掌')
@@ -46,6 +49,16 @@ export default function techniqueLibrary()
     tech.step9 = new Technique({}, 'Yùn Hàu Jung Tiu', 'Monkey Hop', 'Footwork', '猿猴蹤跳')
     tech.step10 = new Technique({}, 'Yap Wàan Bou', 'Circle Entering Stance', 'Stance', '入環步')
     tech.step11 = new Technique({}, 'Tàan Téui', 'Seeking Leg', 'Footwork', '彈腿')
+    tech.step12 = new Technique({}, 'Yùn Hàu Bou', 'Monkey Stance', 'Stance', '猿猴步')
+    tech.step13 = new Technique({}, 'Sè Yán Jūng Chóu', 'Snake in the Grass', 'Stance', '蛇隱中草')
+    tech.step14 = new Technique({}, 'Náu Má Bou', 'Twisted Horse Stance', 'Stance', '扭馬步')
+    tech.step15 = new Technique({}, 'Tāu Bou', 'Stealing Step', 'Stance', '偷步')
+    tech.step16 = new Technique({}, 'Sím Bou', 'Dodge Step', 'Footwork', '閃步')
+    tech.step17 = new Technique({}, 'Jáu Bou', 'Walking Step', 'Footwork', '走步')
+    tech.step18 = new Technique({}, 'Jūng Tiu Daai Jyún Sān', '360 Hop', 'Footwork', '蹤跳大轉身')
+    tech.step19 = new Technique({}, 'Tòng Lòng Jūng Tiu', 'Mantis Hop', 'Stance', '螳螂蹤跳')
+    tech.step20 = new Technique({}, 'Jeun Yùn Hàu Jung Tiu', 'Advancing Monkey Hop', 'Stance', '進猿猴蹤跳')
+    tech.step21 = new Technique({}, 'Chit Yùn Hàu Jung Tiu', 'Retreating Monkey Hop', 'Stance', '撤猿猴蹤跳')
 
     // Kicks and Sweeps
     tech.kick1 = new Technique({}, 'Sap Ji Téui', 'Cross Kick', 'Kick', '十字腿')
@@ -61,6 +74,38 @@ export default function techniqueLibrary()
     tech.comp1 = new Technique({}, 'Baak Yùn Chíng Haak', 'White Ape Invites the Guest', 'Throw', '白猿請客')
     tech.comp2 = new Technique({}, 'Tòng Lòng Bou Sìm', 'Mantis Catches the Cicada', 'Control', '螳螂捕蟬')
     tech.comp3 = new Technique({}, 'Ngo Fú Pok Sik', 'Hungry Tiger Seeks Its Prey', 'Control', '餓虎撲食')
+    tech.comp4 = new Technique({}, 'Tòng Lòng Bou Syùn', 'Mantis Whirlwind Step', 'Combination', '螳螂步旋')
+
+    // Gung Lik Kyun
+    tech.glk1 = new Technique({}, 'Ba Wòng Géui Díng', 'Tyrant Lifts The Cauldron', 'Gung Lik Kyun', '霸王举鼎')
+    tech.glk2 = new Technique({}, 'Seun Sáu Tàu Jéng', 'Effortlessly Cast Into The Well', 'Gung Lik Kyun', '顺手投井')
+    tech.glk3 = new Technique({}, 'Wū Lùng Taam Hói', 'Black Dragon Explores The Ocean', 'Gung Lik Kyun', '乌龙探海')
+    tech.glk4 = new Technique({}, 'Yé Má Fan Jūng', "Part the Wild Horse's Mane", 'Gung Lik Kyun', '野马分鬃')
+    tech.glk5 = new Technique({}, 'Seun Fung Sou Hip', 'Obey the Wind, Clear in Harmony', 'Gung Lik Kyun', '顺风扫叶')
+    tech.glk6 = new Technique({}, 'Yiu Jí Jyun Tīn', 'Sparrow Hawk Soars Into The Sky', 'Gung Lik Kyun', '鹞子钻天')
+    tech.glk7 = new Technique({}, 'Nàja Gáau Hói', 'Nezha Stirs The Sea', 'Gung Lik Kyun', '哪吒搅海')
+    tech.glk8 = new Technique({}, 'Saam Wàan Tou Yut', 'Three Rings Envelop The Moon', 'Gung Lik Kyun', '三环套月')
+    tech.glk9 = new Technique({}, 'Yi Lòng Daam Sāan', 'Erlangshen Carries The Mountain', 'Gung Lik Kyun', '二郎担山')
+    tech.glk10 = new Technique({}, 'Baak Yùn Hin Gwó', 'White Ape Offers The Fruit', 'Gung Lik Kyun', '白猿献果')
+    tech.glk11 = new Technique({}, 'Chēng Lùng Chēut Hói', 'Azure Dragon Goes Out To Sea', 'Gung Lik Kyun', '青龙出海')
+
+    // Iron Phoenix
+    tech.ipma1 = new Technique({}, 
+        'Tit Fung Pāan Dāng (Fūng Jéung, Sap Ji Téui, Pek Chèui)',
+        'Iron Phoenix Forges Ahead', 'Iron Phoenix', '鐵鳳攀登 (封掌十字腿劈捶)'
+    )
+    tech.ipma2 = new Technique({}, 
+        'Tit Fung Pīk Dei (Jāu Téui, Fáan Jéung, Dang Pok Téui)',
+        'Iron Phoenix Opens the Earth', 'Iron Phoenix', '鐵鳳辟地 (揪腿反掌蹬扑腿)'
+    )
+    tech.ipma3 = new Technique({}, 
+        'Hàak Fú Gàau Chà (Sēung Dìu, Chéui Mìn, Só Hàu)',
+        'Black Tiger Crossing', 'Iron Phoenix', '黑虎交叉 (雙刁取眠鎖喉)'
+    )
+    tech.ipma4 = new Technique({}, 
+        'Pēi Gīng Jáam Gīk (Pek, Bàng, Hyùn Chèui)',
+        'Cutting Through Thorns and Thistles', 'Iron Phoenix', '披荊斬棘 (劈崩圈捶)'
+    )
 
     return tech;
 }
