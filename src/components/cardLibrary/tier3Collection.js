@@ -22,7 +22,7 @@ export default function refinementTier()
     t3.brownMindBatJikBatLei = new PathCard(r7.mind5);
     t3.brownTechDaaiFuNgaan = new PathCard(r7.tech1);
     t3.brownTechSixHarmonyStaff = new PathCard(r7.tech2);
-    t3.brownTechAny = new PathCard(r7.tech3);
+    t3.brownTechAny = new PathCard(r7.techX);
     t3.brownTrainingManual = new PathCard(r7.manual);
     t3.brownProficiency = new PathCard(r7.prof1)
     t3.brownSeals = new PathCard(r7.seals)
@@ -31,26 +31,52 @@ export default function refinementTier()
     t3.brownAdvancement = new PathCard(r7.adv)
 
     t3.brown = [
-        t3.brownSash, t3.brownMind8Weakening, t3.brownMind8Devastation, t3.brownMindSeNgoiLin, t3.brownMindSeiNaapLin, t3.brownMindBatJikBatLei, t3.brownTechDaaiFuNgaan, t3.brownTechSixHarmonyStaff, t3.brownTechAny, t3.brownTrainingManual, t3.brownProficiency, t3.brownSeals, t3.brownEvaluation, t3.brownAdvancement
+        t3.brownSash, 
+        t3.brownMind8Weakening, 
+        t3.brownMind8Devastation, 
+        t3.brownMindSeNgoiLin, 
+        t3.brownMindSeiNaapLin, 
+        t3.brownMindBatJikBatLei, 
+        t3.brownTechDaaiFuNgaan, 
+        t3.brownTechSixHarmonyStaff, 
+        t3.brownTechAny, 
+        t3.brownTrainingManual, 
+        t3.brownProficiency, 
+        t3.brownSeals, 
+        t3.brownEvaluation, 
+        t3.brownAdvancement
     ]
 
     t3.goldSash = new PathCard(r8.sash)
     t3.goldMindBatDiuBatDeng = new PathCard(r8.mind1);
-    t3.goldMindFongYun = new PathCard(r8.mind2);
-    t3.goldMind4Ounces = new PathCard(r8.mind3);
-    t3.goldMindSiuDikDaai = new PathCard(r8.mind4);
-    t3.goldMindYanJeunLaaiHung = new PathCard(r8.mind5);
+    t3.goldMindYanJeunLaaiHung = new PathCard(r8.mind2);
+    t3.goldMindFongYun = new PathCard(r8.mind3);
+    t3.goldMind4Ounces = new PathCard(r8.mind4);
+    t3.goldMindSiuDikDaai = new PathCard(r8.mind5);
     t3.goldTechTongLongCheutDung = new PathCard(r8.tech1);
     t3.goldTechYinChingDaanDou = new PathCard(r8.tech2);
     t3.goldTechSpeedOfHands = new PathCard(r8.tech3);
-    t3.goldTechAny = new PathCard(r8.tech4);
+    t3.goldTechAny = new PathCard(r8.techX);
     t3.goldTrainingManual = new PathCard(r8.manual);
     t3.goldProficiency = new PathCard(r8.prof1)
     t3.goldSeals = new PathCard(r8.seals)
     t3.goldAdvancement = new PathCard(r8.adv)
 
     t3.gold = [
-        t3.goldSash, t3.goldMindBatDiuBatDeng, t3.goldMindFongYun, t3.goldMind4Ounces, t3.goldMindSiuDikDaai, t3.goldMindYanJeunLaaiHung, t3.goldTechTongLongCheutDung, t3.goldTechYinChingDaanDou, t3.goldTechSpeedOfHands, t3.goldTechAny, t3.goldTrainingManual, t3.goldProficiency, t3.goldSeals, t3.goldAdvancement
+        t3.goldSash, 
+        t3.goldMindBatDiuBatDeng, 
+        t3.goldMindYanJeunLaaiHung, 
+        t3.goldMindFongYun, 
+        t3.goldMind4Ounces, 
+        t3.goldMindSiuDikDaai, 
+        t3.goldTechTongLongCheutDung, 
+        t3.goldTechYinChingDaanDou, 
+        t3.goldTechSpeedOfHands, 
+        t3.goldTechAny, 
+        t3.goldTrainingManual, 
+        t3.goldProficiency, 
+        t3.goldSeals, 
+        t3.goldAdvancement
     ]
 
     t3.redSash = new PathCard(r9.sash)

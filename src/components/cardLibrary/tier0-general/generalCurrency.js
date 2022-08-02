@@ -14,6 +14,7 @@ import sealTigerImage from './currency/seal-tiger.png'
 import sealBirdImage from './currency/seal-bird.png'
 import sealTortoiseImage from './currency/seal-tortoise.png'
 import sealLionImage from './currency/seal-lion.png'
+import sealPhoenixImage from './currency/seal-phoenix.png'
 
 export default function generalCurrency()
 {
@@ -70,6 +71,12 @@ export default function generalCurrency()
         image: iron10Image
     }
 
+    t0.iron30 = {
+        title: '30 Iron',
+        subtitle: '',
+        image: iron10Image
+    }
+
     t0.iron50 = {
         title: '50 Iron',
         subtitle: '',
@@ -83,12 +90,66 @@ export default function generalCurrency()
     }
 
     // Seals
+    t0.sealMaster = {
+        title: 'Seal of the Master',
+        subtitle: '',
+        image: sealPhoenixImage
+    }
+
+    t0.sealLion = {
+        title: 'Seal of the Jade Lion',
+        subtitle: '',
+        image: sealLionImage
+    }
+
+
     t0.sealDragon = {
-        title: 'Seal of the Dragon',
+        title: 'Seal of the Azure Dragon',
         subtitle: '',
         image: sealDragonImage
     }
 
+    t0.sealTortoise = {
+        title: 'Seal of the Black Tortoise',
+        subtitle: '',
+        image: sealTortoiseImage
+    }
+
+    t0.sealBird = {
+        title: 'Seal of the Vermilion Bird',
+        subtitle: '',
+        image: sealBirdImage
+    }
+
+    t0.sealTiger = {
+        title: 'Seal of the White Tiger',
+        subtitle: '',
+        image: sealTigerImage
+    }
+
+    t0.sealMonkey = {
+        title: 'Seal of the Monkey',
+        subtitle: '',
+        image: sealMonkeyImage
+    }
+
+    t0.sealLeopard = {
+        title: 'Seal of the Leopard',
+        subtitle: '',
+        image: sealLeopardImage
+    }
+
+    t0.sealCrane = {
+        title: 'Seal of the Crane',
+        subtitle: '',
+        image: sealCraneImage
+    }
+
+    t0.sealSnake = {
+        title: 'Seal of the Snake',
+        subtitle: '',
+        image: sealSnakeImage
+    }
 
     return t0;
 }

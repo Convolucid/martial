@@ -91,21 +91,34 @@ export default function techniqueLibrary()
 
     // Iron Phoenix
     tech.ipma1 = new Technique({}, 
-        'Tit Fung Pāan Dāng (Fūng Jéung, Sap Ji Téui, Pek Chèui)',
-        'Iron Phoenix Forges Ahead', 'Iron Phoenix', '鐵鳳攀登 (封掌十字腿劈捶)'
+        'Tit Fung Pāan Dāng',
+        'Iron Phoenix Forges Ahead (封掌十字腿劈捶 - Fūng Jéung, Sap Ji Téui, Pek Chèui)', 'Iron Phoenix', '鐵鳳攀登'
     )
     tech.ipma2 = new Technique({}, 
-        'Tit Fung Pīk Dei (Jāu Téui, Fáan Jéung, Dang Pok Téui)',
-        'Iron Phoenix Opens the Earth', 'Iron Phoenix', '鐵鳳辟地 (揪腿反掌蹬扑腿)'
+        'Tit Fung Pīk Dei',
+        'Iron Phoenix Opens the Earth (揪腿反掌蹬扑腿 - Jāu Téui, Fáan Jéung, Dang Pok Téui)', 'Iron Phoenix', '鐵鳳辟地'
     )
     tech.ipma3 = new Technique({}, 
-        'Hàak Fú Gàau Chà (Sēung Dìu, Chéui Mìn, Só Hàu)',
-        'Black Tiger Crossing', 'Iron Phoenix', '黑虎交叉 (雙刁取眠鎖喉)'
+        'Hàak Fú Gàau Chà',
+        'Black Tiger Crossing (雙刁取眠鎖喉 - Sēung Dìu, Chéui Mìn, Só Hàu)', 'Iron Phoenix', '黑虎交叉'
     )
     tech.ipma4 = new Technique({}, 
-        'Pēi Gīng Jáam Gīk (Pek, Bàng, Hyùn Chèui)',
-        'Cutting Through Thorns and Thistles', 'Iron Phoenix', '披荊斬棘 (劈崩圈捶)'
+        'Pēi Gīng Jáam Gīk',
+        'Cutting Through Thorns and Thistles (劈崩圈捶 - Pek, Bàng, Hyùn Chèui)', 'Iron Phoenix', '披荊斬棘'
     )
+
+    // Long Pole
+    tech.pole1 = new Technique({}, 'Wàang Sóu Chīn Gwān', 'Sweep Away a Thousand Troops', 'Long Pole', '橫掃千軍')
+    tech.pole2 = new Technique({}, 'But Séui Chàm Yù', 'Stroke the Water to Seek the Fish', 'Long Pole', '撥水尋魚')
+    tech.pole3 = new Technique({}, 'Taai Sāan Aat Déng', 'Mount Tai Crushes the Head', 'Long Pole', '泰山壓頂')
+    tech.pole4 = new Technique({}, 'Yap Gaap Chēung Gwan', 'Pressing Spear Staff', 'Long Pole', '入夾槍棍')
+    tech.pole5 = new Technique({}, 'Chēng Lùng Tóu Sit', 'Azure Dragon Flicks its Tongue', 'Long Pole', '青龍吐舌')
+    tech.pole6 = new Technique({}, 'Chēng Lùng Pok Sik', 'Azure Dragon Pounces its Prey', 'Long Pole', '青龍撲食')
+    tech.pole7 = new Technique({}, 'Diu Yù', 'Hoist the Fish', 'Long Pole', '吊魚')
+    tech.pole8 = new Technique({}, 'Gwán Fā', 'Rolling Flowers', 'Long Pole', '滾花')
+    tech.pole9 = new Technique({}, 'Chēng Lùng Hēi Séui', 'Azure Dragon Plays in the Water', 'Long Pole', '青龍嬉水')
+    tech.pole10 = new Technique({}, 'Yù Yūng Saat Gōng', 'Old Fisherman Casts the Net', 'Long Pole', '魚翁撒綱')
+    tech.pole11 = new Technique({}, 'Chēng Lùng Chìn Chyú', 'Azure Dragon Coils Around the Pillar', 'Long Pole', '青龍纏柱')
 
     return tech;
 }

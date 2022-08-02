@@ -1,105 +1,156 @@
-<section id='r4-mind1-desc'>
+<section id='r8-mind1-desc'>
 
-# 門 Gates
-## The Entry.  The Opportunity.  The Abyss.
+# 不丟不頂 Bāt Dīu Bāt Déng
+## The Latching.  The Ever-present.  The Unrestricted.
 
-The gates are a concept that breaks down the positioning of the body.  The two most basic of them are the inside & outside gate.  
+Bāt Dīu Bāt Déng is a duality principle which states that losing contact is incorrect, yet resisting is also incorrect.  Thus the proper method is to both maintain contact and not resist.  This principle expands our understanding of Jim & Nim.  We must seek to maintain contact once it has been established, but the way we achieve this matters as well.  To resist the natural flow of things in order to avoid loss is self-defeating, but so too would it be if we simply submit. 
 
-The inside gate is the area between the arms & legs and is home to our vital organs.  
-
-The outside gate is the area outside the arms & legs.  
-
-*Be wary of the opponent who approaches your home, for even while they remain outside their attacks may penetrate your walls.  Be more wary of the opponent who enters your home unannounced, for they are reckless and lack caution.  Be most wary of opponents who invite you into their home without fear.*
+*A battle of attrition is the fool’s strategy.  The dominant force is likely to overcome, and even if the smaller force were to succeed their losses would be great.  Some battles must be lost, but if ground is taken too easily then it may alert the opposition to a greater strategy at work.*
 </section>
 
 
-<section id='r4-mind1-tasks'>
+<section id='r8-mind1-tasks'>
 
-**“Through Confidence, Courage, and Conviction, I will Persevere and I will Succeed.”**
+**The Strength of Our Resolve.**
 
-Success is gained through progress.  To advance down a path you must demonstrate perseverance, the will to push onward.  Your willpower will be strengthened as you raise your confidence and gain the courage to face failure.  Lastly, you must find and bolster your conviction, the will to achieve success.  
+When you are traveling down a path, it is your determination that keeps you steady.  Each person’s determination manifests differently but the result is the same.  The challenge lies in the obstacles standing in the way of our determination.  It is the strength of our resolve which allows our determination to stand firm.
 
-The path is long and arduous.  There will be times of standstill where it seems that you’ve reached the end of your rope.  But should you demonstrate patience, focus on these tenets, and continue looking forward, then progress will surely follow.
- 
-How do you feel about the path in front of you?  
+The path of the martial artist is fraught with these obstacles.  But it is the accomplishment of overcoming that makes it all worthwhile.  So regardless of your reasons for training, it is resolve that ensures we may break through and continue to progress.
 
-Will you find success?  
-
-How far down the path do you want to travel?
+What motivates and inspires you to train? How strong do you gauge your resolve to progress your training?
+Name an obstacle which your resolve is not strong enough to overcome.
 
 Submit your responses <a href="">here.</a>
 </section>
 
 
 
-<section id='r4-mind2-desc'>
+<section id='r8-mind2-desc'>
 
-# 鬆 Sūng
-## The Relaxed.  The Unimpeded.  The Soft.
+# 引進落空 Yán Jeun Laai Hūng
+## The Trickster.  The Enthralling.  The Ruse.
 
-Sung is the concept of being void of tension such that energy may flow uninterrupted.  It is a state of relaxation where there is no tension, yet the body may still move however it desires.
+Yán Jeun Laai Hūng is the concept of attracting into emptiness.  It is the idea that your opponent will not haphazardly stumble into a trap without bait.  You must allow them to trust their attack will land but prepare a precisely timed yield - thereby revealing their error only after the trap has been sprung.  This level of deception will grant you significant gains if performed well.
 
-*If a smaller force acts bullish and aggressively resists opposition, they unknowingly blind themselves to flanks.  Likewise, if they yield to every advance they quickly run out of room to maneuver and are overrun.  Success is found through resistance while yielding.*
+*The enemy strategist is well aware of the typical ploys and is therefore cautious.  If the ambush you’ve set is too obvious, the opposing force will simply retreat and you will have gained nothing.  Lure the enemy with an object of desire nearly within their reach.  They will overextend in their ambition and your ambush will succeed.*
 </section>
 
 
-<section id='r4-mind2-tasks'>
+<section id='r8-mind2-tasks'>
 
-**“The skills I learn are my own, and I shall use them only in defense of myself and others.”**
+**水滴石穿 - Dripping Water Penetrates the Stone**
 
-Through strength and steadfastness we are able to learn many skills, and we prepare to use these skills in the defense of others.  But this idea has multiple meanings.  Fighting to protect the defenseless typically comes to mind, though some learn forms like a collector, hoarding knowledge.  While we do claim these skills as our own, following the path for this purpose may bring misfortune.
+In a time of progress, perseverance is key to achieving our goals.  But we must remain cautious.  Attempts to move too quickly can inadvertently halt progress.  It is through patience that we unlock the true strength of perseverance.  
 
-By sharing knowledge to educate and improve others, we enable them to defend themselves.  Such kindness toward our  classmates aids them on their path to improvement, and moves us further along our own.
+Even when we cannot see the path forward we will find success by demonstrating patience.  Like small amounts of water dripping onto the surface of a stone, we must maintain consistent effort even as we’re blind to the results.  Through this practice we find success - just as we would eventually discover that the water has bore through the stone.
 
-How do you aid your fellow classmates?  Do you help motivate them?  Do you cheer them on and encourage them?  What new things can you do to help your classmates grow with you?
+What progress have you made?
+What major milestones have you achieved?
+What milestones are you looking forward to achieving?
 
 Submit your responses <a href="">here.</a>
 </section>
 
 
-<section id='r4-mind3-desc'>
+<section id='r8-mind3-desc'>
 
-# 撲摟封 Pok, Lāu, Fūng
-## The Closing.  The Secured.  The Sealing.
+# 方圓 Fōng Yùn
+## The Firm.  The Lithe.  The Complementary.
 
-Pok is the concept of warding inwardly, typically with the palm of the hand.  The hand moves across the body using the power of a connected waist, closing the inner gate.  Be careful not to overextend or unnecessarily redirect as both are common faults.
+Fōng is the concept of squareness.  That which is square has a solid foundation and impeccable balance.  Such a construct is strong, powerful, and finite, allowing energy to be backed by the ground on which the foundation was laid.
 
-Lāu is the concept of securing one’s hand to an opponent.  Initiated with Pok, it is then altered to create a tight grasp using the strength of the fingers.  This allows the wrist to remain flexible.
+Yùn is the concept of roundness.  That which is round is perfectly flexible and ever-changing.  Such a construct is fast, fluid, and infinite, allowing energy to transfer and adapt to new vectors.
 
-Fūng is the concept of sealing.  Also initiated with Pok and often performed in combination with Lau, the opponent’s limb is trapped below the gate being attacked.
+Success is found when Fōng is within Yùn, and when Yùn is within Fōng.
 
-*A strategy to divide the enemy forces can be quite effective.  But if you do not ensure that the divided force is secured or sealed off, they will rejoin the main force before you can exploit this advantage.*
+*Should the opposing general field only cavalry, they’ll have an edge in mobility but lack in power.  Likewise, if the general were to field only artillery, they would have an edge in power but lack mobility.  Therefore it is reasonable to expect that we’ll encounter a balance of both.*
 </section>
 
 
-<section id='r4-mind3-tasks'>
+<section id='r8-mind3-tasks'>
 
-**The Importance of Family**
+**The Importance of Minor Refinement**
 
-Family is the basis for most relationships.  Love, loyalty, respect, devotion - this wide array of relationship qualities is best depicted through a familial structure.  Spousal, sibling, parental, and filial relationships are all different, and though the strength of our bonds vary, these types of relationships are the cornerstone for all others.
+Refinement and effectiveness have an exponential relationship.  At 100%, you’ve refined yourself to perfection and your effectiveness will likewise be perfect.  However, refine yourself to 99% and your effectiveness will top out at 80%.  Every minor blemish you polish makes the whole shine so much brighter.  
 
-A familial hierarchy exists in Chinese martial arts culture, which is one of student & master.  The Sifu is head of the household, exhibiting love and devotion to his students.  They reciprocate through loyalty and devotion of their own.  Students show each other respect and humble themselves to their elders, as siblings would.  The strength of these bonds are what you make of them, but know that strong bonds beget unity, which earns you a collective strength that is unattainable alone.
+Refinement happens in stages.  It is only after you reach 100% that you discover you’re truthfully still at 98% - and with that discovery, you can access the next level of refinement.
 
-Describe your relationships with your Kung Fu family.  Think of how people have been supportive of you or how you’ve aided other fellow students.  Think of the bonds you share with your instructors and your Sifu.
+There is so much to be gained by focusing on minor refinement that you should actively set goals to improve minor details.  What are some of the smallest details you can think of that you’d like to add some polish to?  Set goals for working on these and describe why these details are important.  Be prepared to explain and demonstrate your success to Sifu at your next test.
 
 Submit your responses <a href="">here.</a>
 </section>
 
+<section id='r8-mind4-desc'>
 
+# 四两撥千斤 Sei Léung But Chīn Gān
+## The Ultimate.  The Keen.  The Mighty.
 
-<section id='r4-tech1-desc'>
+Sei Léung But Chīn Gān is the proverb “Four Ounces Can Overcome 1000 Pounds.”  This concept illustrates the scale to which efficiency yields effectiveness.  When all conditions are met, it takes little effort to topple that which is great.  Beyond simple technique, this concept extends to all aspects of Kung Fu as well as life.  It is the embodiment of the inferior man who has laid the groundwork to conquer what appears insurmountable: rising up to become superior.
 
-# 七腳 Chāt Geuk
-## Seven Kicks
-
-Though it’s regarded as a basic set among Wahlum practitioners, Seven Kicks is a demanding introduction to the strength and flexibility required for Mantis.  Welcome to the Development Chamber.  Persevere and succeed!
+*We have cut off their supply routes, allied with their enemies, and exploited every weakness we could find.  Head-to-head we would have been routed quickly, but now that these conditions have been met, we merely need to pull on the thread to watch it all unravel before us.*
 </section>
 
 
-<section id='r4-manual-desc'>
+<section id='r8-mind4-tasks'>
 
-# 少林寺 Síu Làm Ji
-## The Shaolin Monastery
+**大勇若怯 - A Great Hero May Appear Timid**
+**Balancing Success with Modesty**
 
-The Shaolin Monastery was the birthplace of Praying Mantis Kung Fu.  It was here that Wong Long combined the 18 origin styles into his own combat art and at last overcame his kung fu brother.
+Success begets success, and consecutive successes are a breeding ground for arrogance.  As our knowledge expands and our skills improve we may find we’ve inadvertently placed ourselves on a pedestal, explicitly situating ourselves above others.  
+
+Likewise, it would be arrogant to presume that we’d never do such a thing.  It is within our nature to revel in success.  We tend to enjoy the empowerment over those walking a path we’ve already traversed.  The constant pursuit of modesty tempers this natural inclination.  Through modesty our upward push can continue unhindered, because we keep our minds and hearts open to the notion that each success is not ours alone - and neither are they indicative of an eternal greatness.  And so we shift our focus from the success itself and onto bringing others to a similar attainment.
+
+Write a short story of a time when success had gone to your head.  What was it that humbled you to realize where you had gone wrong?  Looking back, what would have been the modest approach to prevent it from happening?
+
+Submit your responses <a href="">here.</a>
+</section>
+
+<section id='r8-mind5-desc'>
+
+# 小敵大慢敵快 Síu Dik Daai, Maan Dik Faai
+## The Unimposing.  The Proficient.  The Imperceptible.
+
+Síu Dik Daai is the concept of the small overcoming the large, while Maan Dik Faai is the concept of the slow overcoming the swift. This pairing of concepts indicates that by combining the proper technique with the patience to execute it at the right time, one may become superior to those who dwell in excess.
+
+*If we take a smaller force with knowledge of the terrain and skill in ambush tactics, it becomes quite possible to decimate larger forces.  Still, such a force requires heavy training to be succesful.*
+</section>
+
+
+<section id='r8-mind5-tasks'>
+
+**Navigating a Time When the Waters Flood**
+
+Despite your best efforts, there comes a time when the waters flood and you are overloaded with too much of a good thing.  Perhaps it is because you didn’t leverage a time of decrease, overcome past obstacles, or set limits upon yourself to be better prepared.  Regardless, the “why” will only give insight for how to avoid this culmination in the future.  Now that it is here you should make the most of it.  
+
+Unlike being overloaded with burdens, being overloaded by blessings can still be beneficial if properly navigated.  It is very enticing to lose yourself in all the great things happening, but if you ignore caution and vigilance you’ll have a hard time noticing a turn for the worse.  You must be decisive and take action to reduce that which overwhelms you.  If you proceed in this fashion you’ll be ready to pivot when times shift yet again.
+
+Write a short story of a time when you encountered too much of a good thing.  How did you navigate those waters?  Was it difficult to handle?  How do you think you could’ve handled it now that you look back?
+
+Submit your responses <a href="">here.</a>
+</section>
+
+<section id='r8-tech1-desc'>
+
+# 螳螂出洞拳 Tòng Lòng Chèut Dung Kyùn
+## Praying Mantis Exits the Cave
+
+Its name does it justice - the Mantis practitioner bursts forth from secluded study with fantastical technique chains and deceptively erratic footwork, leveraging a strong comprehensive set of Mantis movements.
+</section>
+
+<section id='r8-tech2-desc'>
+
+# 燕青單刀 Yìn Chìng Dàan Dòu
+## Yin Ching’s Single Broadsword
+
+Yin Ching was the 36th Heavenly Spirit in the Chinese classic Water Margin, reborn as an outlaw during the Song Dynasty.  A clever and agile fighter, his single broadsword set is an effective foundation for all dao training.
+</section>
+
+<section id='r8-manual-desc'>
+
+# 山東鄉 Sāan Dūng Heung
+## The Shandong Countryside
+
+Faan Yūk Dūng, also known as “the Giant with the Broadsword,” was an extraordinary student of Wòng Wìng Sāang. 
+
+The inheritor of Seven Star, he was a fighter of incredible size and skill.  Legends describe him wandering the countryside when two raging bulls charged.  One fell to a mighty kick.  The other met Faan Yūk Dūng’s Iron Palm technique with its skull.
 </section>
