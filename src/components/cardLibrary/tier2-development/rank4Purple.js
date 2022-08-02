@@ -4,7 +4,7 @@ import Challenge from '../Challenge.js'
 
 import techniqueLibrary from '../../techniqueLibrary/techniqueLibrary.js'
 import generalCurrency from '../tier0-general/generalCurrency.js'
-// import blueRankContent from './rank5Blue.js'
+import blueRankContent from './rank5Blue.js'
 
 // import purpleContent from './rank4-purple/purple-content.md'
 // import purpleChallenges from './rank4-purple/purple-challenges.js'
@@ -21,7 +21,7 @@ import proficiencyBronzeInitiateImage from '../tier0-general/proficiency-bronze-
 export default function purpleRankContent()
 {
     const r4 = {}
-    // const r5 = blueRankContent()
+    const r5 = blueRankContent()
 
     const t = techniqueLibrary()
     // const ch = purpleChallenges()
@@ -33,8 +33,8 @@ export default function purpleRankContent()
 
     // Sash
     r4.sash = {
-        title: 'White Sash',
-        subtitle: 'Initiate Chamber',
+        title: 'Purple Sash',
+        subtitle: 'Development Chamber',
         image: purpleSashImage,
     }
 
@@ -147,9 +147,9 @@ export default function purpleRankContent()
 
     // Advancement Invitation
     r4.adv = gen.advancementTier2
-    // r4.adv.rewards = [
-    //         new PathCard(r2.sash)
-    //     ]
+    r4.adv.rewards = [
+            new PathCard(r5.sash)
+        ]
 
     return r4;
 }
