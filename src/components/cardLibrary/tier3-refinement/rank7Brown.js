@@ -39,7 +39,7 @@ export default function brownRankContent()
     // Sash
     r7.sash = {
         title: 'Brown Sash',
-        subtitle: 'Development Chamber',
+        subtitle: 'Refinement Chamber',
         image: brownSashImage,
     }
 
