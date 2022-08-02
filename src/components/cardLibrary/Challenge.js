@@ -1,3 +1,5 @@
+import './challenge.css'
+
 export default class Challenge
 {
 
@@ -41,5 +43,7 @@ export default class Challenge
         challenge.append(challenge.image)
         challenge.append(challenge.name)
         challenge.append(challenge.description)
+
+        return challenge;
     }
 }

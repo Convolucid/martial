@@ -57,26 +57,40 @@ export default class Card
             if(cardContent.techniques)
             {
                 const techniquesHeader = document.createElement('h2')
-                techniquesHeader.innerText = 'Techniques'
                 const techniquesGrid = document.createElement('div')
 
+                techniquesHeader.innerText = 'Techniques'
                 card.techniques.append(techniquesHeader)
                 card.techniques.append(techniquesGrid)
+                techniquesGrid.classList.add('card-techniques')
 
                 for(let i=0; i < cardContent.techniques.length; i++)
                 {
                     techniquesGrid.append(cardContent.techniques[i])
-                    techniquesGrid.classList.add('card-techniques')
+
                 }
             }
             card.techniques.classList.add('rank-requirements-hidden')
 
-            card.cardChallenges = document.createElement('div')
+            card.challenges = document.createElement('div')
             if(cardContent.challenges)
             {
-                card.cardChallenges = cardContent.challenges
+                const challengesHeader = document.createElement('h2')
+                const challengesGrid = document.createElement('div')
+
+                challengesHeader.innerText = 'Challenges'
+                card.challenges.append(challengesHeader)
+                card.challenges.append(challengesGrid)
+                challengesGrid.classList.add('card-challenges')
+
+                for(let i=0; i < cardContent.challenges.length; i++)
+                {
+                    challengesGrid.append(cardContent.challenges[i])
+
+                }
+
             }
-            card.cardChallenges.classList.add('card-challenges', 'rank-requirements-hidden')
+            card.challenges.classList.add('rank-requirements-hidden')
 
 
             card.cardRewards = document.createElement('div')
@@ -88,12 +102,13 @@ export default class Card
                 rewardsHeader.innerText = 'Rewards'
                 card.cardRewards.append(rewardsHeader)
                 card.cardRewards.append(rewardsGrid)
+                rewardsGrid.classList.add('card-rewards')
 
                 for(let i=0; i < cardContent.rewards.length; i++)
                 {
                     rewardsGrid.append(cardContent.rewards[i])
-                    rewardsGrid.classList.add('card-rewards')
                 }
+
             }
             card.cardRewards.classList.add('rank-requirements-hidden')
         }

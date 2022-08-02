@@ -1,0 +1,27 @@
+.challenge-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    max-width: 28rem;
+    padding-top: 0.5rem;
+}
+
+.challenge-image {
+    grid-row: 1 / 3;
+    width: 8rem;
+    margin: 0 auto;
+}
+
+.challenge-title {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.challenge-description {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+

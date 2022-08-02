@@ -1,15 +1,18 @@
 import PathCard from '../PathCard.js'
 import Technique from '../../techniqueLibrary/Technique.js'
+import Challenge from '../Challenge.js'
 
 import techniqueLibrary from '../../techniqueLibrary/techniqueLibrary.js'
 import generalCurrency from '../tier0-general/generalCurrency.js'
 import yellowRankContent from './rank2Yellow.js'
 
 import whiteContent from './rank1-white/white-content.md'
+import whiteChallenges from './rank1-white/white-challenges.js'
 import whiteSashImage from './rank1-white/white-sash.png'
 import whiteMindImage1 from './rank1-white/white-mind-tiu.png'
 import whiteMindImage2 from './rank1-white/white-mind-css.png'
 import whiteTechImage from './rank1-white/white-tech.png'
+
 
 export default function whiteRankContent()
 {
@@ -17,6 +20,7 @@ export default function whiteRankContent()
     const r2 = yellowRankContent()
 
     const t = techniqueLibrary()
+    const ch = whiteChallenges()
     const gen = generalCurrency()
 
 
@@ -46,7 +50,13 @@ export default function whiteRankContent()
             new Technique(t.step1), 
             new Technique(t.step2)
         ],
-        challenges: '',
+        challenges: [
+            new Challenge(ch.a),
+            new Challenge(ch.a),
+            new Challenge(ch.a),
+            new Challenge(ch.a),
+            new Challenge(ch.a),
+        ],
         rewards: [
             new PathCard(gen.advancementInvitation),
             new PathCard(gen.iron10)
@@ -59,7 +69,7 @@ export default function whiteRankContent()
         subtitle: 'The Warding Principle',
         image: whiteMindImage1,
         description: container.querySelector('#r1-mind1-desc'),
-        challenges: container.querySelector('#r1-mind1-tasks'),
+        challenges: [container.querySelector('#r1-mind1-tasks')],
         rewards: [
             new PathCard(r1.tech1),
             new PathCard(gen.iron10)
@@ -96,7 +106,7 @@ export default function whiteRankContent()
         subtitle: 'Three Hands of Mantis',
         image: whiteMindImage2,
         description: container.querySelector('#r1-mind2-desc'),
-        challenges: container.querySelector('#r1-mind2-tasks'),
+        challenges: [container.querySelector('#r1-mind2-tasks')],
         rewards: [
             new PathCard(r1.tech2),
             new PathCard(gen.iron10)

@@ -13,8 +13,6 @@ At longer ranges it becomes the first point of contact and gains crucial informa
 
 <section id='r1-mind1-tasks'>
 
-## Challenge
-
 **"I accept the challenges of my training, and diligently pursue improvement and excellence."**
 
 Effort is the essence of Kung Fu.  Your training will be full of challenges, but it will be your effort that determines how you improve.  If you are unable to commit yourself and accept these challenges your effort will be self-defeating.  Don't focus on difficulty or thoughts of what you cannot do.  Rather, embrace the understanding that - with effort - you'll overcome any challenge.
@@ -38,8 +36,6 @@ Chèui Saam Sáu is the concept of continuity.  Known as the “three hands of
 
 
 <section id='r1-mind2-tasks'>
-
-## Challenge
 
 **“When the student is ready, the master will appear.”**
 

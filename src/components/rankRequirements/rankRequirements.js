@@ -98,7 +98,7 @@ export default function rankRequirements(containerElement)
             {
                 rankCardArray[i].cardDescription.classList.add('rank-requirements-hidden')
                 rankCardArray[i].techniques.classList.add('rank-requirements-hidden')
-                rankCardArray[i].cardChallenges.classList.add('rank-requirements-hidden')
+                rankCardArray[i].challenges.classList.add('rank-requirements-hidden')
                 rankCardArray[i].cardRewards.classList.add('rank-requirements-hidden')
                 rankRequirementsPanel.curriculumDisplayPanel.appendChild(rankCardArray[i])
             }
@@ -121,12 +121,12 @@ export default function rankRequirements(containerElement)
                     rankRequirementsPanel.cardDisplayPanel.appendChild(rankCardArray[i])
                     rankRequirementsPanel.curriculumDisplayPanel.append(rankCardArray[i].cardDescription)
                     rankRequirementsPanel.curriculumDisplayPanel.append(rankCardArray[i].techniques)
-                    rankRequirementsPanel.curriculumDisplayPanel.append(rankCardArray[i].cardChallenges)
+                    rankRequirementsPanel.curriculumDisplayPanel.append(rankCardArray[i].challenges)
                     rankRequirementsPanel.curriculumDisplayPanel.append(rankCardArray[i].cardRewards)
 
                     rankCardArray[i].cardDescription.classList.remove('rank-requirements-hidden')
                     rankCardArray[i].techniques.classList.remove('rank-requirements-hidden')
-                    rankCardArray[i].cardChallenges.classList.remove('rank-requirements-hidden')
+                    rankCardArray[i].challenges.classList.remove('rank-requirements-hidden')
                     rankCardArray[i].cardRewards.classList.remove('rank-requirements-hidden')
                 }
                 else
@@ -134,7 +134,7 @@ export default function rankRequirements(containerElement)
                     rankCardArray[i].classList.add('rank-requirements-hidden')
                     rankCardArray[i].cardDescription.classList.add('rank-requirements-hidden')
                     rankCardArray[i].techniques.classList.add('rank-requirements-hidden')
-                    rankCardArray[i].cardChallenges.classList.add('rank-requirements-hidden')
+                    rankCardArray[i].challenges.classList.add('rank-requirements-hidden')
                     rankCardArray[i].cardRewards.classList.add('rank-requirements-hidden')
                 }
             }
