@@ -45,15 +45,22 @@ export default function techniqueLibrary()
     tech.step8 = new Technique({}, 'Dip Bou', 'Burst Step', 'Footwork', '疊步')
     tech.step9 = new Technique({}, 'Yùn Hàu Jung Tiu', 'Monkey Hop', 'Footwork', '猿猴蹤跳')
     tech.step10 = new Technique({}, 'Yap Wàan Bou', 'Circle Entering Stance', 'Stance', '入環步')
+    tech.step11 = new Technique({}, 'Tàan Téui', 'Seeking Leg', 'Footwork', '彈腿')
 
-    // Kicks
+    // Kicks and Sweeps
     tech.kick1 = new Technique({}, 'Sap Ji Téui', 'Cross Kick', 'Kick', '十字腿')
-    tech.kick2 = new Technique({}, 'Jaat Téui', 'Leg Piercing Kick', 'Kick', '扎腿')
-    tech.kick3 = new Technique({}, 'Bai Mùn Téui', 'Door Shutting Kick', 'Kick', '閉門腿')
+    tech.kick2 = new Technique({}, 'Liu Yam Téui', 'Groin Lift Kick', 'Kick', '撩陰腿')
+    tech.kick3 = new Technique({}, 'Jaat Téui', 'Leg Piercing Kick', 'Kick', '扎腿')
+    tech.kick4 = new Technique({}, 'Bai Mùn Téui', 'Door Shutting Kick', 'Kick', '閉門腿')
+    tech.kick5 = new Technique({}, 'Syùn Fūng Téui', 'Whirlwind Kick', 'Kick', '旋風腿')
+    tech.kick6 = new Technique({}, 'Chìn Hau Sou Tòng Téui', 'Iron Broom', 'Sweep', '前後掃蹚腿')
+    tech.kick7 = new Technique({}, 'Jāk Cháai Téui', 'Side Kick', 'Kick', '側踹腿')
+    tech.kick8 = new Technique({}, 'Chyun Sam Téui', 'Heart Piercing Kick', 'Kick', '穿心腿')
 
     // Complex Movements (Throw, Combination)
     tech.comp1 = new Technique({}, 'Baak Yùn Chíng Haak', 'White Ape Invites the Guest', 'Throw', '白猿請客')
     tech.comp2 = new Technique({}, 'Tòng Lòng Bou Sìm', 'Mantis Catches the Cicada', 'Control', '螳螂捕蟬')
+    tech.comp3 = new Technique({}, 'Ngo Fú Pok Sik', 'Hungry Tiger Seeks Its Prey', 'Control', '餓虎撲食')
 
     return tech;
 }

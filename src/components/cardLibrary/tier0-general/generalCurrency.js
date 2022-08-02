@@ -39,24 +39,33 @@ export default function generalCurrency()
     t0.advancementTier2 = {
         title: 'Advancement',
         subtitle: 'Development Tier or Higher',
-        image: advancementImage
+        image: advancementImage,
+        description: container.querySelector('#t0-advancement-tier2')
     }
 
     t0.advancementTier3 = {
         title: 'Advancement',
         subtitle: 'Refinement Tier or Higher',
-        image: advancementImage
+        image: advancementImage,
+        description: container.querySelector('#t0-advancement-tier3')
     }
 
     t0.advancementTier4 = {
         title: 'Advancement',
         subtitle: 'Adept Tier or Higher',
-        image: forgeInvitationImage
+        image: forgeInvitationImage,
+        description: container.querySelector('#t0-advancement-tier4')
     }
 
     // Iron
     t0.iron10 = {
         title: '10 Iron',
+        subtitle: '',
+        image: iron10Image
+    }
+    
+    t0.iron20 = {
+        title: '20 Iron',
         subtitle: '',
         image: iron10Image
     }
@@ -74,6 +83,11 @@ export default function generalCurrency()
     }
 
     // Seals
+    t0.sealDragon = {
+        title: 'Seal of the Dragon',
+        subtitle: '',
+        image: sealDragonImage
+    }
 
 
     return t0;

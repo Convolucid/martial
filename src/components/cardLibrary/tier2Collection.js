@@ -15,8 +15,8 @@ export default function developmentTier()
     const r6 = greenRankContent();
 
     t2.purpleSash = new PathCard(r4.sash)
-    t2.purpleMindSung= new PathCard(r4.mind1);
-    t2.purpleMindGates = new PathCard(r4.mind2);
+    t2.purpleMindGates = new PathCard(r4.mind1);
+    t2.purpleMindSung= new PathCard(r4.mind2);
     t2.purpleMindPokLauFung = new PathCard(r4.mind3);
     t2.purpleTechSevenKicks = new PathCard(r4.tech1);
     t2.purpleTrainingManual = new PathCard(r4.manual);
@@ -27,7 +27,15 @@ export default function developmentTier()
     t2.purpleAdvancement = new PathCard(r4.adv)
 
     t2.purple = [
-        t2.purpleSash, t2.purpleMindSung, t2.purpleMindGates, t2.purpleMindPokLauFung, t2.purpleTechSevenKicks, t2.purpleTrainingManual, t2.purpleProficiency, t2.purpleEvaluation, t2.purpleAdvancement
+        t2.purpleSash, 
+        t2.purpleMindGates, 
+        t2.purpleMindSung, 
+        t2.purpleMindPokLauFung, 
+        t2.purpleTechSevenKicks, 
+        t2.purpleTrainingManual, 
+        t2.purpleProficiency, 
+        t2.purpleEvaluation, 
+        t2.purpleAdvancement
     ]
 
     t2.blueSash = new PathCard(r5.sash)
@@ -43,7 +51,15 @@ export default function developmentTier()
     t2.blueAdvancement = new PathCard(r5.adv)
 
     t2.blue = [
-        t2.blueSash, t2.blueMindManGam, t2.blueMindSimJau, t2.blueMindTangNo, t2.blueTechGungLik, t2.blueTechFootwork, t2.blueTrainingManual, t2.blueProficiency, t2.blueAdvancement
+        t2.blueSash, 
+        t2.blueMindManGam, 
+        t2.blueMindSimJau, 
+        t2.blueMindTangNo, 
+        t2.blueTechGungLik, 
+        t2.blueTechFootwork, 
+        t2.blueTrainingManual, 
+        t2.blueProficiency, 
+        t2.blueAdvancement
     ]
 
     t2.greenSash = new PathCard(r6.sash)
@@ -59,7 +75,15 @@ export default function developmentTier()
     t2.greenAdvancement = new PathCard(r6.adv)
 
     t2.green = [
-        t2.greenSash, t2.greenMindLengHeng, t2.greenMindRoot, t2.greenMindWanCham, t2.greenTechTongLongBouSyun, t2.greenTrainingManual, t2.greenProficiency1, t2.greenProficiency2, t2.greenAdvancement
+        t2.greenSash, 
+        t2.greenMindLengHeng, 
+        t2.greenMindRoot, 
+        t2.greenMindWanCham, 
+        t2.greenTechTongLongBouSyun, 
+        t2.greenTrainingManual, 
+        t2.greenProficiency1, 
+        t2.greenProficiency2, 
+        t2.greenAdvancement
     ]
 
     return t2;

@@ -31,17 +31,17 @@ export default function initiateTier()
     ]
 
     t1.yellowSash = new PathCard(r2.sash)
-    t1.yellowMindJimNim = new PathCard(r2.mind1);
+    t1.yellowMindAu = new PathCard(r2.mind1);
     t1.yellowTechIronPhoenixCombo2 = new PathCard(r2.tech1);
-    t1.yellowMindAu = new PathCard(r2.mind2);
+    t1.yellowMindJimNim = new PathCard(r2.mind2);
     t1.yellowTechInterceptingHammerFist = new PathCard(r2.tech2);
-    t1.yellowAdvancement = new PathCard(t0.advancementTier1)
+    t1.yellowAdvancement = new PathCard(r2.adv)
 
     t1.yellow = [
         t1.yellowSash, 
-        t1.yellowMindJimNim, 
-        t1.yellowTechIronPhoenixCombo2, 
         t1.yellowMindAu, 
+        t1.yellowTechIronPhoenixCombo2, 
+        t1.yellowMindJimNim, 
         t1.yellowTechInterceptingHammerFist, 
         t1.yellowAdvancement
     ]
@@ -51,7 +51,7 @@ export default function initiateTier()
     t1.orangeTechIronPhoenixCombo3 = new PathCard(r3.tech1);
     t1.orangeMindTipKaau = new PathCard(r3.mind2);
     t1.orangeTechEightEssentials = new PathCard(r3.tech2);
-    t1.orangeAdvancement = new PathCard(t0.advancementTier1)
+    t1.orangeAdvancement = new PathCard(r3.adv)
 
     t1.orange = [
         t1.orangeSash, 
