@@ -1,4 +1,5 @@
 import PathCard from '../PathCard.js'
+import Technique from '../../techniqueLibrary/Technique.js'
 
 import techniqueLibrary from '../../techniqueLibrary/techniqueLibrary.js'
 import generalCurrency from '../tier0-general/generalCurrency.js'
@@ -35,7 +36,16 @@ export default function whiteRankContent()
         subtitle: '1st Route',
         image: whiteTechImage,
         description: container.querySelector('#r1-tech1-desc'),
-        techniques: [t.fist2, t.fist3, t.kick1, t.fist4, t.hand2, t.hand5, t.step1, t.step2],
+        techniques: [
+            new Technique(t.fist2), 
+            new Technique(t.fist3), 
+            new Technique(t.kick1), 
+            new Technique(t.fist4), 
+            new Technique(t.hand2), 
+            new Technique(t.hand5), 
+            new Technique(t.step1), 
+            new Technique(t.step2)
+        ],
         challenges: '',
         rewards: [
             new PathCard(gen.advancementInvitation),
@@ -62,7 +72,17 @@ export default function whiteRankContent()
         subtitle: '2nd Route',
         image: whiteTechImage,
         description: container.querySelector('#r1-tech2-desc'),
-        techniques: [t.hand2, t.hand3, t.hand5, t.fist3, t.fist4, t.fist5, t.step3, t.step4, t.step5],
+        techniques: [
+            new Technique(t.hand2), 
+            new Technique(t.hand3), 
+            new Technique(t.hand5), 
+            new Technique(t.fist3), 
+            new Technique(t.fist4), 
+            new Technique(t.fist5), 
+            new Technique(t.step3), 
+            new Technique(t.step4), 
+            new Technique(t.step5)
+        ],
         challenges: '',
         rewards: [
             new PathCard(gen.advancementInvitation),
