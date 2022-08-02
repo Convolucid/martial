@@ -96,7 +96,21 @@ export default function refinementTier()
     t3.redAdvancement = new PathCard(r9.adv)
 
     t3.red = [
-        t3.redSash, t3.redMind1, t3.redMind2, t3.redMind3, t3.redMind4, t3.redMind5, t3.redTech1, t3.redTech2, t3.redTech3, t3.redTechAny, t3.redTrainingManual, t3.redProficiency1, t3.redProficiency2, t3.redSeals, t3.redAdvancement
+        t3.redSash, 
+        t3.redMind1, 
+        t3.redMind2, 
+        t3.redMind3, 
+        t3.redMind4, 
+        t3.redMind5, 
+        t3.redTech1, 
+        t3.redTech2, 
+        t3.redTech3, 
+        t3.redTechAny, 
+        t3.redTrainingManual, 
+        t3.redProficiency1, 
+        t3.redProficiency2, 
+        t3.redSeals, 
+        t3.redAdvancement
     ]
 
     return t3;

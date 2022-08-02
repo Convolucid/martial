@@ -7,12 +7,8 @@
     display: grid;
     grid-template-columns: 30% 70%;
 
-    min-height: 43vw;
-
     padding: 2rem;
 }
-
-
 
 .rank-requirements-card-display {
     padding-left: 10vw;
@@ -21,7 +17,7 @@
 
 .rank-requirements-card-display-overlay {
     position: absolute;
-    width: 6vw;
+    max-width: 6vw;
     left: 8%;
 }
 
@@ -126,6 +122,42 @@
     grid-template-columns: repeat(auto-fit, minmax(8rem, 8rem));
 }
 
+
+@media(max-width: 768px) {
+
+    .rank-requirements {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        
+        /* justify-items: center; */
+    
+        padding: 0.75rem;
+    }
+
+    .rank-requirements-card-display {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        max-width: 45vw;
+        margin: 0 auto;
+    }
+    
+    .rank-requirements-card-display-overlay {
+        position: absolute;
+        max-width: 20vw;
+        left: 18%;
+
+    }
+
+    .rank-requirements-curriculum-display {
+        justify-content: center;
+    }
+
+    .card-techniques, .card-challenges {
+        justify-content: space-between;
+    }
+
+}
 
 
 /* White Sash */

@@ -1,4 +1,4 @@
-<section id='r4-mind1-desc'>
+<section id='r9-mind1-desc'>
 
 # 門 Gates
 ## The Entry.  The Opportunity.  The Abyss.
@@ -13,7 +13,7 @@ The outside gate is the area outside the arms & legs.
 </section>
 
 
-<section id='r4-mind1-tasks'>
+<section id='r9-mind1-tasks'>
 
 **“Through Confidence, Courage, and Conviction, I will Persevere and I will Succeed.”**
 
@@ -32,7 +32,7 @@ Submit your responses <a href="">here.</a>
 
 
 
-<section id='r4-mind2-desc'>
+<section id='r9-mind2-desc'>
 
 # 鬆 Sūng
 ## The Relaxed.  The Unimpeded.  The Soft.
@@ -43,7 +43,7 @@ Sung is the concept of being void of tension such that energy may flow uninterru
 </section>
 
 
-<section id='r4-mind2-tasks'>
+<section id='r9-mind2-tasks'>
 
 **“The skills I learn are my own, and I shall use them only in defense of myself and others.”**
 
@@ -57,7 +57,7 @@ Submit your responses <a href="">here.</a>
 </section>
 
 
-<section id='r4-mind3-desc'>
+<section id='r9-mind3-desc'>
 
 # 撲摟封 Pok, Lāu, Fūng
 ## The Closing.  The Secured.  The Sealing.
@@ -72,7 +72,7 @@ Fūng is the concept of sealing.  Also initiated with Pok and often performed in
 </section>
 
 
-<section id='r4-mind3-tasks'>
+<section id='r9-mind3-tasks'>
 
 **The Importance of Family**
 
@@ -87,7 +87,7 @@ Submit your responses <a href="">here.</a>
 
 
 
-<section id='r4-tech1-desc'>
+<section id='r9-tech1-desc'>
 
 # 七腳 Chāt Geuk
 ## Seven Kicks
@@ -96,7 +96,7 @@ Though it’s regarded as a basic set among Wahlum practitioners, Seven Kicks is
 </section>
 
 
-<section id='r4-manual-desc'>
+<section id='r9-manual-desc'>
 
 # 少林寺 Síu Làm Ji
 ## The Shaolin Monastery
