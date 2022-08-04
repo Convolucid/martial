@@ -51,8 +51,8 @@ export default function whiteRankContent()
             new Technique(t.step2)
         ],
         challenges: [
-            new Challenge({}, 'test', '108 Roads', 'Learn the complete set and rehearse it 108 times.  Mark its progress etc etc', 108),
-            new Challenge(ch.a),
+            new Challenge({}, 'test', '108 Roads', 'Learn the complete set and rehearse it 108 times.', 5, 'white1'),
+            new Challenge({}, 'test', '108 Roads', 'Learn the complete set and rehearse it 108 times.', 108, 'white2'),
             new Challenge(ch.a),
             new Challenge(ch.a),
             new Challenge(ch.a),
