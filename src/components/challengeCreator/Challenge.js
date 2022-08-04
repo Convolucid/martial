@@ -3,7 +3,6 @@ import './challenge.css'
 import {gsap} from 'gsap'
 
 import challengeNode from './challenge-node.svg?raw'
-import sashRanksImage from './sashRanks.svg?raw'
 
 export default class Challenge
 {
@@ -21,29 +20,32 @@ export default class Challenge
 
             challenge.repetitions = repetitions;
 
-            // Need a function to get all element IDs and re-assign them unique IDs.
+            // A function to get all element IDs and re-assign them unique IDs.  This allows the same SVG to be used as input and then manipulated on a per challenge basis.
             function createUniqueElementIDs()
             {
+                // Get all elements with an ID
                 const elements = challenge.image.querySelectorAll(`[id]`)
 
-
+                // Add unique identifier to the end of each ID
                 for(let i=0; i < elements.length; i++)
                 {
                     const id = elements[i].id
                     elements[i].id = id + uniqueIdentifier
                 }
 
+                // Get pairs of clipPaths and clipped elements, then set the clip-path url to the new clipPath ID.
                 const clipPaths = challenge.image.getElementsByTagName('clipPath')
                 const clipPathGroups = challenge.image.querySelectorAll(`[clip-path]`)
                 for(let i=0; i < clipPaths.length; i++)
                 {
                     clipPathGroups[i].style.clipPath = 'url(#' + clipPaths[i].id + ')'
-                    console.log(clipPaths[i].id)
-                    console.log(clipPathGroups[i].style.clipPath)
+                    // console.log(clipPaths[i].id)
+                    // console.log(clipPathGroups[i].style.clipPath)
                 }
             }
             createUniqueElementIDs()
             
+
             // This gets the first clipPath and its first path, assigning it an arc value.  The arc value is later used to move the dial around the circle and uncover the underlying layer.
             challenge.image.clipPath = challenge.image.getElementsByTagName('clipPath')
             challenge.image.clipPath[0].path = challenge.image.clipPath[0].getElementsByTagName('path')
@@ -57,7 +59,15 @@ export default class Challenge
                 r: 13.83
             };
 
+
+            // Append elements to the challenge container and assign styles
             challenge.image.classList.add('challenge-image')
+
+
+            challenge.counter = document.createElement('span')
+            challenge.counter.value = 0
+            challenge.counter.innerText = challenge.counter.value + ' / ' + repetitions
+            challenge.counter.classList.add('challenge-counter')
     
             challenge.name = document.createElement('h3')
             challenge.name.innerText = name
@@ -72,6 +82,11 @@ export default class Challenge
             challenge.image = new Image()
             challenge.image.src = challengeContent.img
             challenge.image.classList.add('challenge-image')
+
+            challenge.counter = document.createElement('span')
+            challenge.counter.value = 0
+            challenge.counter.innerText = challenge.counter.value
+            challenge.counter.classList.add('challenge-counter')
     
             challenge.name = document.createElement('h3')
             challenge.name.innerText = challengeContent.name
@@ -84,9 +99,8 @@ export default class Challenge
 
         challenge.append(challenge.image)
         challenge.append(challenge.name)
+        challenge.append(challenge.counter)
         challenge.append(challenge.description)
-
-
 
         challenge.addEventListener('click', this.incrementDial)
 
@@ -127,7 +141,13 @@ export default class Challenge
             return "M " + x1 + " " + y1 + " A " + r + " " + r + " 0 " + largeArc + " 0 " + x2 + " " + y2 + " L " + cx + " " + cy + "z";
         }
 
-        this.image.clipPath[0].path[0].arc.end += 360 / this.repetitions;
+
+        if(this.counter.value < this.repetitions)
+        {
+            this.counter.value += 1
+            this.image.clipPath[0].path[0].arc.end += 360 / this.repetitions;
+        }
+        this.counter.innerText = this.counter.value + ' / ' + this.repetitions
 
         this.image.clipPath[0].path[0].setAttribute("d", getPath(
             this.image.clipPath[0].path[0].arc.cx, this.image.clipPath[0].path[0].arc.cy, this.image.clipPath[0].path[0].arc.r, this.image.clipPath[0].path[0].arc.start, this.image.clipPath[0].path[0].arc.end

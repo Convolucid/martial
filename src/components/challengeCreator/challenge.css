@@ -7,9 +7,15 @@
 }
 
 .challenge-image {
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
     width: 8rem;
     margin: 0 auto;
+}
+
+.challenge-counter {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .challenge-title {
