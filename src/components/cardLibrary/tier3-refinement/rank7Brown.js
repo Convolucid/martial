@@ -1,6 +1,6 @@
 import PathCard from '../PathCard.js'
 import Technique from '../../techniqueLibrary/Technique.js'
-import Challenge from '../Challenge.js'
+import Challenge from '../../challengeCreator/Challenge.js'
 
 import techniqueLibrary from '../../techniqueLibrary/techniqueLibrary.js'
 import generalCurrency from '../tier0-general/generalCurrency.js'

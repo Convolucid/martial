@@ -1,6 +1,6 @@
 import PathCard from '../PathCard.js'
 import Technique from '../../techniqueLibrary/Technique.js'
-import Challenge from '../Challenge.js'
+import Challenge from '../../challengeCreator/Challenge.js'
 
 import techniqueLibrary from '../../techniqueLibrary/techniqueLibrary.js'
 import generalCurrency from '../tier0-general/generalCurrency.js'
@@ -51,7 +51,7 @@ export default function whiteRankContent()
             new Technique(t.step2)
         ],
         challenges: [
-            new Challenge(ch.a),
+            new Challenge({}, 'test', '108 Roads', 'Learn the complete set and rehearse it 108 times.  Mark its progress etc etc', 108),
             new Challenge(ch.a),
             new Challenge(ch.a),
             new Challenge(ch.a),
