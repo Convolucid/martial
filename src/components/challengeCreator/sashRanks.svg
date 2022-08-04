@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 251.42 32">
+  <defs>
+    <radialGradient id="radial-gradient" cx="235.2" cy="16" fx="235.2" fy="16" r="28.93" gradientTransform="translate(105.13 7.15) scale(.55)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset=".95" stop-color="#e6e6e6" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clippath">
+      <circle id="black-overlay-mask" cx="235.2" cy="16" r="6" fill="none"/>
+    </clipPath>
+    <radialGradient id="radial-gradient-2" cx="229.53" cy="21.08" fx="229.53" fy="21.08" r="10.11" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-3" cx="241.32" cy="15.7" fx="241.32" fy="15.7" r="10.11" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#333"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-4" cx="231.68" cy="10.17" fx="231.68" fy="10.17" r="10.11" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="gray"/>
+      <stop offset="1" stop-color="#3b2f17" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-5" cx="210.84" cy="16" fx="210.84" fy="16" r="28.93" gradientTransform="translate(94.25 7.15) scale(.55)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b62626"/>
+      <stop offset=".16" stop-color="#b72a2a" stop-opacity=".98"/>
+      <stop offset=".31" stop-color="#bb3737" stop-opacity=".92"/>
+      <stop offset=".46" stop-color="#c34d4d" stop-opacity=".82"/>
+      <stop offset=".6" stop-color="#cd6c6c" stop-opacity=".67"/>
+      <stop offset=".73" stop-color="#db9494" stop-opacity=".49"/>
+      <stop offset=".87" stop-color="#ebc5c5" stop-opacity=".27"/>
+      <stop offset="1" stop-color="#fefefe" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-6" cx="210.84" cy="16" fx="210.84" fy="16" r="4" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset=".5" stop-color="#810000"/>
+      <stop offset=".59" stop-color="#840101"/>
+      <stop offset=".68" stop-color="#8f0505"/>
+      <stop offset=".77" stop-color="#a20b0c"/>
+      <stop offset=".85" stop-color="#bc1416"/>
+      <stop offset=".93" stop-color="#dd2023"/>
+      <stop offset="1" stop-color="#ff2c30"/>
+    </radialGradient>
+    <clipPath id="clippath-1">
+      <circle id="red-overlay-mask" cx="210.84" cy="16" r="6" fill="none"/>
+    </clipPath>
+    <radialGradient id="radial-gradient-7" cx="205.17" cy="21.08" fx="205.17" fy="21.08" r="10.11" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#940004" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-8" cx="216.96" cy="15.7" fx="216.96" fy="15.7" r="10.11" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff373e"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-9" cx="206.84" cy="12.95" fx="206.84" fy="12.95" r="10.11" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffbfc1"/>
+      <stop offset="1" stop-color="#910002" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-10" cx="162.13" cy="16" fx="162.13" fy="16" r="28.93" gradientTransform="translate(72.47 7.15) scale(.55)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#754c24"/>
+      <stop offset=".2" stop-color="#79512a" stop-opacity=".97"/>
+      <stop offset=".38" stop-color="#86623f" stop-opacity=".87"/>
+      <stop offset=".56" stop-color="#9c7e62" stop-opacity=".72"/>
+      <stop offset=".73" stop-color="#baa692" stop-opacity=".49"/>
+      <stop offset=".9" stop-color="#e2d9d1" stop-opacity=".21"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-11" cx="162.13" cy="16" fx="162.13" fy="16" r="4" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset=".5" stop-color="#a67c52"/>
+      <stop offset=".67" stop-color="#a47d55"/>
+      <stop offset=".83" stop-color="#a08060"/>
+      <stop offset=".99" stop-color="#998573"/>
+      <stop offset="1" stop-color="#998675"/>
+    </radialGradient>
+    <clipPath id="clippath-2">
+      <circle id="brown-overlay-mask" cx="162.13" cy="16" r="6" fill="none"/>
+    </clipPath>
+    <radialGradient id="radial-gradient-12" cx="156.46" cy="21.08" fx="156.46" fy="21.08" r="10.11" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#42210b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-13" cx="168.25" cy="15.7" fx="168.25" fy="15.7" r="10.11" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#754c24"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-14" cx="158.61" cy="10.17" fx="158.61" fy="10.17" r="10.11" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#975e00"/>
+      <stop offset="1" stop-color="#ffde6a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-15" cx="137.78" cy="16" fx="137.78" fy="16" r="28.93" gradientTransform="translate(61.59 7.15) scale(.55)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5dd855"/>
+      <stop offset=".15" stop-color="#5fd857" stop-opacity=".98"/>
+      <stop offset=".29" stop-color="#68da60" stop-opacity=".93"/>
+      <stop offset=".42" stop-color="#75de6f" stop-opacity=".85"/>
+      <stop offset=".55" stop-color="#89e283" stop-opacity=".73"/>
+      <stop offset=".68" stop-color="#a2e89e" stop-opacity=".57"/>
+      <stop offset=".8" stop-color="#c1f0be" stop-opacity=".38"/>
+      <stop offset=".92" stop-color="#e5f8e4" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-16" cx="137.78" cy="16" fx="137.78" fy="16" r="4" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset=".45" stop-color="#16af00"/>
+      <stop offset=".58" stop-color="#19b203"/>
+      <stop offset=".7" stop-color="#24bd0d"/>
+      <stop offset=".82" stop-color="#36d01e"/>
+      <stop offset=".93" stop-color="#4fea36"/>
+      <stop offset="1" stop-color="#64ff4a"/>
+    </radialGradient>
+    <clipPath id="clippath-3">
+      <circle id="green-overlay-mask" cx="137.78" cy="16" r="6" fill="none"/>
+    </clipPath>
+    <radialGradient id="radial-gradient-17" cx="132.11" cy="21.08" fx="132.11" fy="21.08" r="10.11" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#004800" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-18" cx="143.89" cy="15.7" fx="143.89" fy="15.7" r="10.11" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#009c00"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-19" cx="134.26" cy="10.17" fx="134.26" fy="10.17" r="10.11" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55ff56"/>
+      <stop offset="1" stop-color="lime" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="blackSash">
+    <g id="black-glow">
+      <circle cx="235.2" cy="16" r="16" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="black-node">
+      <circle cx="235.2" cy="16" r="3.75"/>
+      <path d="M235.2,12.5c1.93,0,3.5,1.57,3.5,3.5s-1.57,3.5-3.5,3.5-3.5-1.57-3.5-3.5,1.57-3.5,3.5-3.5m0-.5c-2.21,0-4,1.79-4,4s1.79,4,4,4,4-1.79,4-4-1.79-4-4-4h0Z" fill="#555"/>
+    </g>
+    <g id="black-overlay">
+      <g clip-path="url(#clippath)">
+        <g id="black-overlay-gradients">
+          <g id="black-overlay-gradC">
+            <circle cx="229.53" cy="21.08" r="10.11" fill="url(#radial-gradient-2)"/>
+          </g>
+          <g id="black-overlay-gradB">
+            <circle cx="241.32" cy="15.7" r="10.11" fill="url(#radial-gradient-3)"/>
+          </g>
+          <g id="black-overlay-gradA">
+            <circle cx="231.68" cy="10.17" r="10.11" fill="url(#radial-gradient-4)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="redSash">
+    <g id="red-glow">
+      <circle cx="210.84" cy="16" r="16" fill="url(#radial-gradient-5)"/>
+    </g>
+    <g id="red-node">
+      <circle cx="210.84" cy="16" r="4" fill="#d00017"/>
+      <path d="M210.84,12.5c1.93,0,3.5,1.57,3.5,3.5s-1.57,3.5-3.5,3.5-3.5-1.57-3.5-3.5,1.57-3.5,3.5-3.5m0-.5c-2.21,0-4,1.79-4,4s1.79,4,4,4,4-1.79,4-4-1.79-4-4-4h0Z" fill="url(#radial-gradient-6)"/>
+    </g>
+    <g id="red-overlay">
+      <g clip-path="url(#clippath-1)">
+        <g id="red-overlay-gradients">
+          <g id="red-overlay-gradC">
+            <circle cx="205.17" cy="21.08" r="10.11" fill="url(#radial-gradient-7)"/>
+          </g>
+          <g id="red-overlay-gradB">
+            <circle cx="216.96" cy="15.7" r="10.11" fill="url(#radial-gradient-8)"/>
+          </g>
+          <g id="red-overlay-gradA">
+            <circle cx="206.84" cy="12.95" r="10.11" fill="url(#radial-gradient-9)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="brownSash">
+    <g id="brown-glow">
+      <circle cx="162.13" cy="16" r="16" fill="url(#radial-gradient-10)"/>
+    </g>
+    <g id="brown-node">
+      <circle cx="162.13" cy="16" r="4" fill="#845c21"/>
+      <path d="M162.13,12.5c1.93,0,3.5,1.57,3.5,3.5s-1.57,3.5-3.5,3.5-3.5-1.57-3.5-3.5,1.57-3.5,3.5-3.5m0-.5c-2.21,0-4,1.79-4,4s1.79,4,4,4,4-1.79,4-4-1.79-4-4-4h0Z" fill="url(#radial-gradient-11)"/>
+    </g>
+    <g id="brown-overlay">
+      <g clip-path="url(#clippath-2)">
+        <g id="brown-overlay-gradients">
+          <g id="brown-overlay-gradC">
+            <circle cx="156.46" cy="21.08" r="10.11" fill="url(#radial-gradient-12)"/>
+          </g>
+          <g id="brown-overlay-gradB">
+            <circle cx="168.25" cy="15.7" r="10.11" fill="url(#radial-gradient-13)"/>
+          </g>
+          <g id="brown-overlay-gradA">
+            <circle cx="158.61" cy="10.17" r="10.11" fill="url(#radial-gradient-14)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="greenSash">
+    <g id="green-glow">
+      <circle cx="137.78" cy="16" r="16" fill="url(#radial-gradient-15)"/>
+    </g>
+    <g id="green-node">
+      <circle cx="137.78" cy="16" r="4" fill="#00cc0a"/>
+      <path d="M137.78,12.5c1.93,0,3.5,1.57,3.5,3.5s-1.57,3.5-3.5,3.5-3.5-1.57-3.5-3.5,1.57-3.5,3.5-3.5m0-.5c-2.21,0-4,1.79-4,4s1.79,4,4,4,4-1.79,4-4-1.79-4-4-4h0Z" fill="url(#radial-gradient-16)"/>
+    </g>
+    <g id="green-overlay">
+      <g clip-path="url(#clippath-3)">
+        <g id="green-overlay-gradients">
+          <g id="green-overlay-gradC">
+            <circle cx="132.11" cy="21.08" r="10.11" fill="url(#radial-gradient-17)"/>
+          </g>
+          <g id="green-overlay-gradB">
+            <circle cx="143.89" cy="15.7" r="10.11" fill="url(#radial-gradient-18)"/>
+          </g>
+          <g id="green-overlay-gradA">
+            <circle cx="134.26" cy="10.17" r="10.11" fill="url(#radial-gradient-19)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
