@@ -51,13 +51,13 @@ export default function whiteRankContent()
             new Technique(t.step2)
         ],
         challenges: [
-            new Challenge({}, 'tally', '108 Roads', 'Learn the complete set and rehearse it 108 times.', 108, 'white1'),
-            new Challenge({}, 'speed', 'Monk Stokes the Forge', 'Speed Drill: Perform 100 repetitions of Tiu Tong Cheui, Jyun Cheui in 2 minutes or less.', 3, 'white2'),
-            new Challenge({}, 'tally', 'Heart Stealing', 'Advance into Tau Sam Cheui in a low Ma Bou.  Advance again on the other side.  Repeat 108 times.', 108, 'white3'),
-            new Challenge({}, 'tally', 'Build the Foundation', 'Pivot between Ma Bou and Dang Saan Bou, holding each stance for 3 seconds.', 180, 'white4'),
-            new Challenge({}, 'tally', 'Cross-Shaped Kick', 'Perform Sap Ji Teui once on each side for 180 reps', 180, 'white5'),
-            new Challenge({}, 'tally', 'Wiping the Pull', 'Partner Drill: Perform a wiping defense as your opponent grabs to pull the arm.', 108, 'white6'),
-            new Challenge({}, 'tally', 'Heart Stealing II', 'Partner Drill: Advance into Tau Sam Cheui in a low Ma Bou while your opponent defends and retreats.  Advance again on the other side.', 108, 'white7'),
+            new Challenge(ch.tech1a),
+            new Challenge(ch.tech1b),
+            new Challenge(ch.tech1c),
+            new Challenge(ch.tech1d),
+            new Challenge(ch.tech1e),
+            new Challenge(ch.tech1f),
+            new Challenge(ch.tech1g),
         ],
         rewards: [
             new PathCard(gen.advancementInvitation),
@@ -84,11 +84,13 @@ export default function whiteRankContent()
             new Technique(t.step5)
         ],
         challenges: [
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
+            new Challenge(ch.tech2a),
+            new Challenge(ch.tech2b),
+            new Challenge(ch.tech2c),
+            new Challenge(ch.tech2d),
+            new Challenge(ch.tech2e),
+            new Challenge(ch.tech2f),
+            new Challenge(ch.tech2g),
         ],
         rewards: [
             new PathCard(gen.advancementInvitation),
