@@ -17,7 +17,7 @@ export default class Challenge
         challenge.image = document.createElement('div')
         challenge.image.innerHTML = challengeNode
 
-        challenge.repetitions = obj.repetitions;
+        challenge.totalRepetitions = obj.repetitions;
 
         // A function to get all element IDs and re-assign them unique IDs.  This allows the same SVG to be used as input and then manipulated on a per challenge basis.
         function createUniqueElementIDs()
@@ -38,8 +38,6 @@ export default class Challenge
             for(let i=0; i < clipPaths.length; i++)
             {
                 clipPathGroups[i].style.clipPath = 'url(#' + clipPaths[i].id + ')'
-                // console.log(clipPaths[i].id)
-                // console.log(clipPathGroups[i].style.clipPath)
             }
         }
         createUniqueElementIDs()
@@ -63,10 +61,17 @@ export default class Challenge
         challenge.image.classList.add('challenge-image')
 
 
+        challenge.test = document.createElement('div')
         challenge.counter = document.createElement('span')
-        challenge.counter.value = 0
-        challenge.counter.innerText = challenge.counter.value + ' / ' + challenge.repetitions
-        challenge.counter.classList.add('challenge-counter')
+        challenge.total = document.createElement('span')
+        challenge.counter.currentRepetitions = 0
+        challenge.counter.innerText = challenge.counter.currentRepetitions
+        challenge.total.innerText = ' / ' + challenge.totalRepetitions
+        challenge.counter.contentEditable = 'true'
+
+        challenge.test.append(challenge.counter, challenge.total)
+        challenge.test.classList.add('challenge-counter')
+        // challenge.counter.classList.add('challenge-counter')
 
         challenge.name = document.createElement('h3')
         challenge.name.innerText = obj.name
@@ -79,23 +84,17 @@ export default class Challenge
 
         challenge.append(challenge.image)
         challenge.append(challenge.name)
-        challenge.append(challenge.counter)
+        challenge.append(challenge.test)
         challenge.append(challenge.description)
 
-        challenge.addEventListener('click', this.incrementDial)
+        challenge.image.addEventListener('click', this.incrementDial)
 
         return challenge;
     }
 
-
-    createUniqueElementIDs()
-    {
-        console.log(this.image)
-    }
-
     incrementDial()
     {
-
+        console.log(this.parentNode)
         function getPath(cx, cy, r, a1, a2)
         {
             const RAD  = Math.PI / 180;
@@ -121,16 +120,17 @@ export default class Challenge
             return "M " + x1 + " " + y1 + " A " + r + " " + r + " 0 " + largeArc + " 0 " + x2 + " " + y2 + " L " + cx + " " + cy + "z";
         }
 
+        const challenge = this.parentNode;
 
-        if(this.counter.value < this.repetitions)
+        if(challenge.counter.currentRepetitions < challenge.totalRepetitions)
         {
-            this.counter.value += 1
-            this.image.clipPath[0].path[0].arc.end += 360 / this.repetitions;
+            challenge.counter.currentRepetitions += 1
+            challenge.image.clipPath[0].path[0].arc.end += 360 / challenge.totalRepetitions;
         }
-        this.counter.innerText = this.counter.value + ' / ' + this.repetitions
+        challenge.counter.innerText = challenge.counter.currentRepetitions
 
-        this.image.clipPath[0].path[0].setAttribute("d", getPath(
-            this.image.clipPath[0].path[0].arc.cx, this.image.clipPath[0].path[0].arc.cy, this.image.clipPath[0].path[0].arc.r, this.image.clipPath[0].path[0].arc.start, this.image.clipPath[0].path[0].arc.end
+        challenge.image.clipPath[0].path[0].setAttribute("d", getPath(
+            challenge.image.clipPath[0].path[0].arc.cx, challenge.image.clipPath[0].path[0].arc.cy, challenge.image.clipPath[0].path[0].arc.r, challenge.image.clipPath[0].path[0].arc.start, challenge.image.clipPath[0].path[0].arc.end
         ))
 
     }
