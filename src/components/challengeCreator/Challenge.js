@@ -46,12 +46,16 @@ export default class Challenge
 
         this.challenge.counterContainer = document.createElement('form')
 
+        // Input field and default value
         this.challenge.counterInput = document.createElement('input')
-        this.challenge.counterSubmit = document.createElement('submit')
         this.challenge.counterInput.type = 'number'
         this.challenge.counterInput.max = this.challenge.totalRepetitions
         this.challenge.counterInput.value = 0
 
+        // Submit for enter key submission and accessibility
+        this.challenge.counterSubmit = document.createElement('submit')
+
+        // Display the current value
         this.challenge.counterCurrent = document.createElement('span')
         this.challenge.counterCurrent.innerText = this.challenge.counterInput.value
 
@@ -205,11 +209,9 @@ export default class Challenge
             }
     
             const challenge = this.parentNode;
-   
-            if(challenge.counterInput.value < challenge.totalRepetitions)
-            {
-                challenge.image.clipPath[0].path[0].arc.end = challenge.counterInput.value * (360 / challenge.totalRepetitions);
-            }
+            
+            challenge.image.clipPath[0].path[0].arc.end = challenge.counterInput.value * (360 / challenge.totalRepetitions);
+
             challenge.counterCurrent.innerText = challenge.counterInput.value
     
             challenge.image.clipPath[0].path[0].setAttribute("d", getPath(
@@ -223,6 +225,7 @@ export default class Challenge
 
     incrementDial()
     {
+
         function getPath(cx, cy, r, a1, a2)
         {
             const RAD  = Math.PI / 180;

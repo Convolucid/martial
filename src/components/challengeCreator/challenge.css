@@ -4,6 +4,7 @@
     align-items: center;
     max-width: 28rem;
     padding-top: 0.5rem;
+    user-select: none;
 }
 
 .challenge-image {
@@ -23,6 +24,7 @@
     text-transform: uppercase;
     padding-left: 1rem;
     padding-right: 1rem;
+
 }
 
 .challenge-description {
