@@ -1,5 +1,3 @@
-import tallyImage from './challenge-icon.png'
-
 export default function whiteChallenges()
 {
     const ch = {}
