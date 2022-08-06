@@ -4,7 +4,7 @@ export default function whiteChallenges()
 
     ch.tech1a = {
         name: '108 Roads',
-        desc: 'Learn the complete set and rehearse it 108 times.  Mark progress each time you complete 18 reps.',
+        desc: 'Learn the complete set and rehearse it 108 times.',
         repetitions: 108,
         uniqueID: 'r1t1a'
     }

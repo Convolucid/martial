@@ -134,6 +134,14 @@ export default class Challenge
         {
             clipPathGroups[i].style.clipPath = 'url(#' + clipPaths[i].id + ')'
         }
+
+        // Get pairs of clipPaths and clipped elements, then set the clip-path url to the new clipPath ID.
+        const gradients = this.challenge.image.getElementsByTagName('radialGradient')
+        const gradientPaths = this.challenge.image.querySelectorAll(`[fill^=url]`)
+        for(let i=0; i < gradients.length; i++)
+        {
+            gradientPaths[i].style.fill= 'url(#' + gradients[i].id + ')'
+        }
     }
 
     blurInput()
