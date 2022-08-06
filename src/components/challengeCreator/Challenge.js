@@ -39,6 +39,7 @@ export default class Challenge
             r: 13.83
         };
 
+        // this.animateDial(0)
 
         // Append elements to the challenge container and assign styles
         this.challenge.image.classList.add('challenge-image')
@@ -70,11 +71,7 @@ export default class Challenge
             this.challenge.counterInput.focus()
         })
 
-        this.challenge.counterInput.addEventListener('blur', ()=>{
-            this.challenge.counterInput.replaceWith(this.challenge.counterCurrent)
-            this.challenge.counterCurrent.innerText = this.challenge.counterInput.value
-        }
-        )
+        this.challenge.counterInput.addEventListener('blur', this.blurInput)
 
         this.challenge.counterContainer.addEventListener('submit', this.submitValue)
         //     event.preventDefault()
@@ -108,6 +105,16 @@ export default class Challenge
         return this.challenge;
     }
 
+    // animateDial(endArc)
+    // {
+    //     const dial = this.challenge.image.clipPath[0].path[0].arc
+
+    //     gsap.to(dial, {
+    //         end: endArc
+    //     })
+    //     console.log(dial)
+    // }
+
     createUniqueElementIDs(obj)
     {
         // Get all elements with an ID
@@ -129,48 +136,52 @@ export default class Challenge
         }
     }
 
-    moveDial()
+    blurInput()
     {
-        function getPath(cx, cy, r, a1, a2)
+        const moveDial = () =>
         {
-            const RAD  = Math.PI / 180;
-            const PI_2 = Math.PI / 2;
-            const delta = a2-a1;
-    
-            if (delta >= 360)
+            function getPath(cx, cy, r, a1, a2)
             {
-                return "M " + (cx - r) + " " + cy + " a " + r + " " + r + " 0 1 0 " + r * 2 + " 0 a " + r + " " + r + " 0 1 0 " + -r * 2 + " 0z"; 
+                const RAD  = Math.PI / 180;
+                const PI_2 = Math.PI / 2;
+                const delta = a2-a1;
+        
+                if (delta >= 360)
+                {
+                    return "M " + (cx - r) + " " + cy + " a " + r + " " + r + " 0 1 0 " + r * 2 + " 0 a " + r + " " + r + " 0 1 0 " + -r * 2 + " 0z"; 
+                }
+                
+                const largeArc = delta > 180 ? 1 : 0;
+    
+                a1 = a1 * RAD - PI_2;
+                a2 = a2 * RAD - PI_2;
+    
+                const x1 = cx + r * Math.cos(a2);
+                const y1 = cy + r * Math.sin(a2);
+    
+                const x2 = cx + r * Math.cos(a1);
+                const y2 = cy + r * Math.sin(a1);
+    
+                return "M " + x1 + " " + y1 + " A " + r + " " + r + " 0 " + largeArc + " 0 " + x2 + " " + y2 + " L " + cx + " " + cy + "z";
             }
+    
+            const challenge = this.parentNode.parentNode;
+
+            challenge.counterInput.replaceWith(challenge.counterCurrent)
+            challenge.counterCurrent.innerText = challenge.counterInput.value
             
-            const largeArc = delta > 180 ? 1 : 0;
+            challenge.image.clipPath[0].path[0].arc.end = challenge.counterInput.value * (360 / challenge.totalRepetitions);
 
-            a1 = a1 * RAD - PI_2;
-            a2 = a2 * RAD - PI_2;
+            challenge.counterCurrent.innerText = challenge.counterInput.value
+            
 
-            const x1 = cx + r * Math.cos(a2);
-            const y1 = cy + r * Math.sin(a2);
-
-            const x2 = cx + r * Math.cos(a1);
-            const y2 = cy + r * Math.sin(a1);
-
-            return "M " + x1 + " " + y1 + " A " + r + " " + r + " 0 " + largeArc + " 0 " + x2 + " " + y2 + " L " + cx + " " + cy + "z";
+    
+            challenge.image.clipPath[0].path[0].setAttribute("d", getPath(
+                challenge.image.clipPath[0].path[0].arc.cx, challenge.image.clipPath[0].path[0].arc.cy, challenge.image.clipPath[0].path[0].arc.r, challenge.image.clipPath[0].path[0].arc.start, challenge.image.clipPath[0].path[0].arc.end
+            ))
         }
-
-        const challenge = this.parentNode;
-
-        console.log(challenge)
-
-
-        this.challenge.image.clipPath[0].path[0].arc.end = this.challenge.counterInput.value * (360 / this.challenge.totalRepetitions);
-
-        // this.challenge.counterCurrent.innerText = this.challenge.counterInput.value
-
-        this.challenge.image.clipPath[0].path[0].setAttribute("d", getPath(
-            this.challenge.image.clipPath[0].path[0].arc.cx, this.challenge.image.clipPath[0].path[0].arc.cy, this.challenge.image.clipPath[0].path[0].arc.r, this.challenge.image.clipPath[0].path[0].arc.start, this.challenge.image.clipPath[0].path[0].arc.end
-        ))
-
+        moveDial()
     }
-
 
     submitValue(event)
     {
@@ -213,6 +224,8 @@ export default class Challenge
             challenge.image.clipPath[0].path[0].arc.end = challenge.counterInput.value * (360 / challenge.totalRepetitions);
 
             challenge.counterCurrent.innerText = challenge.counterInput.value
+            
+
     
             challenge.image.clipPath[0].path[0].setAttribute("d", getPath(
                 challenge.image.clipPath[0].path[0].arc.cx, challenge.image.clipPath[0].path[0].arc.cy, challenge.image.clipPath[0].path[0].arc.r, challenge.image.clipPath[0].path[0].arc.start, challenge.image.clipPath[0].path[0].arc.end
