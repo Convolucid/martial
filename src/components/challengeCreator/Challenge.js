@@ -37,7 +37,9 @@ export default class Challenge
     buildChallengeImage(obj)
     {
         this.challenge.image = document.createElement('div')
-        this.challenge.image.innerHTML = challengeNode
+
+
+        this.challenge.image.innerHTML = obj.img
 
         // A function to get all element IDs and re-assign them unique IDs.  This allows the same SVG to be used as input and then manipulated on a per challenge basis.
         const createUniqueElementIDs = (obj) =>
@@ -100,7 +102,7 @@ export default class Challenge
         this.challenge.counterInput = document.createElement('input')
         this.challenge.counterInput.type = 'number'
         this.challenge.counterInput.value = 0
-        this.challenge.counterInput.max = obj.repetitions
+        this.challenge.counterInput.maxReps = obj.repetitions
 
         // Display the current value and max value
         this.challenge.counterCurrent = document.createElement('span')
@@ -170,7 +172,7 @@ export default class Challenge
         const startingPoint = getPath(clipPath.arc.cx, clipPath.arc.cy, clipPath.arc.r, clipPath.arc.start, clipPath.arc.end)
         clipPath.setAttribute("d", startingPoint)
 
-        clipPath.arc.end = challenge.counterInput.value * (360 / challenge.counterInput.max);
+        clipPath.arc.end = challenge.counterInput.value * (360 / challenge.counterInput.maxReps);
         const stoppingPoint = getPath(clipPath.arc.cx, clipPath.arc.cy, clipPath.arc.r, clipPath.arc.start, clipPath.arc.end)
         clipPath.setAttribute("d", stoppingPoint)
 
@@ -185,15 +187,12 @@ export default class Challenge
     {
         const challenge = this.challenge;
 
-        if(challenge.counterInput.value < challenge.counterInput.max)
+        if(challenge.counterInput.value < challenge.counterInput.maxReps)
         {
             challenge.counterInput.value++
-            challenge.image.clipPath[0].path[0].arc.end += 360 / challenge.counterInput.max;
         }
-        challenge.counterCurrent.innerText = challenge.counterInput.value
 
         this.moveDial()
-
     }
 
     // When event is submitted, stop page refresh, change displayed value then blur away from input and move the dial.
@@ -201,10 +200,7 @@ export default class Challenge
     {
         event.preventDefault()
         const challenge = this.challenge
-        challenge.counterCurrent.innerText = challenge.counterInput.value
-
         challenge.counterInput.blur()
     }
-
 
 }

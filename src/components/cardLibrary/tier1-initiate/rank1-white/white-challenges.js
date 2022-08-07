@@ -1,3 +1,5 @@
+import challengeNode from './challenge-node.svg?raw'
+
 export default function whiteChallenges()
 {
     const ch = {}
@@ -98,6 +100,10 @@ export default function whiteChallenges()
         desc: "Partner Drill - Practice trapping your opponent's arm with one hand as you Bang Cheui with the other.  Experiment with different techniques to start the drill, but always finish with Bang Cheui.",
         repetitions: 200,
         uniqueID: 'r1t2g'
+    }
+
+    for (const challenge of Object.values(ch)) {
+        challenge.img = challengeNode
     }
 
     return ch;

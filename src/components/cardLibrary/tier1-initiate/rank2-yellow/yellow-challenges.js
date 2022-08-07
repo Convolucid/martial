@@ -1,4 +1,4 @@
-import tallyImage from './challenge-icon.png'
+import challengeNode from './challenge-node.svg?raw'
 
 export default function yellowChallenges()
 {
@@ -51,6 +51,10 @@ export default function yellowChallenges()
         desc: 'Partner Drill: Advance into Tau Sam Cheui in a low Ma Bou while your opponent defends and retreats.  Advance again on the other side.',
         repetitions: 108,
         uniqueID: 'yellow7'
+    }
+
+    for (const challenge of Object.values(ch)) {
+        challenge.img = challengeNode
     }
 
     return ch;

@@ -31,7 +31,6 @@ export default function goldRankContent()
     const ch = goldChallenges()
     const gen = generalCurrency()
 
-
     const container = document.createElement('div')
     container.insertAdjacentHTML('beforeend', goldContent)
 
@@ -60,10 +59,7 @@ export default function goldRankContent()
         ],
         challenges: [
             new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
+
         ],
         rewards: [
             new PathCard(gen.advancementInvitation),
@@ -90,11 +86,8 @@ export default function goldRankContent()
             new Technique(t.step2)
         ],
         challenges: [
-                new Challenge(ch.a),
-                new Challenge(ch.a),
-                new Challenge(ch.a),
-                new Challenge(ch.a),
-            new Challenge(ch.a),
+                new Challenge(ch.b),
+
         ],
         rewards: [
             new PathCard(gen.advancementInvitation),

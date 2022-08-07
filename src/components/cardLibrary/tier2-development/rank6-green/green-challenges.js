@@ -1,4 +1,4 @@
-import tallyImage from './challenge-icon.png'
+import challengeNode from './challenge-node.svg?raw'
 
 export default function greenChallenges()
 {
@@ -52,6 +52,11 @@ export default function greenChallenges()
         repetitions: 108,
         uniqueID: 'green7'
     }
+
+    for (const challenge of Object.values(ch)) {
+        challenge.img = challengeNode
+    }
+
 
     return ch;
 }
