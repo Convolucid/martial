@@ -12,8 +12,6 @@ export default class Challenge
         this.challenge = document.createElement('figure')
         this.challenge.classList.add('challenge-container')
 
-        this.challenge.totalRepetitions = obj.repetitions;
-
         // Build image and counter elements and add all event listeners for functionality
         this.buildChallengeImage(obj)
         this.buildChallengeCounter(obj)
@@ -141,7 +139,7 @@ export default class Challenge
         {
             const RAD  = Math.PI / 180;
             const PI_2 = Math.PI / 2;
-            const delta = a2-a1;
+            const delta = a2 - a1;
     
             if (delta >= 360)
             {
@@ -166,15 +164,20 @@ export default class Challenge
 
         challenge.counterInput.replaceWith(challenge.counterCurrent)
         challenge.counterCurrent.innerText = challenge.counterInput.value
-        
-        challenge.image.clipPath[0].path[0].arc.end = challenge.counterInput.value * (360 / challenge.totalRepetitions);
 
-        challenge.counterCurrent.innerText = challenge.counterInput.value
-        
-        challenge.image.clipPath[0].path[0].setAttribute("d", getPath(
-            challenge.image.clipPath[0].path[0].arc.cx, challenge.image.clipPath[0].path[0].arc.cy, challenge.image.clipPath[0].path[0].arc.r, challenge.image.clipPath[0].path[0].arc.start, challenge.image.clipPath[0].path[0].arc.end
-        ))
+        // Getting clipping path arc attributes and set the new end value by degrees on circle
+        const clipPath = challenge.image.clipPath[0].path[0]
+        const startingPoint = getPath(clipPath.arc.cx, clipPath.arc.cy, clipPath.arc.r, clipPath.arc.start, clipPath.arc.end)
+        clipPath.setAttribute("d", startingPoint)
 
+        clipPath.arc.end = challenge.counterInput.value * (360 / challenge.counterInput.max);
+        const stoppingPoint = getPath(clipPath.arc.cx, clipPath.arc.cy, clipPath.arc.r, clipPath.arc.start, clipPath.arc.end)
+        clipPath.setAttribute("d", stoppingPoint)
+
+        // gsap.to(clipPath, {
+        //     duration: 1,
+        //     attr: { d: stoppingPoint }
+        // })
     }
 
     // When dial image is clicked, increment the current value by 1 and move the dial.
@@ -182,10 +185,10 @@ export default class Challenge
     {
         const challenge = this.challenge;
 
-        if(challenge.counterInput.value < challenge.totalRepetitions)
+        if(challenge.counterInput.value < challenge.counterInput.max)
         {
             challenge.counterInput.value++
-            challenge.image.clipPath[0].path[0].arc.end += 360 / challenge.totalRepetitions;
+            challenge.image.clipPath[0].path[0].arc.end += 360 / challenge.counterInput.max;
         }
         challenge.counterCurrent.innerText = challenge.counterInput.value
 
