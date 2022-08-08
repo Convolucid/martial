@@ -85,7 +85,15 @@ export default class Card
 
                 for(let i=0; i < cardContent.challenges.length; i++)
                 {
-                    challengesGrid.append(cardContent.challenges[i].challenge)
+                    if(cardContent.challenges[i].challenge)
+                    {
+                        challengesGrid.append(cardContent.challenges[i].challenge)
+                    }
+                    else
+                    {
+                        challengesGrid.append(cardContent.challenges[i])
+                    }
+
 
                 }
 
