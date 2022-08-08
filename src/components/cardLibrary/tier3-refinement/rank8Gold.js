@@ -58,7 +58,7 @@ export default function goldRankContent()
             new Technique(t.step2)
         ],
         challenges: [
-            new Challenge(ch.a),
+            new Challenge(ch.tech1a),
 
         ],
         rewards: [
@@ -86,7 +86,7 @@ export default function goldRankContent()
             new Technique(t.step2)
         ],
         challenges: [
-                new Challenge(ch.b),
+            new Challenge(ch.tech2a),
 
         ],
         rewards: [

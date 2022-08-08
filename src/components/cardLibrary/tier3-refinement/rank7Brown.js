@@ -53,11 +53,7 @@ export default function brownRankContent()
             new Technique(t.fist11) 
         ],
         challenges: [
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
+            new Challenge(ch.tech1a),
         ],
         rewards: [
             new PathCard(gen.advancementInvitation),
@@ -86,11 +82,7 @@ export default function brownRankContent()
             new Technique(t.pole11)
         ],
         challenges: [
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
+            new Challenge(ch.tech2a),
         ],
         rewards: [
             new PathCard(gen.advancementInvitation),

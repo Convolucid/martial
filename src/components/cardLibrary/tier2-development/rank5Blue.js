@@ -58,11 +58,7 @@ export default function purpleRankContent()
             new Technique(t.glk11)
         ],
         challenges: [
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
+            new Challenge(ch.tech1a),
         ],
         rewards: [
             new PathCard(gen.advancementInvitation),
@@ -99,11 +95,7 @@ export default function purpleRankContent()
             new Technique(t.step21)
         ],
         challenges: [
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
+            new Challenge(ch.tech2a),
         ],
         rewards: [
             new PathCard(gen.advancementInvitation),

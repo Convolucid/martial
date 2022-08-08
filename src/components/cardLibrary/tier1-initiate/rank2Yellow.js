@@ -50,11 +50,7 @@ export default function yellowRankContent()
             new Technique(t.step6)
         ],
         challenges: [
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
+            new Challenge(ch.tech1a),
         ],
         rewards: [
             new PathCard(t0.advancementInvitation),
@@ -79,11 +75,7 @@ export default function yellowRankContent()
             new Technique(t.step7)
         ],
         challenges: [
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
+            new Challenge(ch.tech2a),
         ],
         rewards: [
             new PathCard(t0.advancementInvitation),

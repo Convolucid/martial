@@ -55,11 +55,7 @@ export default function orangeRankContent()
             new Technique(t.comp2)
         ],
         challenges: [
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
+            new Challenge(ch.tech1a),
         ],
         rewards: [
             new PathCard(t0.advancementInvitation),
@@ -88,11 +84,7 @@ export default function orangeRankContent()
             new Technique(t.comp2)
         ],
         challenges: [
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
+            new Challenge(ch.tech2a),
         ],
         rewards: [
             new PathCard(t0.advancementInvitation),

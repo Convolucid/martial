@@ -55,11 +55,8 @@ export default function greenRankContent()
             new Technique(t.comp4)
         ],
         challenges: [
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
-            new Challenge(ch.a),
+            new Challenge(ch.tech1a),
+
         ],
         rewards: [
             new PathCard(gen.advancementInvitation),
