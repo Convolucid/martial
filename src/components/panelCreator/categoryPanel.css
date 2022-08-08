@@ -1,0 +1,92 @@
+.category-panel {
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    padding: 2rem;
+}
+
+.category-subject-display {
+    padding-left: 10vw;
+    padding-right: 3vw;
+}
+
+.category-subject-overlay {
+    position: absolute;
+    max-width: 6vw;
+    left: 8%;
+}
+
+.category-collection-display {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 10rem));
+
+    padding: 0 2%;
+
+    transition: 0.5s;
+}
+
+.category-details-display {
+    display: grid;
+
+    padding: 1% 2%;
+
+    transition: 0.5s;
+    font-family: var(--sansSerif);
+}
+
+.category-details-display h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.25rem;
+    font-size: 1.25rem;
+    width: 100%;
+    /* border-top: 1px solid; */
+}
+
+
+
+
+
+@media(max-width: 768px) {
+
+    .category-panel {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        
+        /* justify-items: center; */
+    
+        padding: 0.75rem;
+    }
+
+    .category-subject-display {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        max-width: 45vw;
+        margin: 0 auto;
+    }
+    
+    .category-subject-overlay {
+        position: absolute;
+        max-width: 20vw;
+        left: 18%;
+
+    }
+
+    .category-details-display {
+        justify-content: center;
+    }
+
+    .card-techniques, .card-challenges {
+        justify-content: space-between;
+    }
+
+}
+
+
+
+
+.rank-requirements-hidden {
+    display: none;
+}

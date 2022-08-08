@@ -1,3 +1,5 @@
+import './pathCard.css'
+
 export default class Card
 {
     constructor(cardContent, cardImage, cardTitle, cardSubtitle)
