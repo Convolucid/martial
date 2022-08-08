@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="uuid-e0a48fd1-a61e-469e-8150-853311bcbac9" data-name="blackSash" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 27.67 27.67">
+<svg id="uuid-7e7f7e90-1621-4fab-a42b-16468aa9d5b7" data-name="goldChallenge" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 27.67 27.67">
   <defs>
-    <radialGradient id="uuid-b7b706eb-d885-4d19-86da-b86c589d57a3" cx="13.83" cy="13.83" fx="13.83" fy="13.83" r="13.58" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
-      <stop offset=".54" stop-color="#f9f9f9"/>
-      <stop offset=".59" stop-color="#b3b3b3"/>
-      <stop offset="1" stop-color="#f2f2f2" stop-opacity="0"/>
+    <radialGradient id="uuid-3900a9c5-58e4-4a7b-be30-479b336cbcc8" cx="13.83" cy="13.83" fx="13.83" fy="13.83" r="13.58" gradientUnits="userSpaceOnUse">
+      <stop offset=".54" stop-color="#f2be55"/>
+      <stop offset=".59" stop-color="#ffefbf"/>
+      <stop offset="1" stop-color="#f2be55" stop-opacity="0"/>
     </radialGradient>
-    <clipPath id="uuid-9d2157a6-6244-4038-9fbb-d11e692a3ca2">
+    <clipPath id="uuid-acf41c35-0f91-4d8c-b9dd-759c588a9b62">
       <path d="M13.83,13.83c0-.66,.71-1.33,1.42-1.33" fill="none"/>
     </clipPath>
-    <radialGradient id="uuid-13709c5b-49d3-4bf6-a8f8-37cbac762bf7" cx="13.83" cy="13.83" fx="13.83" fy="13.83" r="13.58" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
-      <stop offset=".54" stop-color="#fff"/>
-      <stop offset=".59" stop-color="#666"/>
-      <stop offset=".64" stop-color="#6e6e6e"/>
-      <stop offset=".72" stop-color="#868686"/>
-      <stop offset=".82" stop-color="#acacac"/>
-      <stop offset=".94" stop-color="#e1e1e1"/>
-      <stop offset="1" stop-color="#fff"/>
+    <radialGradient id="uuid-6b682e77-8f2a-453e-95da-ff5856d3e7a0" cx="13.83" cy="13.83" fx="13.83" fy="13.83" r="13.58" gradientUnits="userSpaceOnUse">
+      <stop offset=".54" stop-color="#f2be55"/>
+      <stop offset=".59" stop-color="#c95700"/>
+      <stop offset=".63" stop-color="#ce650c"/>
+      <stop offset=".74" stop-color="#de8b2b"/>
+      <stop offset=".84" stop-color="#e9a742"/>
+      <stop offset=".93" stop-color="#efb850"/>
+      <stop offset="1" stop-color="#f2be55"/>
     </radialGradient>
   </defs>
-  <g id="uuid-39a68576-c22b-4cfd-8df5-fbd8b28c4b85" data-name="filled-region">
-    <path d="M13.83,27.42C6.34,27.42,.25,21.32,.25,13.83S6.34,.25,13.83,.25s13.58,6.09,13.58,13.58-6.09,13.58-13.58,13.58Z" fill="url(#uuid-b7b706eb-d885-4d19-86da-b86c589d57a3)"/>
-    <path d="M13.83,.5c7.35,0,13.33,5.98,13.33,13.33s-5.98,13.33-13.33,13.33S.5,21.19,.5,13.83,6.48,.5,13.83,.5m0-.5C6.19,0,0,6.19,0,13.83s6.19,13.83,13.83,13.83,13.83-6.19,13.83-13.83S21.47,0,13.83,0h0Z" fill="#f2f2f2"/>
+  <g id="uuid-d2ff29bd-610a-452f-bf39-bfbd44d7b9de" data-name="filled-region">
+    <path d="M13.83,27.42C6.34,27.42,.25,21.32,.25,13.83S6.34,.25,13.83,.25s13.58,6.09,13.58,13.58-6.09,13.58-13.58,13.58Z" fill="url(#uuid-3900a9c5-58e4-4a7b-be30-479b336cbcc8)"/>
+    <path d="M13.83,.5c7.35,0,13.33,5.98,13.33,13.33s-5.98,13.33-13.33,13.33S.5,21.19,.5,13.83,6.48,.5,13.83,.5m0-.5C6.19,0,0,6.19,0,13.83s6.19,13.83,13.83,13.83,13.83-6.19,13.83-13.83S21.47,0,13.83,0h0Z" fill="#ffe6ac"/>
   </g>
-  <g clip-path="url(#uuid-9d2157a6-6244-4038-9fbb-d11e692a3ca2)">
-    <g id="uuid-1b1cf3ff-2a97-46b3-8935-2681727c196d" data-name="filled-region">
-      <path d="M13.83,27.42C6.34,27.42,.25,21.32,.25,13.83S6.34,.25,13.83,.25s13.58,6.09,13.58,13.58-6.09,13.58-13.58,13.58Z" fill="url(#uuid-13709c5b-49d3-4bf6-a8f8-37cbac762bf7)"/>
+  <g clip-path="url(#uuid-acf41c35-0f91-4d8c-b9dd-759c588a9b62)">
+    <g id="uuid-8e719eb3-be62-4359-aab5-2aadecb69bbc" data-name="filled-region">
+      <path d="M13.83,27.42C6.34,27.42,.25,21.32,.25,13.83S6.34,.25,13.83,.25s13.58,6.09,13.58,13.58-6.09,13.58-13.58,13.58Z" fill="url(#uuid-6b682e77-8f2a-453e-95da-ff5856d3e7a0)"/>
       <path d="M13.83,.5c7.35,0,13.33,5.98,13.33,13.33s-5.98,13.33-13.33,13.33S.5,21.19,.5,13.83,6.48,.5,13.83,.5m0-.5C6.19,0,0,6.19,0,13.83s6.19,13.83,13.83,13.83,13.83-6.19,13.83-13.83S21.47,0,13.83,0h0Z" fill="#3d3d3d"/>
     </g>
   </g>
-  <g id="uuid-698c4e41-2998-4438-9aed-4413dd63b869" data-name="center-node">
-    <circle cx="13.83" cy="13.83" r="6.47" fill="#fff"/>
+  <g id="uuid-bc8f0548-0d37-453d-9ce1-e455423ed948" data-name="center-node">
+    <circle cx="13.83" cy="13.83" r="6.47" fill="#f2be55"/>
     <path d="M13.83,7.61c3.43,0,6.22,2.79,6.22,6.22s-2.79,6.22-6.22,6.22-6.22-2.79-6.22-6.22,2.79-6.22,6.22-6.22m0-.5c-3.71,0-6.72,3.01-6.72,6.72s3.01,6.72,6.72,6.72,6.72-3.01,6.72-6.72-3.01-6.72-6.72-6.72h0Z" fill="#484848"/>
   </g>
 </svg>
