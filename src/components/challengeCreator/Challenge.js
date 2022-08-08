@@ -100,6 +100,7 @@ export default class Challenge
         this.challenge.counterInput = document.createElement('input')
         this.challenge.counterInput.type = 'number'
         this.challenge.counterInput.value = 0
+        this.challenge.counterInput.max = obj.repetitions
         this.challenge.counterInput.maxReps = obj.repetitions
 
         // Display the current value and max value

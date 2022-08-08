@@ -1,6 +1,6 @@
 import {gsap} from 'gsap'
 
-import './rankNodeSelector.css'
+import './nodeSelector.css'
 import svgRankNodeSelector from './sashRanks.svg?raw'
 
 export default function rankNodeSelector(containerElement)

@@ -4,22 +4,22 @@ import buildRankRequirements from './rankRequirements/rankRequirements.js'
 
 // Will add shadered background canvas
 
-export default class RankCurriculum
+export default class TechniqueGlossary
 {
     constructor(containerElement)
     {
         // Container Element for Rank Curriculum UI
-        const rankCurriculum = document.createElement('div')
-        containerElement.appendChild(rankCurriculum)
+        const techniqueGlossary = document.createElement('div')
+        containerElement.appendChild(techniqueGlossary)
 
         // Animated SVG Node Selector for sash ranks
-        const rankNodeSelector = buildRankNodeSelector(rankCurriculum);
+        const rankNodeSelector = buildRankNodeSelector(techniqueGlossary);
 
         // Color themed text bar for Sash Title
-        const rankTitle = buildRankTitle(rankCurriculum);
+        const rankTitle = buildRankTitle(techniqueGlossary);
 
         // Card-based Frames for individual sash ranks
-        const rankRequirements = buildRankRequirements(rankCurriculum);
+        const rankRequirements = buildRankRequirements(techniqueGlossary);
 
 
         // Add EventListeners to all rank nodes
