@@ -11,9 +11,9 @@ import adeptTierCollection from '../cardLibrary/tier4Collection'
 export default function rankRequirements(containerElement)
 {
     // Create HTML element section for rank requirements
-    const rankRequirementsSection = document.createElement('section')
-    rankRequirementsSection.classList.add('rank-requirements-section')
-    containerElement.appendChild(rankRequirementsSection)
+    const requirementsSection = document.createElement('section')
+    requirementsSection.classList.add('rank-requirements-section')
+    containerElement.appendChild(requirementsSection)
 
     // Will need a better grid, built with four sections each, image, title, subtitle, checkbox
 
@@ -23,22 +23,22 @@ export default function rankRequirements(containerElement)
     const refinementTier = refinementTierCollection()
     const adeptTier = adeptTierCollection()
 
-    const whiteRankRequirementsPanel = new CategoryPanel(initiateTier.white, rankRequirementsSection)
-    const yellowRankRequirementsPanel = new CategoryPanel(initiateTier.yellow, rankRequirementsSection)
-    const orangeRankRequirementsPanel = new CategoryPanel(initiateTier.orange, rankRequirementsSection)
+    const whiteRequirementsPanel = new CategoryPanel(initiateTier.white, requirementsSection)
+    const yellowRequirementsPanel = new CategoryPanel(initiateTier.yellow, requirementsSection)
+    const orangeRequirementsPanel = new CategoryPanel(initiateTier.orange, requirementsSection)
 
-    const purpleRankRequirementsPanel = new CategoryPanel(developmentTier.purple, rankRequirementsSection)
-    const blueRankRequirementsPanel = new CategoryPanel(developmentTier.blue, rankRequirementsSection)
-    const greenRankRequirementsPanel = new CategoryPanel(developmentTier.green, rankRequirementsSection)
+    const purpleRequirementsPanel = new CategoryPanel(developmentTier.purple, requirementsSection)
+    const blueRequirementsPanel = new CategoryPanel(developmentTier.blue, requirementsSection)
+    const greenRequirementsPanel = new CategoryPanel(developmentTier.green, requirementsSection)
 
-    const brownRankRequirementsPanel = new CategoryPanel(refinementTier.brown, rankRequirementsSection)
-    const goldRankRequirementsPanel = new CategoryPanel(refinementTier.gold, rankRequirementsSection)
-    const redRankRequirementsPanel = new CategoryPanel(refinementTier.red, rankRequirementsSection)
+    const brownRequirementsPanel = new CategoryPanel(refinementTier.brown, requirementsSection)
+    const goldRequirementsPanel = new CategoryPanel(refinementTier.gold, requirementsSection)
+    const redRequirementsPanel = new CategoryPanel(refinementTier.red, requirementsSection)
 
-    const blackRankRequirementsPanel = new CategoryPanel(adeptTier.black, rankRequirementsSection)
+    const blackRequirementsPanel = new CategoryPanel(adeptTier.black, requirementsSection)
 
-    const rankRequirementsPanelArray = [
-        whiteRankRequirementsPanel, yellowRankRequirementsPanel, orangeRankRequirementsPanel, purpleRankRequirementsPanel, blueRankRequirementsPanel, greenRankRequirementsPanel, brownRankRequirementsPanel, goldRankRequirementsPanel, redRankRequirementsPanel, blackRankRequirementsPanel
+    const requirementsPanelArray = [
+        whiteRequirementsPanel, yellowRequirementsPanel, orangeRequirementsPanel, purpleRequirementsPanel, blueRequirementsPanel, greenRequirementsPanel, brownRequirementsPanel, goldRequirementsPanel, redRequirementsPanel, blackRequirementsPanel
     ]
 
 
@@ -47,15 +47,15 @@ export default function rankRequirements(containerElement)
     {
 
 
-        for(let i=0; i < rankRequirementsPanelArray.length; i++)
+        for(let i=0; i < requirementsPanelArray.length; i++)
         {
-            if(rankRequirementsPanelArray[i] == panel)
+            if(requirementsPanelArray[i] == panel)
             {
-                rankRequirementsPanelArray[i].panel.classList.remove('rank-requirements-hidden')
+                requirementsPanelArray[i].panel.classList.remove('rank-requirements-hidden')
             }
             else
             {
-                rankRequirementsPanelArray[i].panel.classList.add('rank-requirements-hidden')
+                requirementsPanelArray[i].panel.classList.add('rank-requirements-hidden')
             }
         }
     }
@@ -67,32 +67,29 @@ export default function rankRequirements(containerElement)
 
 
     // Style-switching functionality
-    rankRequirementsSection.rankChange = function(rank)
+    requirementsSection.rankChange = function(rank)
     {
         for(let i=0; i < rankRequirementsStyles.length; i++)
         {
-            rankRequirementsSection.classList.remove(rankRequirementsStyles[i]);
+            requirementsSection.classList.remove(rankRequirementsStyles[i]);
         }
 
-        displayCurriculum(rankRequirementsPanelArray[rank])
-        rankRequirementsSection.classList.add(rankRequirementsStyles[rank])
-
-        console.log(rankRequirementsStyles[rank])
-
+        displayCurriculum(requirementsPanelArray[rank])
+        requirementsSection.classList.add(rankRequirementsStyles[rank])
     }
 
-    rankRequirementsSection.rankChange(0);
+    requirementsSection.rankChange(0);
 
 
     // Run through all cards and add onclicks
-    for(let i=0; i < rankRequirementsPanelArray.length; i++)
+    for(let i=0; i < requirementsPanelArray.length; i++)
     {
-        for(let j=0; j < rankRequirementsPanelArray[i].collection.length; j++)
+        for(let j=0; j < requirementsPanelArray[i].collection.length; j++)
         {
-            rankRequirementsPanelArray[i].collection[j].addEventListener('click', function()
+            requirementsPanelArray[i].collection[j].addEventListener('click', function()
                 {
-                    rankRequirementsPanelArray[i].focalCardSelector(
-                        rankRequirementsPanelArray[i].collection[j]
+                    requirementsPanelArray[i].focalCardSelector(
+                        requirementsPanelArray[i].collection[j]
                     )
                 }
             )
@@ -100,5 +97,5 @@ export default function rankRequirements(containerElement)
     }
 
 
-    return rankRequirementsSection;
+    return requirementsSection;
 }
