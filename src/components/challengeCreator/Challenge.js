@@ -2,8 +2,6 @@ import './challenge.css'
 
 import {gsap} from 'gsap'
 
-import challengeNode from './challenge-node.svg?raw'
-
 export default class Challenge
 {
 
