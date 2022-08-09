@@ -7,7 +7,7 @@ export default function rankNodeSelector(containerElement)
     {
     // Create HTML element and insert SVG
     const rankNodeSelector = document.createElement('div')
-    rankNodeSelector.classList.add('rank-selector')
+    rankNodeSelector.classList.add('node-selector')
     rankNodeSelector.innerHTML = svgRankNodeSelector;
     containerElement.appendChild(rankNodeSelector)
 

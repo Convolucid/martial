@@ -25,7 +25,7 @@ export default class Card
         {
             card.cardDescription = cardContent.description
         }
-        card.cardDescription.classList.add('card-description', 'rank-requirements-hidden')
+        card.cardDescription.classList.add('card-description', 'hidden')
 
         card.techniques = document.createElement('div')
         if(cardContent.techniques)
@@ -44,7 +44,7 @@ export default class Card
 
             }
         }
-        card.techniques.classList.add('rank-requirements-hidden')
+        card.techniques.classList.add('hidden')
 
         card.challenges = document.createElement('div')
         if(cardContent.challenges)
@@ -72,7 +72,7 @@ export default class Card
             }
 
         }
-        card.challenges.classList.add('rank-requirements-hidden')
+        card.challenges.classList.add('hidden')
 
 
         card.cardRewards = document.createElement('div')
@@ -92,7 +92,7 @@ export default class Card
             }
 
         }
-        card.cardRewards.classList.add('rank-requirements-hidden')
+        card.cardRewards.classList.add('hidden')
 
 
         // Visible in all contexts

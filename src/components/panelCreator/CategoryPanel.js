@@ -43,17 +43,17 @@ export default class CategoryPanel
             this.panel.detailsDisplay.classList.replace('category-details-display','category-collection-display')
 
             this.collection[0].classList.replace('category-subject-overlay', 'category-subject-display')
-            this.collection[0].cardTitle.classList.remove('rank-requirements-hidden')
-            this.collection[0].cardSubtitle.classList.remove('rank-requirements-hidden')
-            this.collection.forEach(card => {card.classList.remove('rank-requirements-hidden')})
+            this.collection[0].cardTitle.classList.remove('hidden')
+            this.collection[0].cardSubtitle.classList.remove('hidden')
+            this.collection.forEach(card => {card.classList.remove('hidden')})
 
             // Index is 1 instead of 0 here because we are always skipping the Sash Card in the initial position
             for(let i=1; i < this.collection.length; i++)
             {
-                this.collection[i].cardDescription.classList.add('rank-requirements-hidden')
-                this.collection[i].techniques.classList.add('rank-requirements-hidden')
-                this.collection[i].challenges.classList.add('rank-requirements-hidden')
-                this.collection[i].cardRewards.classList.add('rank-requirements-hidden')
+                this.collection[i].cardDescription.classList.add('hidden')
+                this.collection[i].techniques.classList.add('hidden')
+                this.collection[i].challenges.classList.add('hidden')
+                this.collection[i].cardRewards.classList.add('hidden')
                 this.panel.detailsDisplay.appendChild(this.collection[i])
             }
 
@@ -65,8 +65,8 @@ export default class CategoryPanel
             this.panel.detailsDisplay.classList.replace('category-collection-display', 'category-details-display')
 
             this.collection[0].classList.add('category-subject-overlay')
-            this.collection[0].cardTitle.classList.add('rank-requirements-hidden')
-            this.collection[0].cardSubtitle.classList.add('rank-requirements-hidden')
+            this.collection[0].cardTitle.classList.add('hidden')
+            this.collection[0].cardSubtitle.classList.add('hidden')
             
             for(let i=1; i < this.collection.length; i++)
             {
@@ -78,18 +78,18 @@ export default class CategoryPanel
                     this.panel.detailsDisplay.append(this.collection[i].challenges)
                     this.panel.detailsDisplay.append(this.collection[i].cardRewards)
 
-                    this.collection[i].cardDescription.classList.remove('rank-requirements-hidden')
-                    this.collection[i].techniques.classList.remove('rank-requirements-hidden')
-                    this.collection[i].challenges.classList.remove('rank-requirements-hidden')
-                    this.collection[i].cardRewards.classList.remove('rank-requirements-hidden')
+                    this.collection[i].cardDescription.classList.remove('hidden')
+                    this.collection[i].techniques.classList.remove('hidden')
+                    this.collection[i].challenges.classList.remove('hidden')
+                    this.collection[i].cardRewards.classList.remove('hidden')
                 }
                 else
                 {
-                    this.collection[i].classList.add('rank-requirements-hidden')
-                    this.collection[i].cardDescription.classList.add('rank-requirements-hidden')
-                    this.collection[i].techniques.classList.add('rank-requirements-hidden')
-                    this.collection[i].challenges.classList.add('rank-requirements-hidden')
-                    this.collection[i].cardRewards.classList.add('rank-requirements-hidden')
+                    this.collection[i].classList.add('hidden')
+                    this.collection[i].cardDescription.classList.add('hidden')
+                    this.collection[i].techniques.classList.add('hidden')
+                    this.collection[i].challenges.classList.add('hidden')
+                    this.collection[i].cardRewards.classList.add('hidden')
                 }
             }
         }

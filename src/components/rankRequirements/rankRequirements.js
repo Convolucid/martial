@@ -45,8 +45,6 @@ export default function rankRequirements(containerElement)
     // Function to choose panel to display
     function displayCurriculum(panel)
     {
-
-
         for(let i=0; i < requirementsPanelArray.length; i++)
         {
             if(requirementsPanelArray[i] == panel)

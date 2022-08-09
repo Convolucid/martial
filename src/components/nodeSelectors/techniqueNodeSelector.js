@@ -1,75 +1,102 @@
 import {gsap} from 'gsap'
 
 import './nodeSelector.css'
-import svgRankNodeSelector from './sashRanks.svg?raw'
+import svgTechniqueNodeSelector from './techniqueCategories.svg?raw'
 
-export default function rankNodeSelector(containerElement)
+export default function techniqueNodeSelector(containerElement)
     {
     // Create HTML element and insert SVG
-    const rankNodeSelector = document.createElement('div')
-    rankNodeSelector.classList.add('rank-selector')
-    rankNodeSelector.innerHTML = svgRankNodeSelector;
-    containerElement.appendChild(rankNodeSelector)
+    const techniqueNodeSelector = document.createElement('div')
+    techniqueNodeSelector.classList.add('node-selector')
+    techniqueNodeSelector.innerHTML = svgTechniqueNodeSelector;
+    containerElement.appendChild(techniqueNodeSelector)
 
 
-    const whiteSash = document.getElementById('whiteSash')
-    const yellowSash = document.getElementById('yellowSash')
-    const orangeSash = document.getElementById('orangeSash')
-    const purpleSash = document.getElementById('purpleSash')
-    const blueSash = document.getElementById('blueSash')
-    const greenSash = document.getElementById('greenSash')
-    const brownSash = document.getElementById('brownSash')
-    const goldSash = document.getElementById('goldSash')
-    const redSash = document.getElementById('redSash')
-    const blackSash = document.getElementById('blackSash')
+    // This separates the generic gradient ids produced by Adobe Illustrator and appends 'tech' to each of them, then loops through all the elements filled by the gradients and reassigns them the new id.
+    const gradients = techniqueNodeSelector.querySelectorAll(`radialGradient[id]`)
+    for(let i=0; i < gradients.length; i++)
+    {
+        const id = gradients[i].id
+        gradients[i].id = 'tech-' + id 
+    }
 
-    rankNodeSelector.rankArray = [
-        whiteSash, yellowSash, orangeSash, purpleSash, blueSash, greenSash, brownSash, goldSash, redSash, blackSash
+    const gradientFills = techniqueNodeSelector.querySelectorAll(`[fill^=url]`)
+    for(let i=0; i < gradientFills.length; i++)
+    {
+        gradientFills[i].style.fill= 'url(#' + gradients[i].id + ')'
+    }
+
+    const clipPaths = techniqueNodeSelector.querySelectorAll(`clipPath[id]`)
+    for(let i=0; i < clipPaths.length; i++)
+    {
+        const id = clipPaths[i].id
+        clipPaths[i].id = 'tech-' + id 
+    }
+    
+    const clipPathTargets = techniqueNodeSelector.querySelectorAll(`[clip-path^=url]`)
+    for(let i=0; i < clipPathTargets.length; i++)
+    {
+        clipPathTargets[i].style.clipPath= 'url(#' + clipPaths[i].id + ')'
+    }
+
+    const stepTech = document.getElementById('stepTech')
+    const handTech = document.getElementById('handTech')
+    const fistTech = document.getElementById('fistTech')
+    const palmTech = document.getElementById('palmTech')
+    const kickTech = document.getElementById('kickTech')
+    const poetTech = document.getElementById('poetTech')
+    const poleTech = document.getElementById('poleTech')
+    const bladeTech = document.getElementById('bladeTech')
+    const flexTech = document.getElementById('flexTech')
+    const exoticTech = document.getElementById('exoticTech')
+
+    techniqueNodeSelector.rankArray = [
+        stepTech, handTech, fistTech, palmTech, kickTech, poetTech, poleTech, bladeTech, flexTech, exoticTech
     ]
 
-    const whiteNode = document.getElementById('white-node')
-    const yellowNode = document.getElementById('yellow-node')
-    const orangeNode = document.getElementById('orange-node')
-    const purpleNode = document.getElementById('purple-node')
-    const blueNode = document.getElementById('blue-node')
-    const greenNode = document.getElementById('green-node')
-    const brownNode = document.getElementById('brown-node')
-    const goldNode = document.getElementById('gold-node')
-    const redNode = document.getElementById('red-node')
-    const blackNode = document.getElementById('black-node')
+    const stepNode = document.getElementById('step-node')
+    const handNode = document.getElementById('hand-node')
+    const fistNode = document.getElementById('fist-node')
+    const palmNode = document.getElementById('palm-node')
+    const kickNode = document.getElementById('kick-node')
+    const poetNode = document.getElementById('poet-node')
+    const poleNode = document.getElementById('pole-node')
+    const bladeNode = document.getElementById('blade-node')
+    const flexNode = document.getElementById('flex-node')
+    const exoticNode = document.getElementById('exotic-node')
 
     const rankNodeArray = [
-        whiteNode, yellowNode, orangeNode, purpleNode, blueNode, greenNode, brownNode, goldNode, redNode, blackNode
+        stepNode, handNode, fistNode, palmNode, kickNode, poetNode, poleNode, bladeNode, flexNode, exoticNode
     ]
 
-    const whiteGlow = document.getElementById('white-glow')
-    const yellowGlow = document.getElementById('yellow-glow')
-    const orangeGlow = document.getElementById('orange-glow')
-    const purpleGlow = document.getElementById('purple-glow')
-    const blueGlow = document.getElementById('blue-glow')
-    const greenGlow = document.getElementById('green-glow')
-    const brownGlow = document.getElementById('brown-glow')
-    const goldGlow = document.getElementById('gold-glow')
-    const redGlow = document.getElementById('red-glow')
-    const blackGlow = document.getElementById('black-glow')
+    const stepGlow = document.getElementById('step-glow')
+    const handGlow = document.getElementById('hand-glow')
+    const fistGlow = document.getElementById('fist-glow')
+    const palmGlow = document.getElementById('palm-glow')
+    const kickGlow = document.getElementById('kick-glow')
+    const poetGlow = document.getElementById('poet-glow')
+    const poleGlow = document.getElementById('pole-glow')
+    const bladeGlow = document.getElementById('blade-glow')
+    const flexGlow = document.getElementById('flex-glow')
+    const exoticGlow = document.getElementById('exotic-glow')
 
     const rankGlowArray = [
-        whiteGlow, yellowGlow, orangeGlow, purpleGlow, blueGlow, greenGlow, brownGlow, goldGlow, redGlow, blackGlow
+        stepGlow, handGlow, fistGlow, palmGlow, kickGlow, poetGlow, poleGlow, bladeGlow, flexGlow, exoticGlow
     ]
 
-    const whiteOverlay = document.getElementById('white-overlay-gradients').getElementsByTagName('circle')
-    const yellowOverlay = document.getElementById('yellow-overlay-gradients').getElementsByTagName('circle')
-    const orangeOverlay = document.getElementById('orange-overlay-gradients').getElementsByTagName('circle')
-    const purpleOverlay = document.getElementById('purple-overlay-gradients').getElementsByTagName('circle')
-    const blueOverlay = document.getElementById('blue-overlay-gradients').getElementsByTagName('circle')
-    const greenOverlay = document.getElementById('green-overlay-gradients').getElementsByTagName('circle')
-    const brownOverlay = document.getElementById('brown-overlay-gradients').getElementsByTagName('circle')
-    const goldOverlay = document.getElementById('gold-overlay-gradients').getElementsByTagName('circle')
-    const redOverlay = document.getElementById('red-overlay-gradients').getElementsByTagName('circle')
-    const blackOverlay = document.getElementById('black-overlay-gradients').getElementsByTagName('circle')
+    const stepOverlay = document.getElementById('step-overlay-gradients').getElementsByTagName('circle')
+    const handOverlay = document.getElementById('hand-overlay-gradients').getElementsByTagName('circle')
+    const fistOverlay = document.getElementById('fist-overlay-gradients').getElementsByTagName('circle')
+    const palmOverlay = document.getElementById('palm-overlay-gradients').getElementsByTagName('circle')
+    const kickOverlay = document.getElementById('kick-overlay-gradients').getElementsByTagName('circle')
+    const poetOverlay = document.getElementById('poet-overlay-gradients').getElementsByTagName('circle')
+    const poleOverlay = document.getElementById('pole-overlay-gradients').getElementsByTagName('circle')
+    const bladeOverlay = document.getElementById('blade-overlay-gradients').getElementsByTagName('circle')
+    const flexOverlay = document.getElementById('flex-overlay-gradients').getElementsByTagName('circle')
+    const exoticOverlay = document.getElementById('exotic-overlay-gradients').getElementsByTagName('circle')
 
     const rankOverlayArray = [
-        whiteOverlay, yellowOverlay, orangeOverlay, purpleOverlay, blueOverlay, greenOverlay, brownOverlay, goldOverlay, redOverlay, blackOverlay
+        stepOverlay, handOverlay, fistOverlay, palmOverlay, kickOverlay, poetOverlay, poleOverlay, bladeOverlay, flexOverlay, exoticOverlay
     ]
 
     // Create gradient movement methods
@@ -114,11 +141,11 @@ export default function rankNodeSelector(containerElement)
 
 
     // Selector function
-    rankNodeSelector.rankSelection = function(sashRank)
+    techniqueNodeSelector.rankSelection = function(techCat)
     {
         for(let i=0; i < rankNodeArray.length; i++)
         {
-            if(sashRank == rankNodeSelector.rankArray[i])
+            if(techCat == techniqueNodeSelector.rankArray[i])
             {
                 rankNodeArray[i].style.transition = '1s'
                 rankNodeArray[i].style.transform = 'scale(2.0, 2.0)'
@@ -143,9 +170,9 @@ export default function rankNodeSelector(containerElement)
         }
     }
 
-    // Begin with initial WhiteSash node
-    rankNodeSelector.rankSelection(whiteSash)
+    // Begin with initial stepTech node
+    techniqueNodeSelector.rankSelection(stepTech)
 
-    return rankNodeSelector;
+    return techniqueNodeSelector;
 }
 

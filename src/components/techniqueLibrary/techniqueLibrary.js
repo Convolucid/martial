@@ -17,6 +17,8 @@ export default function techniqueLibrary()
     tech.hand10 = new Technique({}, 'Tyut', 'To Cast Off', 'Hand', '脫')
     tech.hand11 = new Technique({}, 'Bóng', 'To Topple', 'Hand', '榜')
 
+    tech.handTechs = [tech.hand1, tech.hand2, tech.hand3, tech.hand4, tech.hand5, tech.hand6, tech.hand7, tech.hand8, tech.hand9, tech.hand10, tech.hand11]
+
     // Closed Fist Strikes
     tech.fist1 = new Technique({}, 'Tóng Chèui', 'Straight Punch', 'Fist', '捅捶')
     tech.fist2 = new Technique({}, 'Tīu Tóng Chèui', 'Warding Straight Punch', 'Fist', '挑捅捶')

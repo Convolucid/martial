@@ -9,7 +9,7 @@ export default class RankCurriculum
     constructor(containerElement)
     {
         // Container Element for Rank Curriculum UI
-        const rankCurriculum = document.createElement('div')
+        const rankCurriculum = document.createElement('section')
         containerElement.appendChild(rankCurriculum)
 
         // Animated SVG Node Selector for sash ranks

@@ -3,13 +3,13 @@ svg * {
     transform-origin: center;
 }
 
-.rank-selector {
+.node-selector {
     margin: 0 auto;
     width: 100%;
 }
 
 @media(min-width: 768px) {
-    .rank-selector {
+    .node-selector {
         width: 60%;
     }
 }
