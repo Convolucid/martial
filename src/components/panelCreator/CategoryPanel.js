@@ -105,8 +105,8 @@ export default class CategoryPanel
             this.panel.detailsDisplay.classList.replace('category-details-display','category-collection-display')
 
             this.collection[0].classList.replace('category-subject-overlay', 'category-subject-display')
-            this.collection[0].name.classList.remove('hidden')
-            this.collection[0].altName.classList.remove('hidden')
+            this.collection[0].cardTitle.classList.remove('hidden')
+            this.collection[0].cardSubtitle.classList.remove('hidden')
             this.collection.forEach(tech => {tech.classList.remove('hidden')})
 
             // Index is 1 instead of 0 here because we are always skipping the Sash Card in the initial position
@@ -126,20 +126,20 @@ export default class CategoryPanel
             this.panel.detailsDisplay.classList.replace('category-collection-display', 'category-details-display')
 
             this.collection[0].classList.add('category-subject-overlay')
-            this.collection[0].name.classList.add('hidden')
-            this.collection[0].altName.classList.add('hidden')
+            this.collection[0].cardTitle.classList.add('hidden')
+            this.collection[0].cardSubtitle.classList.add('hidden')
             
             for(let i=1; i < this.collection.length; i++)
             {
                 if(this.collection[i] == techName)
                 {
                     this.panel.subjectDisplay.appendChild(this.collection[i])
-                    this.panel.detailsDisplay.append(this.collection[i].cardDescription)
+                    // this.panel.detailsDisplay.append(this.collection[i].cardDescription)
 
                     // this.panel.detailsDisplay.append(this.collection[i].challenges)
                     // this.panel.detailsDisplay.append(this.collection[i].rewards)
 
-                    this.collection[i].cardDescription.classList.remove('hidden')
+                    // this.collection[i].cardDescription.classList.remove('hidden')
 
                     // this.collection[i].challenges.classList.remove('hidden')
                     // this.collection[i].rewards.classList.remove('hidden')
@@ -147,7 +147,7 @@ export default class CategoryPanel
                 else
                 {
                     this.collection[i].classList.add('hidden')
-                    this.collection[i].cardDescription.classList.add('hidden')
+                    // this.collection[i].cardDescription.classList.add('hidden')
 
                     // this.collection[i].challenges.classList.add('hidden')
                     // this.collection[i].rewards.classList.add('hidden')

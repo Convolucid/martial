@@ -49,14 +49,14 @@ export default function rankRequirements(containerElement)
         {
             if(requirementsPanelArray[i] == panel)
             {
-                requirementsPanelArray[i].panel.classList.remove('rank-requirements-hidden')
+                requirementsPanelArray[i].panel.classList.remove('hidden')
                 requirementsPanelArray[i].focalCardSelector(
                     requirementsPanelArray[i].collection[0]
                 )
             }
             else
             {
-                requirementsPanelArray[i].panel.classList.add('rank-requirements-hidden')
+                requirementsPanelArray[i].panel.classList.add('hidden')
             }
         }
     }

@@ -175,3 +175,7 @@
 /* .card-image-blackSash {
     box-shadow: 0px 2px 10px 1px black;
 } */
+
+.hidden {
+    display: none;
+}

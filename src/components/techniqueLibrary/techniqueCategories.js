@@ -2,14 +2,12 @@ import './technique.css'
 
 // import CategoryPanel from './CategoryPanel.js'
 import CategoryPanel from '../panelCreator/CategoryPanel.js'
+import PathCard from '../cardLibrary/PathCard.js'
 import Technique from './Technique.js'
 
 import techniqueLibrary from './techniqueLibrary.js'
 
-import initiateTierCollection from '../cardLibrary/tier1Collection'
-import developmentTierCollection from '../cardLibrary/tier2Collection'
-import refinementTierCollection from '../cardLibrary/tier3Collection'
-import adeptTierCollection from '../cardLibrary/tier4Collection'
+import generalCurrency from '../cardLibrary/tier0-general/generalCurrency.js'
 
 export default function techniqueCategories(containerElement)
 {
@@ -19,19 +17,34 @@ export default function techniqueCategories(containerElement)
     containerElement.appendChild(techCategoriesSection)
 
     // Create categories from techniqueLibrary
-    const stepTechs = []
-    const handTechs = []
-    const fistTechs = []
-    const palmTechs = []
-    const kickTechs = []
-    const poetTechs = []
-    const poleTechs = []
-    const bladeTechs = []
-    const flexTechs = []
-    const exoticTechs = []
+
+    const gen = generalCurrency()
+    const stepCard = new PathCard(gen.iron100)
+    const handCard = new PathCard(gen.iron100)
+    const fistCard = new PathCard(gen.iron100)
+    const palmCard = new PathCard(gen.iron100)
+    const kickCard = new PathCard(gen.iron100)
+    const poetCard = new PathCard(gen.iron100)
+    const poleCard = new PathCard(gen.iron100)
+    const bladeCard = new PathCard(gen.iron100)
+    const flexCard = new PathCard(gen.iron100)
+    const exoticCard = new PathCard(gen.iron100)
+
+    const stepTechs = [stepCard]
+    const handTechs = [handCard]
+    const fistTechs = [fistCard]
+    const palmTechs = [palmCard]
+    const kickTechs = [kickCard]
+    const poetTechs = [poetCard]
+    const poleTechs = [poleCard]
+    const bladeTechs = [bladeCard]
+    const flexTechs = [flexCard]
+    const exoticTechs = [exoticCard]
+
+
+
 
     const lib = techniqueLibrary()
-
 
     function assignCategory(regex, array)
     {
@@ -64,6 +77,8 @@ export default function techniqueCategories(containerElement)
     assignCategory(/exotic/, exoticTechs);
 
 
+
+
     // Create panels from rank requirement arrays
     const stepTechsPanel = new CategoryPanel(stepTechs, techCategoriesSection)
     const handTechsPanel = new CategoryPanel(handTechs, techCategoriesSection)
@@ -76,7 +91,7 @@ export default function techniqueCategories(containerElement)
     const flexTechsPanel = new CategoryPanel(flexTechs, techCategoriesSection)
     const exoticTechsPanel = new CategoryPanel(exoticTechs, techCategoriesSection)
 
-    const requirementsPanelArray = [
+    const techCategoryPanels = [
         stepTechsPanel, handTechsPanel, fistTechsPanel, palmTechsPanel, kickTechsPanel, poetTechsPanel, poleTechsPanel, bladeTechsPanel, flexTechsPanel, exoticTechsPanel
     ]
 
@@ -84,18 +99,18 @@ export default function techniqueCategories(containerElement)
     // Function to choose panel to display
     function displayCurriculum(panel)
     {
-        for(let i=0; i < requirementsPanelArray.length; i++)
+        for(let i=0; i < techCategoryPanels.length; i++)
         {
-            if(requirementsPanelArray[i] == panel)
+            if(techCategoryPanels[i] == panel)
             {
-                requirementsPanelArray[i].panel.classList.remove('hidden')
-                requirementsPanelArray[i].focalTechSelector(
-                    requirementsPanelArray[i].collection[0]
+                techCategoryPanels[i].panel.classList.remove('hidden')
+                techCategoryPanels[i].focalTechSelector(
+                    techCategoryPanels[i].collection[0]
                 )
             }
             else
             {
-                requirementsPanelArray[i].panel.classList.add('hidden')
+                techCategoryPanels[i].panel.classList.add('hidden')
             }
         }
     }
@@ -114,7 +129,7 @@ export default function techniqueCategories(containerElement)
             techCategoriesSection.classList.remove(rankRequirementsStyles[i]);
         }
 
-        displayCurriculum(requirementsPanelArray[rank])
+        displayCurriculum(techCategoryPanels[rank])
         techCategoriesSection.classList.add(rankRequirementsStyles[rank])
     }
 
@@ -122,14 +137,14 @@ export default function techniqueCategories(containerElement)
 
 
     // Run through all cards and add onclicks
-    for(let i=0; i < requirementsPanelArray.length; i++)
+    for(let i=0; i < techCategoryPanels.length; i++)
     {
-        for(let j=0; j < requirementsPanelArray[i].collection.length; j++)
+        for(let j=0; j < techCategoryPanels[i].collection.length; j++)
         {
-            requirementsPanelArray[i].collection[j].addEventListener('click', function()
+            techCategoryPanels[i].collection[j].addEventListener('click', function()
                 {
-                    requirementsPanelArray[i].focalCardSelector(
-                        requirementsPanelArray[i].collection[j]
+                    techCategoryPanels[i].focalTechSelector(
+                        techCategoryPanels[i].collection[j]
                     )
                 }
             )
