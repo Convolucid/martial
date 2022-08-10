@@ -35,43 +35,52 @@ export default function techniqueCategories(containerElement)
 
     function assignCategory(regex, array)
     {
-        Object.keys(lib).forEach(function(key)
+        let keys = Object.keys(lib)
+        let values = Object.values(lib)
+
+        for(let i=0; i < keys.length; i++)
         {
-            if(regex.test(key))
+            if(regex.test(keys[i]))
             {
-                let tech = new Technique(Object.entries)
+                let tech = new Technique(values[keys.indexOf(keys[i])])
                 array.push(tech)
             }
-        })
+        }
+
     }
 
     // Do NOT use global flag in regex, because it skips every other element
     assignCategory(/step/, stepTechs);
     assignCategory(/hand/, handTechs);
-    // assignCategory(/fist/g, fistTechs);
-    // assignCategory(/palm/g, palmTechs);
-    // assignCategory(/kick/g, kickTechs);
-    // assignCategory(/comp/g, poetTechs);
-    // assignCategory(/glk/g, poetTechs);
-    // assignCategory(/ipma/g, poetTechs);
-    // assignCategory(/pole/g, poleTechs);
-    // assignCategory(/blade/g, bladeTechs);
-    // assignCategory(/flex/g, flexTechs);
-    // assignCategory(/exotic/g, exoticTechs);
+    assignCategory(/fist/, fistTechs);
+    assignCategory(/palm/, palmTechs);
+    assignCategory(/kick/, kickTechs);
+    assignCategory(/comp/, poetTechs);
+    assignCategory(/glk/, poetTechs);
+    assignCategory(/ipma/, poetTechs);
+    assignCategory(/pole/, poleTechs);
+    assignCategory(/blade/, bladeTechs);
+    assignCategory(/flex/, flexTechs);
+    assignCategory(/exotic/, exoticTechs);
+
 
     // Create panels from rank requirement arrays
-    const initiateTier = initiateTierCollection()
-    const developmentTier = developmentTierCollection()
-    const refinementTier = refinementTierCollection()
-    const adeptTier = adeptTierCollection()
-
-    const stepTechsPanel = new CategoryPanel(initiateTier.white, techCategoriesSection)
+    const stepTechsPanel = new CategoryPanel(stepTechs, techCategoriesSection)
+    const handTechsPanel = new CategoryPanel(handTechs, techCategoriesSection)
+    const fistTechsPanel = new CategoryPanel(fistTechs, techCategoriesSection)
+    const palmTechsPanel = new CategoryPanel(palmTechs, techCategoriesSection)
+    const kickTechsPanel = new CategoryPanel(kickTechs, techCategoriesSection)
+    const poetTechsPanel = new CategoryPanel(poetTechs, techCategoriesSection)
+    const poleTechsPanel = new CategoryPanel(poleTechs, techCategoriesSection)
+    const bladeTechsPanel = new CategoryPanel(bladeTechs, techCategoriesSection)
+    const flexTechsPanel = new CategoryPanel(flexTechs, techCategoriesSection)
+    const exoticTechsPanel = new CategoryPanel(exoticTechs, techCategoriesSection)
 
     const requirementsPanelArray = [
-        stepTechsPanel
+        stepTechsPanel, handTechsPanel, fistTechsPanel, palmTechsPanel, kickTechsPanel, poetTechsPanel, poleTechsPanel, bladeTechsPanel, flexTechsPanel, exoticTechsPanel
     ]
 
-
+    // console.log(stepTechs)
     // Function to choose panel to display
     function displayCurriculum(panel)
     {
@@ -80,7 +89,7 @@ export default function techniqueCategories(containerElement)
             if(requirementsPanelArray[i] == panel)
             {
                 requirementsPanelArray[i].panel.classList.remove('hidden')
-                requirementsPanelArray[i].focalCardSelector(
+                requirementsPanelArray[i].focalTechSelector(
                     requirementsPanelArray[i].collection[0]
                 )
             }

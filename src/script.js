@@ -28,7 +28,7 @@ const rankCurriculumDisplay = new RankCurriculum(rankCurriculum);
 const techniqueGlossary = document.getElementById('technique-glossary');
 const techniqueGlossaryDisplay = new TechniqueGlossary(techniqueGlossary);
 
-rankCurriculum.classList.add('hidden')
+techniqueGlossary.classList.add('hidden')
 // Challenge view will show all active challenges with ability to sort by rank, percentage complete, rewards, etc.
 
 // User view will show summary statistics and economy with emphasis on Proficiency medals and Path Ranks.
