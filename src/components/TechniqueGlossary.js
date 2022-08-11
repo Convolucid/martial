@@ -15,9 +15,6 @@ export default class TechniqueGlossary
         // Animated SVG Node Selector for sash ranks
         const techniqueNodeSelector = buildTechniqueNodeSelector(techniqueGlossary);
 
-        // Color themed text bar for Sash Title
-        const rankTitle = buildRankTitle(techniqueGlossary);
-
         // Card-based Frames for individual sash ranks
         const techniqueCategories = buildTechniqueCategories(techniqueGlossary);
 
@@ -40,7 +37,6 @@ export default class TechniqueGlossary
             // Click activates the current rank
             techniqueNodeSelector.rankArray[i].addEventListener('click', () => 
             {
-                rankTitle.rankChange(i)
                 techniqueCategories.rankChange(i)
             })
         }

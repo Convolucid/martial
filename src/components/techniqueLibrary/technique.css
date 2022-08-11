@@ -2,6 +2,8 @@
 
 } */
 
+
+
 .tech-name {
     font-size: 0.8rem;
     color: inherit;
@@ -17,6 +19,26 @@
 .tech-characters {
     font-size: inherit;
     color: inherit;
+}
+
+
+.tech-categories-title {
+    padding: 0.2rem;
+
+    border-width: 5px 0;
+    border-style: double;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4vw;
+
+    transition: background-color 0.5s;
+}
+
+@media(min-width: 481px) {
+    .tech-categories-title {
+        font-size: 1.25rem;
+    }
 }
 
 

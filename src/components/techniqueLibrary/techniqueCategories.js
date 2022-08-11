@@ -11,6 +11,21 @@ import generalCurrency from '../cardLibrary/tier0-general/generalCurrency.js'
 
 export default function techniqueCategories(containerElement)
 {
+    // Create HTML element and insert text
+    const categoryTitle = document.createElement('h2')
+    categoryTitle.classList.add('rank-title')
+    containerElement.appendChild(categoryTitle)
+
+
+    // Create array for class list
+    const categoryTitleStyles = [
+        'whiteSash', 'yellowSash', 'orangeSash', 'purpleSash', 'blueSash', 'greenSash', 'brownSash', 'goldSash', 'redSash', 'blackSash'
+    ]
+
+    const categoryTitleText = [
+        'Stances and Footwork', 'Empty Hand Defense', 'Fists and Elbows', 'Palm Techniques', 'Kicks and Sweeps', 'Poetic Techniques', 'Pole Weapon Techniques', 'Bladed Weapon Techniques', 'Flexible Weapon Techniques', 'Exotic Weapon Techniques'
+    ]
+
     // Create HTML element section for rank requirements
     const techCategoriesSection = document.createElement('section')
     techCategoriesSection.classList.add('tech-categories-section')
@@ -128,6 +143,15 @@ export default function techniqueCategories(containerElement)
         {
             techCategoriesSection.classList.remove(rankRequirementsStyles[i]);
         }
+
+        for(let i=0; i < categoryTitleStyles.length; i++)
+        {
+            categoryTitle.classList.remove(categoryTitleStyles[i]);
+        }
+
+        categoryTitle.classList.add(categoryTitleStyles[rank])
+        categoryTitle.innerText = categoryTitleText[rank]
+        categoryTitle.rank = rank
 
         displayCurriculum(techCategoryPanels[rank])
         techCategoriesSection.classList.add(rankRequirementsStyles[rank])
