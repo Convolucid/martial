@@ -1,5 +1,4 @@
 import buildTechniqueNodeSelector from './nodeSelectors/techniqueNodeSelector.js'
-import buildRankTitle from './rankTitle/rankTitle.js'
 import buildTechniqueCategories from './techniqueLibrary/techniqueCategories.js'
 
 // Will add shadered background canvas
@@ -31,7 +30,7 @@ export default class TechniqueGlossary
             // Deactivates glow and overlay on mouseout, and activates it on the active rank
             techniqueNodeSelector.rankArray[i].addEventListener('mouseout', () => 
             {
-                techniqueNodeSelector.rankSelection(techniqueNodeSelector.rankArray[rankTitle.rank])
+                techniqueNodeSelector.rankSelection(techniqueNodeSelector.rankArray[techniqueCategories.categoryTitle.rank])
             })
 
             // Click activates the current rank

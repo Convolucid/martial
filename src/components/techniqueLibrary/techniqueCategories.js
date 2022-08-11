@@ -11,10 +11,21 @@ import generalCurrency from '../cardLibrary/tier0-general/generalCurrency.js'
 
 export default function techniqueCategories(containerElement)
 {
+
+
+    // Create HTML element section for rank requirements
+    const techCategoriesSection = document.createElement('section')
+
     // Create HTML element and insert text
-    const categoryTitle = document.createElement('h2')
-    categoryTitle.classList.add('rank-title')
-    containerElement.appendChild(categoryTitle)
+    techCategoriesSection.categoryTitle = document.createElement('h2')
+    techCategoriesSection.categoryTitle.classList.add('rank-title')
+    containerElement.appendChild(techCategoriesSection.categoryTitle)
+
+
+    techCategoriesSection.classList.add('tech-categories-section')
+    containerElement.appendChild(techCategoriesSection)
+
+
 
 
     // Create array for class list
@@ -26,10 +37,6 @@ export default function techniqueCategories(containerElement)
         'Stances and Footwork', 'Empty Hand Defense', 'Fists and Elbows', 'Palm Techniques', 'Kicks and Sweeps', 'Poetic Techniques', 'Pole Weapon Techniques', 'Bladed Weapon Techniques', 'Flexible Weapon Techniques', 'Exotic Weapon Techniques'
     ]
 
-    // Create HTML element section for rank requirements
-    const techCategoriesSection = document.createElement('section')
-    techCategoriesSection.classList.add('tech-categories-section')
-    containerElement.appendChild(techCategoriesSection)
 
     // Create categories from techniqueLibrary
 
@@ -146,12 +153,12 @@ export default function techniqueCategories(containerElement)
 
         for(let i=0; i < categoryTitleStyles.length; i++)
         {
-            categoryTitle.classList.remove(categoryTitleStyles[i]);
+            techCategoriesSection.categoryTitle.classList.remove(categoryTitleStyles[i]);
         }
 
-        categoryTitle.classList.add(categoryTitleStyles[rank])
-        categoryTitle.innerText = categoryTitleText[rank]
-        categoryTitle.rank = rank
+        techCategoriesSection.categoryTitle.classList.add(categoryTitleStyles[rank])
+        techCategoriesSection.categoryTitle.innerText = categoryTitleText[rank]
+        techCategoriesSection.categoryTitle.rank = rank
 
         displayCurriculum(techCategoryPanels[rank])
         techCategoriesSection.classList.add(rankRequirementsStyles[rank])
