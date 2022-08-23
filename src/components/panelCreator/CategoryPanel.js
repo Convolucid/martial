@@ -107,7 +107,10 @@ export default class CategoryPanel
             this.collection[0].classList.replace('category-subject-overlay', 'category-subject-display')
             this.collection[0].cardTitle.classList.remove('hidden')
             this.collection[0].cardSubtitle.classList.remove('hidden')
-            this.collection.forEach(tech => {tech.classList.remove('hidden')})
+            this.collection.forEach(tech => {
+                tech.classList.remove('hidden')
+                tech.classList.remove('category-subject-text-display')
+            })
 
             // Index is 1 instead of 0 here because we are always skipping the Sash Card in the initial position
             for(let i=1; i < this.collection.length; i++)
@@ -134,6 +137,8 @@ export default class CategoryPanel
                 if(this.collection[i] == techName)
                 {
                     this.panel.subjectDisplay.appendChild(this.collection[i])
+                    this.collection[i].classList.add('category-subject-text-display')
+
                     // this.panel.detailsDisplay.append(this.collection[i].cardDescription)
 
                     // this.panel.detailsDisplay.append(this.collection[i].challenges)
@@ -147,6 +152,7 @@ export default class CategoryPanel
                 else
                 {
                     this.collection[i].classList.add('hidden')
+                    this.collection[i].classList.remove('category-subject-text-display')
                     // this.collection[i].cardDescription.classList.add('hidden')
 
                     // this.collection[i].challenges.classList.add('hidden')

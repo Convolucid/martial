@@ -10,6 +10,11 @@
     padding-right: 3vw;
 }
 
+.category-subject-text-display {
+    padding-left: 5vw;
+    padding-right: 3vw;
+}
+
 .category-subject-overlay {
     position: absolute;
     max-width: 6vw;
@@ -67,6 +72,11 @@
         margin: 0 auto;
     }
     
+    .category-subject-text-display {
+        padding-left: 10vw;
+        padding-right: 1vw;
+    }
+
     .category-subject-overlay {
         position: absolute;
         max-width: 20vw;
