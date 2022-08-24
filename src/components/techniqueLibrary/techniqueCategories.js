@@ -8,6 +8,7 @@ import Technique from './Technique.js'
 import techniqueLibrary from './techniqueLibrary.js'
 
 import generalCurrency from '../cardLibrary/tier0-general/generalCurrency.js'
+import generalTechCategories from '../cardLibrary/tier0-general/generalTechCategories.js'
 
 export default function techniqueCategories(containerElement)
 {
@@ -40,17 +41,17 @@ export default function techniqueCategories(containerElement)
 
     // Create categories from techniqueLibrary
 
-    const gen = generalCurrency()
-    const stepCard = new PathCard(gen.iron100)
-    const handCard = new PathCard(gen.iron100)
-    const fistCard = new PathCard(gen.iron100)
-    const palmCard = new PathCard(gen.iron100)
-    const kickCard = new PathCard(gen.iron100)
-    const poetCard = new PathCard(gen.iron100)
-    const poleCard = new PathCard(gen.iron100)
-    const bladeCard = new PathCard(gen.iron100)
-    const flexCard = new PathCard(gen.iron100)
-    const exoticCard = new PathCard(gen.iron100)
+    const gen = generalTechCategories()
+    const stepCard = new PathCard(gen.step)
+    const handCard = new PathCard(gen.hand)
+    const fistCard = new PathCard(gen.fist)
+    const palmCard = new PathCard(gen.palm)
+    const kickCard = new PathCard(gen.kick)
+    const poetCard = new PathCard(gen.poet)
+    const poleCard = new PathCard(gen.pole)
+    const bladeCard = new PathCard(gen.blade)
+    const flexCard = new PathCard(gen.flex)
+    const exoticCard = new PathCard(gen.exotic)
 
     const stepTechs = [stepCard]
     const handTechs = [handCard]
