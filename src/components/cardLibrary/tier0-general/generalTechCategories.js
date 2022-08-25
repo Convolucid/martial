@@ -2,6 +2,7 @@ import currencyContent from './currency/currency-content.md'
 
 import stepImage from './techCategories/step-card.png'
 import handImage from './techCategories/hand-card.png'
+import fistImage from './techCategories/fist-card.png'
 
 
 export default function generalTechCategories()
@@ -27,7 +28,7 @@ export default function generalTechCategories()
     t0.fist = {
         title: 'Fists and Elbows',
         subtitle: '',
-        image: stepImage
+        image: fistImage
     }
 
     t0.palm = {
