@@ -1,6 +1,7 @@
 import currencyContent from './currency/currency-content.md'
 
 import stepImage from './techCategories/step-card.png'
+import handImage from './techCategories/hand-card.png'
 
 
 export default function generalTechCategories()
@@ -20,7 +21,7 @@ export default function generalTechCategories()
     t0.hand = {
         title: 'Empty Hand Defense',
         subtitle: '',
-        image: stepImage
+        image: handImage
     }
 
     t0.fist = {
