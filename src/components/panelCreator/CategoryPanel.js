@@ -99,7 +99,7 @@ export default class CategoryPanel
     // Card selection function displays focal card and respective information (challenges, rewards, text)
     focalTechSelector(techName) 
     {
-        // When the sash card is clicked, it returns to focal area, and all other cards are revealed and returned to the curriculum display area.
+        // When the technique is clicked, it returns to focal area, and all other techniques are revealed and returned to the curriculum display area.
         if(techName == this.collection[0])
         {
             this.panel.detailsDisplay.classList.replace('category-details-display','category-collection-display')
@@ -109,7 +109,7 @@ export default class CategoryPanel
             this.collection[0].cardSubtitle.classList.remove('hidden')
             this.collection.forEach(tech => {
                 tech.classList.remove('hidden')
-                tech.classList.remove('category-subject-text-display')
+                tech.classList.remove('category-subject-text-display', 'technique-description')
             })
 
             // Index is 1 instead of 0 here because we are always skipping the Sash Card in the initial position
@@ -118,6 +118,8 @@ export default class CategoryPanel
                 // this.collection[i].type.classList.add('hidden')
                 // this.collection[i].challenges.classList.add('hidden')
                 // this.collection[i].rewards.classList.add('hidden')
+                // this.collection[i].name.classList.remove('hidden')
+                // this.collection[i].altName.classList.remove('hidden')
                 this.panel.detailsDisplay.appendChild(this.collection[i])
             }
 
@@ -128,16 +130,18 @@ export default class CategoryPanel
         {
             this.panel.detailsDisplay.classList.replace('category-collection-display', 'category-details-display')
 
-            this.collection[0].classList.add('category-subject-overlay')
-            this.collection[0].cardTitle.classList.add('hidden')
-            this.collection[0].cardSubtitle.classList.add('hidden')
+            // this.collection[0].classList.add('category-subject-overlay')
+            // this.collection[0].cardTitle.classList.add('hidden')
+            // this.collection[0].cardSubtitle.classList.add('hidden')
             
             for(let i=1; i < this.collection.length; i++)
             {
                 if(this.collection[i] == techName)
                 {
-                    this.panel.subjectDisplay.appendChild(this.collection[i])
-                    this.collection[i].classList.add('category-subject-text-display')
+                    // this.panel.subjectDisplay.appendChild(this.collection[i])
+                    // this.collection[i].name.classList.add('hidden')
+                    // this.collection[i].altName.classList.add('hidden')
+                    this.collection[i].classList.add('category-subject-text-display', 'technique-description')
 
                     // this.panel.detailsDisplay.append(this.collection[i].cardDescription)
 
@@ -152,7 +156,7 @@ export default class CategoryPanel
                 else
                 {
                     this.collection[i].classList.add('hidden')
-                    this.collection[i].classList.remove('category-subject-text-display')
+                    this.collection[i].classList.remove('category-subject-text-display', 'technique-description')
                     // this.collection[i].cardDescription.classList.add('hidden')
 
                     // this.collection[i].challenges.classList.add('hidden')
