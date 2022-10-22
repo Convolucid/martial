@@ -3,6 +3,7 @@ import currencyContent from './currency/currency-content.md'
 import stepImage from './techCategories/step-card.png'
 import handImage from './techCategories/hand-card.png'
 import fistImage from './techCategories/fist-card.png'
+import palmImage from './techCategories/palm-card.png'
 
 
 export default function generalTechCategories()
@@ -34,7 +35,7 @@ export default function generalTechCategories()
     t0.palm = {
         title: 'Palm Techniques',
         subtitle: '',
-        image: stepImage
+        image: palmImage
     }
 
     t0.kick = {
