@@ -9,7 +9,7 @@
 }
 
 .tech-container.category-subject-text-display {
-    padding-left: 3rem;
+    padding-left: 0rem;
     padding-right: 0px;
     box-shadow: none;
 }
@@ -71,6 +71,13 @@
     }
 }
 
+@media(min-width: 768px) {
+    .tech-container.category-subject-text-display {
+        padding-left: 3rem;
+        padding-right: 0px;
+        box-shadow: none;
+    }
+}
 
 .tech-categories-section {
     transition: background-color 0.5s;
