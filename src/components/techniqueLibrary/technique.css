@@ -57,7 +57,7 @@
     font-size: 1.25rem;
     width: 100%;
     font-family: var(--serif);
-    background-color: white;
+    /* background-color: white; */
 }
 
 .technique-description > .tech-altName {
@@ -86,11 +86,17 @@
 
 
 /* White Sash */
-.tech-categories-whiteSash {
+.category-title-step {
+    background-color: white;
+    border-color: black;
+    color:rgb(24, 37, 37);
+}
+
+.tech-categories-step {
     background-color: rgb(240, 240, 240);
 }
 
-.tech-categories-whiteSash h2 {
+.tech-categories-step .category-details-display .tech-name {
     background-color: white;
     border-color: black;
     color:rgb(24, 37, 37);
@@ -101,14 +107,20 @@
 } */
 
 /* Yellow Sash */
-.tech-categories-yellowSash {
-    background-color: rgb(255, 254, 224);
-}
-
-.tech-categories-yellowSash h2 {
-    background-color: rgb(255, 243, 137);
+.category-title-hand {
+    background-color: rgb(246, 229, 248);
     border-color: black;
     color:black;
+}
+
+.tech-categories-hand {
+    background-color: rgb(255, 251, 241);
+}
+
+.tech-categories-hand .category-details-display .tech-name {
+    background-color: rgb(246, 229, 248);
+    border-color: black;
+    color:rgb(24, 37, 37);
 }
 
 /* .card-image-yellowSash {
@@ -116,14 +128,20 @@
 } */
 
 /* Orange Sash */
-.tech-categories-orangeSash {
-    background-color: rgb(250, 233, 210);
+.category-title-fist {
+    background-color: rgb(146, 0, 0);
+    border-color: rgb(255, 57, 57);
+    color:rgb(255, 241, 241);
 }
 
-.tech-categories-orangeSash h2 {
-    background-color: rgb(250, 207, 128);
-    border-color: black;
-    color:black;
+.tech-categories-fist {
+    background-color: rgb(252, 225, 225);
+}
+
+.tech-categories-fist .category-details-display .tech-name {
+    background-color: rgb(146, 0, 0);
+    border-color: rgb(255, 57, 57);
+    color:rgb(255, 241, 241);
 }
 
 /* .card-image-orangeSash {
@@ -131,14 +149,20 @@
 } */
 
 /* Purple Sash */
-.tech-categories-purpleSash {
-    background-color: rgb(247, 221, 255);
+.category-title-palm {
+    background-color: rgb(0, 0, 177);
+    border-color: rgb(193, 246, 255);
+    color:rgb(235, 252, 255);
 }
 
-.tech-categories-purpleSash h2 {
-    background-color: purple;
-    border-color: rgb(255, 97, 189);
-    color:rgb(255, 244, 255);
+.tech-categories-palm {
+    background-color: rgb(197, 219, 253);
+}
+
+.tech-categories-palm .category-details-display .tech-name {
+    background-color: rgb(0, 0, 177);
+    border-color: rgb(193, 246, 255);
+    color:rgb(235, 252, 255);
 }
 
 /* .card-image-purpleSash {
@@ -146,25 +170,37 @@
 } */
 
 /* Blue Sash */
-.tech-categories-blueSash {
-    background-color: rgb(197, 219, 253);
+.category-title-kick {
+    background-color: rgb(231, 197, 86);
+    border-color: black;
+    color:black;
 }
 
-.tech-categories-blueSash h2 {
-    background-color: rgb(0, 0, 177);
-    border-color: rgb(193, 246, 255);
-    color:rgb(235, 252, 255);
+.tech-categories-kick {
+    background-color: rgb(255, 245, 217);
+}
+
+.tech-categories-kick .category-details-display .tech-name {
+    background-color: rgb(231, 197, 86);
+    border-color: black;
+    color:black;
 }
 /* .card-image-blueSash {
     box-shadow: 0px 2px 10px 1px black;
 } */
 
 /* Green Sash */
-.tech-categories-greenSash {
+.category-title-poet {
+    background-color: rgb(0, 107, 0);
+    border-color: rgb(87, 255, 162);
+    color:rgb(241, 255, 249);
+}
+
+.tech-categories-poet {
     background-color: rgb(220, 255, 219);
 }
 
-.tech-categories-greenSash h2 {
+.tech-categories-poet .category-details-display .tech-name {
     background-color: rgb(0, 107, 0);
     border-color: rgb(87, 255, 162);
     color:rgb(241, 255, 249);
@@ -175,11 +211,17 @@
 } */
 
 /* Brown Sash */
-.tech-categories-brownSash {
+.category-title-pole {
+    background-color: rgb(107, 55, 34);
+    border-color: rgb(255, 212, 155);
+    color:rgb(255, 252, 249);
+}
+
+.tech-categories-pole {
     background-color: rgb(224, 218, 212);
 }
 
-.tech-categories-brownSash h2 {
+.tech-categories-pole .category-details-display .tech-name {
     background-color: rgb(107, 55, 34);
     border-color: rgb(255, 212, 155);
     color:rgb(255, 252, 249);
@@ -190,11 +232,17 @@
 } */
 
 /* Gold Sash */
-.tech-categories-goldSash {
+.category-title-blade {
+    background-color: rgb(255, 248, 232);
+    border-color: black;
+    color:black;
+}
+
+.tech-categories-blade {
     background-color: rgb(255, 245, 217);
 }
 
-.tech-categories-goldSash h2 {
+.tech-categories-blade .category-details-display .tech-name {
     background-color: rgb(231, 197, 86);
     border-color: black;
     color:black;
@@ -205,15 +253,20 @@
 } */
 
 /* Red Sash */
-.tech-categories-redSash {
-    background-color: rgb(236, 185, 185);
+.category-title-flex {
+    background-color: purple;
+    border-color: rgb(255, 97, 189);
+    color:rgb(255, 244, 255);
 }
 
-.tech-categories-redSash h2 {
-    background-color: rgb(146, 0, 0);
-    border-color: rgb(255, 57, 57);
-    color:rgb(255, 241, 241);
+.tech-categories-flex {
+    background-color: rgb(247, 221, 255);
+}
 
+.tech-categories-flex .category-details-display .tech-name {
+    background-color: purple;
+    border-color: rgb(255, 97, 189);
+    color:rgb(255, 244, 255);
 }
 
 /* .card-image-redSash {
@@ -221,12 +274,18 @@
 } */
 
 /* Black Sash */
-.tech-categories-blackSash {
+.category-title-exotic {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary-contrast);
+    color: var(--color-primary-contrast)
+}
+
+.tech-categories-exotic {
     background-color: rgb(39, 39, 39);
     color: var(--color-primary-contrast)
 }
 
-.tech-categories-blackSash h2 {
+.tech-categories-exotic .category-details-display .tech-name {
     background-color: var(--color-primary-contrast);
     color: var(--color-primary)
 }

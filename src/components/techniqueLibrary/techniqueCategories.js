@@ -31,7 +31,7 @@ export default function techniqueCategories(containerElement)
 
     // Create array for class list
     const categoryTitleStyles = [
-        'whiteSash', 'yellowSash', 'orangeSash', 'purpleSash', 'blueSash', 'greenSash', 'brownSash', 'goldSash', 'redSash', 'blackSash'
+        'category-title-step', 'category-title-hand', 'category-title-fist', 'category-title-palm', 'category-title-kick', 'category-title-poet', 'category-title-pole', 'category-title-blade', 'category-title-flex', 'category-title-exotic'
     ]
 
     const categoryTitleText = [
@@ -140,17 +140,17 @@ export default function techniqueCategories(containerElement)
     }
 
     // Create array for style class list
-    const rankRequirementsStyles = [
-        'tech-categories-whiteSash', 'tech-categories-yellowSash', 'tech-categories-orangeSash', 'tech-categories-purpleSash', 'tech-categories-blueSash', 'tech-categories-greenSash', 'tech-categories-brownSash', 'tech-categories-goldSash', 'tech-categories-redSash', 'tech-categories-blackSash'
+    const techCategoryStyles = [
+        'tech-categories-step', 'tech-categories-hand', 'tech-categories-fist', 'tech-categories-palm', 'tech-categories-kick', 'tech-categories-poet', 'tech-categories-pole', 'tech-categories-blade', 'tech-categories-flex', 'tech-categories-exotic'
     ]
 
 
     // Style-switching functionality
     techCategoriesSection.rankChange = function(rank)
     {
-        for(let i=0; i < rankRequirementsStyles.length; i++)
+        for(let i=0; i < techCategoryStyles.length; i++)
         {
-            techCategoriesSection.classList.remove(rankRequirementsStyles[i]);
+            techCategoriesSection.classList.remove(techCategoryStyles[i]);
         }
 
         for(let i=0; i < categoryTitleStyles.length; i++)
@@ -163,7 +163,7 @@ export default function techniqueCategories(containerElement)
         techCategoriesSection.categoryTitle.rank = rank
 
         displayCurriculum(techCategoryPanels[rank])
-        techCategoriesSection.classList.add(rankRequirementsStyles[rank])
+        techCategoriesSection.classList.add(techCategoryStyles[rank])
     }
 
     techCategoriesSection.rankChange(0);
