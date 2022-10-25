@@ -81,7 +81,7 @@ export default function purpleRankContent()
             new Technique(t.step6),
             new Technique(t.step7),
             new Technique(t.step8),
-            new Technique(t.comp3),
+            new Technique(t.comp1),
             new Technique(t.step10),
             new Technique(t.step12),
             new Technique(t.step13),

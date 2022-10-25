@@ -45,14 +45,14 @@ export default function greenRankContent()
         image: greenTechImage,
         description: container.querySelector('#r6-tech1-desc'),
         techniques: [
-            new Technique(t.fist13), 
+            new Technique(t.fist14), 
             new Technique(t.hand10), 
             new Technique(t.hand11), 
-            new Technique(t.ipma1), 
-            new Technique(t.ipma2), 
             new Technique(t.ipma3), 
             new Technique(t.ipma4), 
-            new Technique(t.comp4)
+            new Technique(t.ipma5), 
+            new Technique(t.ipma6), 
+            new Technique(t.comp2)
         ],
         challenges: [
             new Challenge(ch.tech1a),

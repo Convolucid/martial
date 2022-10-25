@@ -44,7 +44,7 @@ export default function orangeRankContent()
             new Technique(t.fist10), 
             new Technique(t.hand8), 
             new Technique(t.fist11), 
-            new Technique(t.comp1), 
+            new Technique(t.hand12), 
             new Technique(t.kick3), 
             new Technique(t.palm1), 
             new Technique(t.fist5),
@@ -52,7 +52,7 @@ export default function orangeRankContent()
             new Technique(t.palm2),
             new Technique(t.step8),
             new Technique(t.step9),
-            new Technique(t.comp2)
+            new Technique(t.hand13)
         ],
         challenges: [
             new Challenge(ch.tech1a),
@@ -81,7 +81,7 @@ export default function orangeRankContent()
             new Technique(t.step10),
             new Technique(t.step4),
             new Technique(t.step9),
-            new Technique(t.comp2)
+            new Technique(t.hand13)
         ],
         challenges: [
             new Challenge(ch.tech2a),

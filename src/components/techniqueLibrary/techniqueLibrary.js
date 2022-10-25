@@ -4,39 +4,6 @@ export default function techniqueLibrary()
 {
     const tech = {}
 
-    // Defensive and Controlling Hands
-    tech.hand1 = new Technique({}, 'Tiu Sau', 'Ward Away, Up & Out', 'Hand', '挑手')
-    tech.hand2 = new Technique({}, 'Pok Sáu', 'Ward Away, In & Down', 'Hand', '撲手')
-    tech.hand3 = new Technique({}, 'Fùng Sáu', 'Sealing Hand', 'Hand', '封手')
-    tech.hand4 = new Technique({}, 'Gwa Sáu', 'Hanging Hand', 'Hand', '掛手')
-    tech.hand5 = new Technique({}, 'Lau Sau', 'Grasping Hand', 'Hand', '摟手')
-    tech.hand6 = new Technique({}, 'Dìu Sáu', 'Straight Hook', 'Hand', '刁手')
-    tech.hand7 = new Technique({}, 'Got Sáu', 'Cutting Hook', 'Hand', '割手')
-    tech.hand8 = new Technique({}, 'Àu Láu Chói Sáu', 'To Hook, Grasp, and Pluck', 'Hand', '抅摟採手')
-    tech.hand9 = new Technique({}, 'Yán Jam Sáu', 'To Stretch Across', 'Hand', '引針手')
-    tech.hand10 = new Technique({}, 'Tyut', 'To Cast Off', 'Hand', '脫')
-    tech.hand11 = new Technique({}, 'Bóng', 'To Topple', 'Hand', '榜')
-
-    // Closed Fist Strikes
-    tech.fist1 = new Technique({}, 'Tóng Chèui', 'Straight Punch', 'Fist', '捅捶')
-    tech.fist2 = new Technique({}, 'Tīu Tóng Chèui', 'Warding Straight Punch', 'Fist', '挑捅捶')
-    tech.fist3 = new Technique({}, 'Jyun Chèui', 'Drilling Fist', 'Fist', '鑽捶')
-    tech.fist4 = new Technique({}, 'Tau Sam Chèui', 'Heart Stealing Fist', 'Fist', '偷心捶')
-    tech.fist5 = new Technique({}, 'Bāng Chèui', 'Crashing Fist', 'Fist', '崩捶')
-    tech.fist6 = new Technique({}, 'Sai Chèui', 'Powerful Forcing Fist', 'Fist', '勢捶')
-    tech.fist7 = new Technique({}, 'Gwa Tóng Chèui', 'Hanging Straight Punch', 'Fist', '掛捅捶')
-    tech.fist8 = new Technique({}, 'Pek Chèui', 'Chopping Fist', 'Fist', '劈捶')
-    tech.fist9 = new Technique({}, 'Cho Chèui', 'Filing Fist', 'Fist', '挫捶')
-    tech.fist10 = new Technique({}, 'Bóu Chèui', 'Supplemental Punch', 'Fist', '補捶')
-    tech.fist11 = new Technique({}, 'Fàan Che Chèui', 'Wheel Fist (Turn the Cart Over)', 'Fist', '翻車捶')
-    tech.fist12 = new Technique({}, 'Hyūn Chèui', 'Round Fist', 'Fist', '圈捶')
-    tech.fist13 = new Technique({}, 'Sai Jaat Chèui', 'Side Hammer Fist', 'Fist', '勢扎捶')
-
-    // Palm Strikes
-    tech.palm1 = new Technique({}, 'Fung Jéung', 'Halting Palm', 'Palm', '封掌')
-    tech.palm2 = new Technique({}, 'Tìu Jéung', 'Warding Palm', 'Palm', '挑掌')
-    tech.palm3 = new Technique({}, 'Jáam Yīu Jéung', 'Waist Chopping Palm', 'Palm', '斬腰掌')
-
     // Stances and Footwork
     tech.step1 = new Technique({}, 'Má Bou', 'Horse Stance', 'Stance', '馬步')
     tech.step2 = new Technique({}, 'Dang Saan Bou', 'Hill Climbing Stance', 'Stance', '登山步')
@@ -47,6 +14,8 @@ export default function techniqueLibrary()
     tech.step7 = new Technique({}, 'Tān Daap Bou', 'Collapsing Stance', 'Stance', '吞蹋步')
     tech.step8 = new Technique({}, 'Dip Bou', 'Burst Step', 'Footwork', '疊步')
     tech.step9 = new Technique({}, 'Yùn Hàu Jung Tiu', 'Monkey Hop', 'Footwork', '猿猴蹤跳')
+     tech.step20 = new Technique({}, 'Jeun Yùn Hàu Jung Tiu', 'Advancing Monkey Hop', 'Stance', '進猿猴蹤跳')
+     tech.step21 = new Technique({}, 'Chit Yùn Hàu Jung Tiu', 'Retreating Monkey Hop', 'Stance', '撤猿猴蹤跳')
     tech.step10 = new Technique({}, 'Yap Wàan Bou', 'Circle Entering Stance', 'Stance', '入環步')
     tech.step11 = new Technique({}, 'Tàan Téui', 'Seeking Leg', 'Footwork', '彈腿')
     tech.step12 = new Technique({}, 'Yùn Hàu Bou', 'Monkey Stance', 'Stance', '猿猴步')
@@ -55,10 +24,87 @@ export default function techniqueLibrary()
     tech.step15 = new Technique({}, 'Tāu Bou', 'Stealing Step', 'Stance', '偷步')
     tech.step16 = new Technique({}, 'Sím Bou', 'Dodge Step', 'Footwork', '閃步')
     tech.step17 = new Technique({}, 'Jáu Bou', 'Walking Step', 'Footwork', '走步')
-    tech.step18 = new Technique({}, 'Jūng Tiu Daai Jyún Sān', '360 Hop', 'Footwork', '蹤跳大轉身')
+    tech.step18 = new Technique({}, 'Jūng Tiu Daai Jyún Gyūn', '360 Hop', 'Footwork', '蹤跳大轉身')
     tech.step19 = new Technique({}, 'Tòng Lòng Jūng Tiu', 'Mantis Hop', 'Stance', '螳螂蹤跳')
-    tech.step20 = new Technique({}, 'Jeun Yùn Hàu Jung Tiu', 'Advancing Monkey Hop', 'Stance', '進猿猴蹤跳')
-    tech.step21 = new Technique({}, 'Chit Yùn Hàu Jung Tiu', 'Retreating Monkey Hop', 'Stance', '撤猿猴蹤跳')
+     tech.step22 = new Technique({}, 'Jeun Tòng Lòng Jūng Tiu', 'Advancing Mantis Hop', 'Stance', '進螳螂蹤跳')
+    tech.step23 = new Technique({}, 'Chit Tòng Lòng Jūng Tiu', 'Retreating Mantis Hop', 'Stance', '撤螳螂蹤跳')
+    tech.step24 = new Technique({}, 'Hēui Sīk', 'False Stance', 'Stance', '虛式')
+    tech.step25 = new Technique({}, 'Dái Má', 'Leg Hanging Stance', 'Stance', '提馬')
+    tech.step26 = new Technique({}, 'Jūng Bou', 'Bounding Step', 'Stance', '縱步')
+    tech.step27 = new Technique({}, 'Jūng Tiu Wun', 'Switch Jump', 'Stance', '縱跳換')
+    tech.step28 = new Technique({}, 'Che Bou', 'Slanted Step', 'Stance', '斜步')
+
+
+    // Defensive and Controlling Hands
+    tech.hand1 = new Technique({}, 'Tiu Sau', 'Ward Away, Up & Out', 'Hand', '挑手')
+    tech.hand2 = new Technique({}, 'Pok Sáu', 'Ward Away, In & Down', 'Hand', '撲手')
+    tech.hand3 = new Technique({}, 'Fùng Sáu', 'Sealing Hand', 'Hand', '封手')
+    tech.hand4 = new Technique({}, 'Gwa Sáu', 'Hanging Hand', 'Hand', '掛手')
+    tech.hand5 = new Technique({}, 'Lau Sau', 'Grasping Hand', 'Hand', '摟手')
+    tech.hand6 = new Technique({}, 'Dìu Sáu', 'Straight Hook', 'Hand', '刁手')
+    tech.hand7 = new Technique({}, 'Got Sáu', 'Cutting Hook', 'Hand', '割手')
+    tech.hand8 = new Technique({}, 'Àu Láu Chói Sáu', 'To Hook, Grasp, and Pluck', 'Hand', '抅摟採手')
+    tech.hand9 = new Technique({}, 'Yán Jam Sáu', 'To Stretch Across', 'Hand', '引針手')
+    tech.hand10 = new Technique({}, 'Tyut Sáu', 'To Cast Off', 'Hand', '脫')
+    tech.hand11 = new Technique({}, 'Bóng Sáu', 'Toppling Hand', 'Hand', '榜')
+     tech.hand19 = new Technique({}, 'Gwán Bóng Sáu', 'Roll and Topple Hand', 'Hand', '滾膀手')
+    tech.hand12 = new Technique({}, 'Baak Yùn Chíng Haak', 'White Ape Invites the Guest', 'Throw', '白猿請客')
+    tech.hand13 = new Technique({}, 'Tòng Lòng Bou Sìm', 'Mantis Catches the Cicada', 'Control', '螳螂捕蟬')
+    tech.hand14 = new Technique({}, 'Dāi Tòng Lòng Bou Sìm', 'Mantis Catches the Cicada Below', 'Control', '低螳螂捕蟬')
+    tech.hand15 = new Technique({}, 'Láan Fú Sān Yīu', 'Lazy Tiger Stretches Waist', 'Hand', '懶虎伸腰')
+    tech.hand16 = new Technique({}, 'Dó Gōng Faat', 'Avoiding the Hard Method', 'Hand', '躲剛法')
+    tech.hand17 = new Technique({}, 'Chìn Sī Sáu', 'Small Wrist Wrap', 'Control', '纏絲手')
+    tech.hand18 = new Technique({}, 'Dái Sai Faat', 'Powerful Pressing Method', 'Control', '抵勢法')
+
+    // Closed Fist Strikes
+    tech.fist1 = new Technique({}, 'Tóng Chèui', 'Straight Punch', 'Fist', '捅捶')
+    tech.fist2 = new Technique({}, 'Tīu Tóng Chèui', 'Warding Straight Punch', 'Fist', '挑捅捶')
+    tech.fist3 = new Technique({}, 'Jyun Chèui', 'Drilling Fist', 'Fist', '鑽捶')
+    tech.fist4 = new Technique({}, 'Tau Sam Chèui', 'Heart Stealing Fist', 'Fist', '偷心捶')
+    tech.fist5 = new Technique({}, 'Bāng Chèui', 'Crashing Fist', 'Fist', '崩捶')
+    tech.fist6 = new Technique({}, 'Sai Chèui', 'Powerful Fist', 'Fist', '勢捶')
+    tech.fist7 = new Technique({}, 'Gwa Tóng Chèui', 'Hanging Straight Punch', 'Fist', '掛捅捶')
+    tech.fist8 = new Technique({}, 'Pek Chèui', 'Chopping Fist', 'Fist', '劈捶')
+     tech.fist27 = new Technique({}, 'Dāi Pek Chèui', "Low Chopping Fist", 'Fist', '低劈捶')
+    tech.fist9 = new Technique({}, 'Cho Chèui', 'Filing Fist', 'Fist', '挫捶')
+    tech.fist10 = new Technique({}, 'Bóu Chèui', 'Supplemental Punch', 'Fist', '補捶')
+    tech.fist11 = new Technique({}, 'Fàan Che Chèui', 'Wheel Fist (Turn the Cart Over)', 'Fist', '翻車捶')
+    tech.fist12 = new Technique({}, 'Hyūn Chèui', 'Round Fist', 'Fist', '圈捶')
+    tech.fist13 = new Technique({}, 'Dāi Hyūn Chèui', 'Lower Round Fist', 'Fist', '低圈捶')
+    tech.fist14 = new Technique({}, 'Sai Jaat Chèui', 'Side Hammer Fist', 'Fist', '勢扎捶')
+    tech.fist15 = new Technique({}, 'Sēung Jeui Chèui', 'Double Falling Fists', 'Fist', '雙墜捶')
+    tech.fist16 = new Technique({}, 'Daai Fāan Chē Chèui', 'Big Wheel Fist', 'Fist', '大翻車捶')
+    tech.fist17 = new Technique({}, 'Dāan Bīn Chèui', 'Whip Hooking Fist', 'Fist', '單鞭捶')
+    tech.fist18 = new Technique({}, 'Lūk Lūk Chèui', 'Wheeling Fist', 'Fist', '轆轆捶')
+    tech.fist19 = new Technique({}, 'Sap Ji Chèui', 'Cross Fist', 'Fist', '十字捶')
+    tech.fist20 = new Technique({}, 'Lūk Lòu Chèui', "Potter's Wheel Fist", 'Fist', '轆轤捶')
+    tech.fist21 = new Technique({}, 'Dāi Hīn Chèui', "Lower Carry Fist", 'Fist', '低牽捶')
+    tech.fist22 = new Technique({}, 'Sēung Chòng Chèui', "Double Collider Fist", 'Fist', '雙撞捶')
+    tech.fist23 = new Technique({}, 'Síu Fāan Chē Chèui', "Small Wheel Fist", 'Fist', '小翻車捶')
+    tech.fist24 = new Technique({}, 'Tyut Sáu Fūng Tóng Chèui', "Scrape, Seal, Strike", 'Fist', '脫手封捅捶')
+    tech.fist25 = new Technique({}, 'Lūk Yām Chèui', "Windlass Moon Strike", 'Fist', '轆陰捶')
+    tech.fist26 = new Technique({}, 'Déng Chì Chèui', "Compression Fist", 'Fist', '頂臍捶')
+     tech.fist28 = new Technique({}, 'Tīu Chèui', "Warding Fist", 'Fist', '挑捶')
+    tech.fist29 = new Technique({}, 'Bīn Chèui', "Whipping Fist", 'Fist', '鞭捶')
+
+    // Elbows
+    tech.elbow1 = new Technique({}, 'Gwáai Jáu', "Turning Elbow", 'Elbow', '拐肘')
+    tech.elbow2 = new Technique({}, 'Dip Jáau', "Folding Elbow", 'Elbow', '叠肘')
+
+    // Palm Strikes
+    tech.palm1 = new Technique({}, 'Fung Jéung', 'Halting Palm', 'Palm', '封掌')
+    tech.palm2 = new Technique({}, 'Tìu Jéung', 'Warding Palm', 'Palm', '挑掌')
+    tech.palm3 = new Technique({}, 'Jáam Yīu Jéung', 'Waist Chopping Palm', 'Palm', '斬腰掌')
+    tech.palm4 = new Technique({}, 'Chaap Jéung', 'Thrusting Palm', 'Palm', '插掌')
+    tech.palm5 = new Technique({}, 'Gwa Jéung', 'Hanging Palm', 'Palm', '掛掌')
+    tech.palm6 = new Technique({}, 'Yām Yèung Jéung', 'Duality Palm', 'Palm', '陰陽掌')
+    tech.palm7 = new Technique({}, 'Só Hàu Jéung', 'Throat Locking Palm', 'Palm', '鎖喉掌')
+    tech.palm8 = new Technique({}, 'Jín Jéung', 'Shearing Palm', 'Palm', '剪掌')
+    tech.palm9 = new Technique({}, 'Sēung Mùn Jéung', 'Double Door Palm', 'Palm', '雙門掌')
+    tech.palm10 = new Technique({}, 'Mò Pùn Jéung', 'Millstone Palm', 'Palm', '磨盆掌')
+    tech.palm11 = new Technique({}, 'Chéui Mìn', 'Eye Gouge', 'Palm', '取眠')
+    tech.palm12 = new Technique({}, 'Fāan Jéung', 'Reverse Palm', 'Palm', '反掌')
+    tech.palm13 = new Technique({}, 'Gwán Lau Jéung', 'Slipping Palm', 'Palm', '滾漏掌')
 
     // Kicks and Sweeps
     tech.kick1 = new Technique({}, 'Sap Ji Téui', 'Cross Kick', 'Kick', '十字腿')
@@ -69,12 +115,18 @@ export default function techniqueLibrary()
     tech.kick6 = new Technique({}, 'Chìn Hau Sou Tòng Téui', 'Iron Broom', 'Sweep', '前後掃蹚腿')
     tech.kick7 = new Technique({}, 'Jāk Cháai Téui', 'Side Kick', 'Kick', '側踹腿')
     tech.kick8 = new Technique({}, 'Chyun Sam Téui', 'Heart Piercing Kick', 'Kick', '穿心腿')
+    tech.kick9 = new Technique({}, 'Jāu Téui', 'Leg Sprouting Kick', 'Kick', '揪腿')
+    tech.kick10 = new Technique({}, 'Pok Téui', 'Hard Striking Kick', 'Kick', '撲腿')
+    tech.kick11 = new Technique({}, 'Dāan Fēi Téui', 'Single Leg Soaring Kick', 'Kick', '單飛腿')
 
     // Complex Movements (Throw, Combination)
-    tech.comp1 = new Technique({}, 'Baak Yùn Chíng Haak', 'White Ape Invites the Guest', 'Throw', '白猿請客')
-    tech.comp2 = new Technique({}, 'Tòng Lòng Bou Sìm', 'Mantis Catches the Cicada', 'Control', '螳螂捕蟬')
-    tech.comp3 = new Technique({}, 'Ngo Fú Pok Sik', 'Hungry Tiger Seeks Its Prey', 'Control', '餓虎撲食')
-    tech.comp4 = new Technique({}, 'Tòng Lòng Bou Syùn', 'Mantis Whirlwind Step', 'Combination', '螳螂步旋')
+    tech.comp1 = new Technique({}, 'Ngo Fú Pok Sik', 'Hungry Tiger Seeks Its Prey', 'Control', '餓虎撲食')
+    tech.comp2 = new Technique({}, 'Tòng Lòng Bou Syùn', 'Mantis Whirlwind Step', 'Combination', '螳螂步旋')
+    tech.comp3 = new Technique({}, 'Baak Sè Tóu Sit', 'White Snake Spits its Tongue', 'Combination', '白蛇吐舌')
+    tech.comp4 = new Technique({}, 'Taai Sāan Aat Déng', 'Mount Tai Crushes the Head', 'Combination', '泰山壓頂')
+    tech.comp5 = new Technique({}, 'Hāak Fú Tāu Sām Chèui', 'Black Tiger Steals the Heart', 'Combination', '黑虎偷心捶')
+    tech.comp6 = new Technique({}, 'Jit Sáu Chyūn Sām Téui', 'Obstruct & Pierce the Chest', 'Combination', '截手穿心腿')
+    tech.comp7 = new Technique({}, 'Tòng Lòng Taam Dung', 'Praying Mantis Spies the Cave', 'Combination', '螳螂探洞')
 
     // Gung Lik Kyun
     tech.glk1 = new Technique({}, 'Ba Wòng Géui Díng', 'Tyrant Lifts The Cauldron', 'Gung Lik Kyun', '霸王举鼎')
@@ -91,21 +143,33 @@ export default function techniqueLibrary()
 
     // Iron Phoenix
     tech.ipma1 = new Technique({}, 
+        'Daai Jaak Yīu Sáu',
+        'Large Essential Striking', 'Iron Phoenix', '大摘要手'
+    )
+    tech.ipma2 = new Technique({}, 
+        'Síu Jaak Yīu Sáu',
+        'Small Essential Striking', 'Iron Phoenix', '小摘要手'
+    )
+    tech.ipma3 = new Technique({}, 
         'Tit Fung Pāan Dāng',
         'Iron Phoenix Forges Ahead (封掌十字腿劈捶 - Fūng Jéung, Sap Ji Téui, Pek Chèui)', 'Iron Phoenix', '鐵鳳攀登'
     )
-    tech.ipma2 = new Technique({}, 
+    tech.ipma4 = new Technique({}, 
         'Tit Fung Pīk Dei',
         'Iron Phoenix Opens the Earth (揪腿反掌蹬扑腿 - Jāu Téui, Fáan Jéung, Dang Pok Téui)', 'Iron Phoenix', '鐵鳳辟地'
     )
-    tech.ipma3 = new Technique({}, 
+    tech.ipma5 = new Technique({}, 
         'Hàak Fú Gàau Chà',
         'Black Tiger Crossing (雙刁取眠鎖喉 - Sēung Dìu, Chéui Mìn, Só Hàu)', 'Iron Phoenix', '黑虎交叉'
     )
-    tech.ipma4 = new Technique({}, 
+    tech.ipma6 = new Technique({}, 
         'Pēi Gīng Jáam Gīk',
         'Cutting Through Thorns and Thistles (劈崩圈捶 - Pek, Bàng, Hyùn Chèui)', 'Iron Phoenix', '披荊斬棘'
     )
+    tech.ipma7 = new Technique({}, 
+        'Ngaang Yì Buk Da',
+        'Hard and Concealed Strikes (圈捶頂掌挑捅偷心捶 - Hyùn Chèui, Déng Jéung, Tīu Tóng Tāu Sām Chèui)', 'Iron Phoenix', '硬而伏打'
+    )    
 
     // Long Pole
     tech.pole1 = new Technique({}, 'Wàang Sóu Chīn Gwān', 'Sweep Away a Thousand Troops', 'Long Pole', '橫掃千軍')

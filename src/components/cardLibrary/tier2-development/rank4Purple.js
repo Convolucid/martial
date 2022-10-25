@@ -50,7 +50,7 @@ export default function purpleRankContent()
             new Technique(t.kick1), 
             new Technique(t.kick7), 
             new Technique(t.kick8), 
-            new Technique(t.comp3), 
+            new Technique(t.comp1), 
             new Technique(t.step11)
         ],
         challenges: [

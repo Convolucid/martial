@@ -89,6 +89,7 @@ export default function techniqueCategories(containerElement)
     assignCategory(/step/, stepTechs);
     assignCategory(/hand/, handTechs);
     assignCategory(/fist/, fistTechs);
+    assignCategory(/elbow/, fistTechs);
     assignCategory(/palm/, palmTechs);
     assignCategory(/kick/, kickTechs);
     assignCategory(/comp/, poetTechs);
