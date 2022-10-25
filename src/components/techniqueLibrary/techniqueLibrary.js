@@ -47,7 +47,8 @@ export default function techniqueLibrary()
     tech.hand9 = new Technique({}, 'Yán Jam Sáu', 'To Stretch Across', 'Hand', '引針手')
     tech.hand10 = new Technique({}, 'Tyut Sáu', 'To Cast Off', 'Hand', '脫')
     tech.hand11 = new Technique({}, 'Bóng Sáu', 'Toppling Hand', 'Hand', '榜')
-     tech.hand19 = new Technique({}, 'Gwán Bóng Sáu', 'Roll and Topple Hand', 'Hand', '滾膀手')
+     tech.hand19 = new Technique({}, 'Gwán Bóng Sáu', 'Roll and Topple', 'Hand', '滾膀手')
+     tech.hand20 = new Technique({}, 'Kwán Bóng Sáu', 'Bind and Topple', 'Hand', '捆膀手')
     tech.hand12 = new Technique({}, 'Baak Yùn Chíng Haak', 'White Ape Invites the Guest', 'Throw', '白猿請客')
     tech.hand13 = new Technique({}, 'Tòng Lòng Bou Sìm', 'Mantis Catches the Cicada', 'Control', '螳螂捕蟬')
     tech.hand14 = new Technique({}, 'Dāi Tòng Lòng Bou Sìm', 'Mantis Catches the Cicada Below', 'Control', '低螳螂捕蟬')
@@ -86,6 +87,8 @@ export default function techniqueLibrary()
     tech.fist26 = new Technique({}, 'Déng Chì Chèui', "Compression Fist", 'Fist', '頂臍捶')
      tech.fist28 = new Technique({}, 'Tīu Chèui', "Warding Fist", 'Fist', '挑捶')
     tech.fist29 = new Technique({}, 'Bīn Chèui', "Whipping Fist", 'Fist', '鞭捶')
+    tech.fist30 = new Technique({}, 'Chūng Tīn Bāau Chèui', "Soaring Cannon Fist", 'Fist', '冲天炮捶')
+    tech.fist31 = new Technique({}, 'Dāi Jaat Chèui', "Lower Sweeping Fist", 'Fist', '低扎捶')
 
     // Elbows
     tech.elbow1 = new Technique({}, 'Gwáai Jáu', "Turning Elbow", 'Elbow', '拐肘')
@@ -105,6 +108,10 @@ export default function techniqueLibrary()
     tech.palm11 = new Technique({}, 'Chéui Mìn', 'Eye Gouge', 'Palm', '取眠')
     tech.palm12 = new Technique({}, 'Fāan Jéung', 'Reverse Palm', 'Palm', '反掌')
     tech.palm13 = new Technique({}, 'Gwán Lau Jéung', 'Slipping Palm', 'Palm', '滾漏掌')
+    tech.palm14 = new Technique({}, 'Déng Jéung', 'Propping Palm', 'Palm', '頂掌')
+    tech.palm15 = new Technique({}, 'Jáau Pāau', 'Palm Lift', 'Palm', '頂掌')
+    tech.palm16 = new Technique({}, 'Fāan Tīn Yan Jéung', 'Overwhelming Palm', 'Palm', '翻天印掌')
+    tech.palm17 = new Technique({}, 'Tāu Jéung', 'Stealing Palm', 'Palm', '偷掌')
 
     // Kicks and Sweeps
     tech.kick1 = new Technique({}, 'Sap Ji Téui', 'Cross Kick', 'Kick', '十字腿')
@@ -127,6 +134,7 @@ export default function techniqueLibrary()
     tech.comp5 = new Technique({}, 'Hāak Fú Tāu Sām Chèui', 'Black Tiger Steals the Heart', 'Combination', '黑虎偷心捶')
     tech.comp6 = new Technique({}, 'Jit Sáu Chyūn Sām Téui', 'Obstruct & Pierce the Chest', 'Combination', '截手穿心腿')
     tech.comp7 = new Technique({}, 'Tòng Lòng Taam Dung', 'Praying Mantis Spies the Cave', 'Combination', '螳螂探洞')
+    tech.comp8 = new Technique({}, 'Tòng Lòng Chói Bóu', 'Praying Mantis Plucks the Treasure', 'Combination', '螳螂採寶')
 
     // Gung Lik Kyun
     tech.glk1 = new Technique({}, 'Ba Wòng Géui Díng', 'Tyrant Lifts The Cauldron', 'Gung Lik Kyun', '霸王举鼎')
@@ -183,6 +191,14 @@ export default function techniqueLibrary()
     tech.pole9 = new Technique({}, 'Chēng Lùng Hēi Séui', 'Azure Dragon Plays in the Water', 'Long Pole', '青龍嬉水')
     tech.pole10 = new Technique({}, 'Yù Yūng Saat Gōng', 'Old Fisherman Casts the Net', 'Long Pole', '魚翁撒綱')
     tech.pole11 = new Technique({}, 'Chēng Lùng Chìn Chyú', 'Azure Dragon Coils Around the Pillar', 'Long Pole', '青龍纏柱')
+
+    tech.blade1 = new Technique({}, 'Liu Yam', 'Lift the Moon', 'Broadsword', '撩陰')
+    tech.blade2 = new Technique({}, 'Lā Dōu Sāu', 'Drag the Blade and Harvest', 'Broadsword', '拉刀收')
+    tech.blade3 = new Technique({}, 'Fan Seui', 'Part the Beard', 'Broadsword', '分鬚')
+    tech.blade4 = new Technique({}, 'Fung Wòng Jín Chi', 'Phoenix Spreads its Wings', 'Broadsword', '鳳凰展翅')
+    tech.blade5 = new Technique({}, 'Sou Hip', 'Sweep Away the Petals', 'Broadsword', '掃葉')
+    tech.blade6 = new Technique({}, 'Sai Ngau Mong Yut', 'Rhinoceros Gazes at the Moon', 'Broadsword', '犀牛望月')
+
 
     return tech;
 }
